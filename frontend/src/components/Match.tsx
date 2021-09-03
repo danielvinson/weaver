@@ -1,6 +1,6 @@
 import { CSSProperties, useState } from "react";
 import { useEffect } from "react";
-import { api } from "../api/api";
+import { matchApi } from "../api/api";
 import { Match as MatchType } from "../types/match";
 import { calculateClutches } from "../util/clutches";
 import { calculateRWS } from "../util/rws";
@@ -34,17 +34,7 @@ interface PlayerData {
   readonly kast: number;
 }
 
-interface Props {
-  readonly uuid: string;
-}
-
 const styles: Record<string, CSSProperties> = {
-  container: {
-    backgroundColor: colors.background,
-    minHeight: "100vh",
-    minWidth: "800px",
-    padding: "1em",
-  },
   table: {
     display: "grid",
     border: "1px solid #222",
@@ -94,7 +84,11 @@ const tableHeaders = {
 
 type TableHeaderKey = keyof typeof tableHeaders;
 
-export const Match = ({ uuid }: Props) => {
+interface Props {
+  readonly matchId: string;
+}
+
+export const Match = ({ matchId }: Props) => {
   const [match, setMatch] = useState<MatchType>();
   const [matchTableData, setMatchTableData] = useState<PlayerData[]>();
   const [sortBy, setSortBy] = useState<{
@@ -104,10 +98,10 @@ export const Match = ({ uuid }: Props) => {
 
   // Fetch data from API - refreshes on UUID change
   useEffect(() => {
-    api.get(uuid).then((res: any) => {
+    matchApi.get(matchId).then((res: any) => {
       setMatch(res.data);
     });
-  }, [uuid]);
+  }, [matchId]);
 
   // Calculate data and build table
   useEffect(() => {
@@ -128,9 +122,9 @@ export const Match = ({ uuid }: Props) => {
     );
 
     let rwsData: Record<string, number> = {};
-    match.roundResults.map((round) => {
+    match.roundResults.forEach((round) => {
       const rws = calculateRWS(round, match.players);
-      Object.entries(rws).map(([key, val]) => {
+      Object.entries(rws).forEach(([key, val]) => {
         if (!(key in rwsData)) {
           rwsData[key] = val;
         }
@@ -139,7 +133,7 @@ export const Match = ({ uuid }: Props) => {
     });
 
     // Build table data
-    match.players.map((player) => {
+    match.players.forEach((player) => {
       matchTableData.push({
         id: player.subject,
         team: player.teamId,
@@ -198,7 +192,8 @@ export const Match = ({ uuid }: Props) => {
   );
 
   return (
-    <div style={styles.container}>
+    <div>
+      <div style={{ color: "white" }}>Match {match?.id}</div>
       <div
         style={{
           ...styles.table,
@@ -245,46 +240,64 @@ export const Match = ({ uuid }: Props) => {
         {/* Data */}
         {sortedData.map((player) => (
           <div style={{ display: "contents" }}>
-            {Object.entries(player).map(([key, val]) => {
-              if (tableHeaders[key as TableHeaderKey].display === false) {
-                return;
-              }
+            {Object.entries(player)
+              .filter(
+                ([key, _]) =>
+                  tableHeaders[key as TableHeaderKey].display === true
+              )
+              .map(([key, val]) => {
+                if (key === "rank") {
+                  return (
+                    <div
+                      key={`${player.id}${key}${val}`}
+                      style={{
+                        ...styles.tableItem,
+                        background:
+                          player.team === "Blue"
+                            ? gradients.blueTeamBackground
+                            : gradients.redTeamBackground,
+                      }}
+                    >
+                      <RankIcon rankNumber={val} />
+                    </div>
+                  );
+                }
 
-              if (key === "rank") {
-                return (
-                  <div
-                    key={`${player.id}${key}${val}`}
-                    style={{
-                      ...styles.tableItem,
-                      background:
-                        player.team === "Blue"
-                          ? gradients.blueTeamBackground
-                          : gradients.redTeamBackground,
-                    }}
-                  >
-                    <RankIcon rankNumber={val} />
-                  </div>
-                );
-              }
+                if (key === "agent") {
+                  return (
+                    <div
+                      key={`${player.id}${key}${val}`}
+                      style={{
+                        ...styles.tableItem,
+                        background:
+                          player.team === "Blue"
+                            ? gradients.blueTeamBackground
+                            : gradients.redTeamBackground,
+                      }}
+                    >
+                      <AgentIcon agentId={val} />
+                    </div>
+                  );
+                }
 
-              if (key === "agent") {
-                return (
-                  <div
-                    key={`${player.id}${key}${val}`}
-                    style={{
-                      ...styles.tableItem,
-                      background:
-                        player.team === "Blue"
-                          ? gradients.blueTeamBackground
-                          : gradients.redTeamBackground,
-                    }}
-                  >
-                    <AgentIcon agentId={val} />
-                  </div>
-                );
-              }
+                if (typeof val === "number") {
+                  return (
+                    <div
+                      key={`${player.id}${key}${val}`}
+                      style={{
+                        ...styles.tableItem,
+                        color: colors.white,
+                        background:
+                          player.team === "Blue"
+                            ? gradients.blueTeamBackground
+                            : gradients.redTeamBackground,
+                      }}
+                    >
+                      {val.toFixed(0)}
+                    </div>
+                  );
+                }
 
-              if (typeof val === "number") {
                 return (
                   <div
                     key={`${player.id}${key}${val}`}
@@ -297,27 +310,10 @@ export const Match = ({ uuid }: Props) => {
                           : gradients.redTeamBackground,
                     }}
                   >
-                    {val.toFixed(0)}
+                    {val}
                   </div>
                 );
-              }
-
-              return (
-                <div
-                  key={`${player.id}${key}${val}`}
-                  style={{
-                    ...styles.tableItem,
-                    color: colors.white,
-                    background:
-                      player.team === "Blue"
-                        ? gradients.blueTeamBackground
-                        : gradients.redTeamBackground,
-                  }}
-                >
-                  {val}
-                </div>
-              );
-            })}
+              })}
           </div>
         ))}
       </div>

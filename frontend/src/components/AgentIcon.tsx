@@ -34,8 +34,10 @@ export const agents = {
   "601dbbe7-43ce-be57-2a40-4abd24953621": Kay0,
 };
 
+export type AgentId = keyof typeof agents;
+
 interface Props {
-  readonly agentId: keyof typeof agents;
+  readonly agentId: AgentId;
   readonly width?: number;
   readonly height?: number;
 }
@@ -60,7 +62,7 @@ export const AgentIcon = ({ agentId, width = 35, height = 35 }: Props) => {
         justifyContent: "center",
       }}
     >
-      <img src={agents[agentId]} width={width} height={height} />
+      <img src={agents[agentId]} width={width} height={height} alt={`${agents[agentId]}`} />
     </div>
   );
 };

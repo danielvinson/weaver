@@ -5,11 +5,11 @@ import { makeRoundTimeline } from "./roundTimeline";
 export const calculateFirstDeaths= (players: Player[], rounds: Round[]) => {
   let firstDeaths: Record<Player["subject"], number> = {};
 
-  players.map((player) => {
+  players.forEach((player) => {
     firstDeaths[player.subject] = 0;
   });
 
-  rounds.map((round) => {
+  rounds.forEach((round) => {
     const timeline = makeRoundTimeline(round);
 
     if (timeline.length > 0) {

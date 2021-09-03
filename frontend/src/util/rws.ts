@@ -14,7 +14,7 @@ export interface RWSMap {
 export const calculateRWS = (round: Round, players: Player[]): RWSMap => {
   let rws: RWSMap = {};
 
-  players.map(player => {
+  players.forEach(player => {
     const score = round.playerScores.find(r => r.subject === player.subject)?.score;
     if (score !== undefined) {
       const finalScore = player.teamId === round.winningTeam ? score : 0;

@@ -71,7 +71,7 @@ export const calculateRoundClutch = (
       const redTeamAlive = getTeamPlayersAlive("Red", playersAlive, players);
       const blueTeamAlive = getTeamPlayersAlive("Blue", playersAlive, players);
 
-      if (redTeamAlive.length == 1) {
+      if (redTeamAlive.length === 1) {
         currentClutch = {
           player: redTeamAlive[0],
           enemies: blueTeamAlive.length,
@@ -79,7 +79,7 @@ export const calculateRoundClutch = (
         };
       }
 
-      if (blueTeamAlive.length == 1) {
+      if (blueTeamAlive.length === 1) {
         currentClutch = {
           player: blueTeamAlive[0],
           enemies: redTeamAlive.length,
@@ -136,7 +136,7 @@ export const calculateRoundClutch = (
 
 export const calculateClutches = (players: Player[], rounds: Round[]) => {
   let clutches: Record<Player["subject"], Clutches> = {};
-  players.map((player) => {
+  players.forEach((player) => {
     clutches[player.subject] = {
       "1v1": 0,
       "1v2": 0,
@@ -146,7 +146,7 @@ export const calculateClutches = (players: Player[], rounds: Round[]) => {
     };
   });
 
-  rounds.map((round) => {
+  rounds.forEach((round) => {
     const clutch = calculateRoundClutch(players, round);
     if (clutch !== false) {
       switch (clutch.enemies) {

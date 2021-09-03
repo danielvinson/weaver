@@ -56,7 +56,8 @@ export const RankIcon = ({ rankNumber, width = 35, height = 35 }: Props) => (
       background:
         "radial-gradient(rgba(245, 205, 149, 0.4), rgba(245, 205, 149, 0.2), rgba(245, 205, 149,0.1)), rgba(0,0,0,1)",
       borderRadius: "5px / 45px",
-      boxShadow: "inset 2px 2px 4px rgba(0,0,0,0.8), 0px 0px 2px rgba(0,0,0,0.5)",
+      boxShadow:
+        "inset 2px 2px 4px rgba(0,0,0,0.8), 0px 0px 2px rgba(0,0,0,0.5)",
       overflow: "hidden",
       border: `1px solid rgba(245, 205, 149, 0.5)`,
 
@@ -65,6 +66,11 @@ export const RankIcon = ({ rankNumber, width = 35, height = 35 }: Props) => (
       justifyContent: "center",
     }}
   >
-    <img src={ranks[rankNumber]} width={width} height={height} />
+    <img
+      src={ranks[rankNumber]}
+      width={width}
+      height={height}
+      alt={ranks[rankNumber]}
+    />
   </div>
 );
