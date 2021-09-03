@@ -1,0 +1,20 @@
+<svg width="136" height="136" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect opacity="0.15" x="22" y="6" width="92" height="124" rx="46" fill="#586062"/>
+<rect x="39" y="27" width="58" height="82" rx="29" fill="#586062"/>
+<g style="mix-blend-mode:multiply" opacity="0.25">
+<path d="M38.8172 79.5V56.5C38.8172 40.2076 51.8828 27 68 27V109C51.8828 109 38.8172 95.7924 38.8172 79.5Z" fill="#586062"/>
+</g>
+<g style="mix-blend-mode:multiply" opacity="0.5">
+<rect x="52" y="48" width="32" height="40" rx="16" fill="#586062"/>
+</g>
+<path opacity="0.15" d="M114 84V52C114 26.5949 93.4051 6 68 6V130C93.4051 130 114 109.405 114 84Z" fill="#586062"/>
+<g style="mix-blend-mode:overlay" opacity="0.3">
+<path d="M39 56C39 39.9837 51.9837 27 68 27C84.0163 27 97 39.9837 97 56V80C97 96.0163 84.0163 109 68 109C51.9837 109 39 96.0163 39 80V56Z" fill="url(#paint0_linear)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="97" y1="27" x2="52.4996" y2="115.768" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1"/>
+</linearGradient>
+</defs>
+</svg>

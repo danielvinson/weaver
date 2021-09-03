@@ -11,7 +11,7 @@ export interface RWSMap {
   [playerId: string]: number;
 }
 
-export const getRWS = (round: Round, players: Player[]): RWSMap => {
+export const calculateRWS = (round: Round, players: Player[]): RWSMap => {
   let rws: RWSMap = {};
 
   players.map(player => {

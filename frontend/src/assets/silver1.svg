@@ -1,0 +1,20 @@
+<svg width="136" height="136" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.15" d="M68 6L109.864 48.201C120.712 59.1357 120.712 76.8643 109.864 87.799L68 130L26.1356 87.799C15.2881 76.8643 15.2881 59.1357 26.1356 48.201L68 6Z" fill="#BFCCCD"/>
+<path d="M68 30L94.6863 56.6863C100.935 62.9347 100.935 73.0653 94.6863 79.3137L68 106L41.3137 79.3137C35.0653 73.0653 35.0653 62.9347 41.3137 56.6863L68 30Z" fill="#BFCCCD"/>
+<g style="mix-blend-mode:multiply" opacity="0.35">
+<path d="M41.3137 79.3137L68 106L68 30L41.3137 56.6863C35.0653 62.9347 35.0653 73.0653 41.3137 79.3137Z" fill="#BFCCCD"/>
+</g>
+<g style="mix-blend-mode:multiply" opacity="0.75">
+<path d="M67.9998 45L83.2216 60.2218C87.5174 64.5176 87.5174 71.4824 83.2216 75.7782L67.9998 91L52.778 75.7782C48.4822 71.4824 48.4822 64.5176 52.778 60.2218L67.9998 45Z" fill="#BFCCCD"/>
+</g>
+<path opacity="0.15" d="M109.864 48.201L68 6V130L109.864 87.799C120.712 76.8643 120.712 59.1357 109.864 48.201Z" fill="#BFCCCD"/>
+<g style="mix-blend-mode:overlay" opacity="0.75">
+<path d="M68.0015 30L94.6878 56.6863C100.936 62.9347 100.936 73.0653 94.6878 79.3137L68.0015 106L41.3152 79.3137C35.0668 73.0653 35.0668 62.9347 41.3152 56.6863L68.0015 30Z" fill="url(#paint0_linear)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="99" y1="30" x2="37" y2="106" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1"/>
+</linearGradient>
+</defs>
+</svg>
