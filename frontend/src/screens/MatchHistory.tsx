@@ -1,15 +1,15 @@
-import { CSSProperties, useEffect, useState } from "react";
-import { matchHistoryApi } from "../api/api";
-import { MatchHistoryMatch } from "../types/match";
-import { useParams } from "react-router-dom";
+import { API } from "../api/api";
 import { MatchSummary } from "../components/MatchSummary";
-import { DefaultLayout } from "../layouts/DefaultLayout";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import type { CSSProperties} from "react";
+import type { MatchHistoryMatch } from "../types/match";
 
 const styles: Record<string, CSSProperties> = {
   matches: {
+    alignItems: "center",
     display: "flex",
     flexDirection: "column",
-    alignItems: "center",
     justifyContent: "center",
   },
 };
@@ -20,17 +20,19 @@ interface Params {
 
 export const MatchHistory = () => {
   const { playerId } = useParams<Params>();
-  const [matchHistory, setMatchHistory] = useState<MatchHistoryMatch[]>();
+  const [matchHistory, setMatchHistory] = useState<readonly MatchHistoryMatch[]>();
 
   useEffect(() => {
-    matchHistoryApi.get(playerId).then((res) => {
-      setMatchHistory(res.data);
-    });
+    const getHistory = async () => {
+      const history = await API.getMatchHistory(playerId)
+      setMatchHistory(history.data);
+    }
+
+    void getHistory();
   }, [playerId]);
 
   return (
-    <DefaultLayout>
-      Match History
+    <>
       <div style={styles.matches}>
         {matchHistory?.map((match) => (
           <div>
@@ -38,6 +40,6 @@ export const MatchHistory = () => {
           </div>
         ))}
       </div>
-    </DefaultLayout>
+    </>
   );
 };

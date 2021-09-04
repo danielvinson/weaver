@@ -1,27 +1,26 @@
 export const colors = {
-  primary: "#CEE5F2",
-  secondary: "#ACCBE1",
-
-  background: "#333333",
+  background: "#232224",
+  blueTeam: "#255C99",
+  blueTeamDarker1: "#245894",
+  blueTeamDarker2: "#204E83",
+  blueTeamDarker3: "#1C4473",
+  gold: "rgb(231, 215, 193)",
+  header: "#49464a",
   highlight: "#9CBFE7",
-
-  shadow: "#111111",
-  white: "#F5F0F6",
-
+  primary: "#CEE5F2",
   redTeam: "#B3001B",
   redTeamDarker1: "#A30018",
   redTeamDarker2: "#8F0015",
   redTeamDarker3: "#7A0012",
-
-  blueTeam: "#255C99",
-  blueTeamDarker1: "#245894",
-  blueTeamDarker2: "#204E83",
-  blueTeamDarker3: "#1C4473", // 28, 68, 115
+  secondary: "#ACCBE1",
+  shadow: "#111111",
+  white: "#F5F0F6", // 28, 68, 115
 };
 
 export const gradients = {
-  redTeamBackground: `linear-gradient(0deg, ${colors.redTeamDarker1}, ${colors.redTeam})`,
   blueTeamBackground: `linear-gradient(0deg, ${colors.blueTeamDarker2}, ${colors.blueTeamDarker1})`,
+  mainBackground: `linear-gradient(90deg, ${colors.background}, ${colors.shadow}, ${colors.background})`,
+  redTeamBackground: `linear-gradient(0deg, ${colors.redTeamDarker1}, ${colors.redTeam})`,
 };
 
 export const colorScales = {
@@ -61,4 +60,11 @@ export const colorScales = {
     "#ac213b",
     "#990d35",
   ],
+};
+
+export const makeAlpha = (rgbColor: string, alpha: number) => {
+  // messy but consistent... regex probably better
+  const [r, g, b] = rgbColor.split("(")[1].split(")")[0].split(",");
+
+  return `rgba(${r}, ${g}, ${b}, ${alpha}`;
 };

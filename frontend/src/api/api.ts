@@ -1,12 +1,23 @@
 import axios from "axios";
+import type { AxiosResponse } from "axios";
+import type { Match, MatchHistoryMatch } from "../types/match";
 
-export const matchApi = axios.create({
+const matchApi = axios.create({
   baseURL: "https://valorant.iesdev.com/match/",
 });
 
-export const matchHistoryApi = axios.create({
+const matchHistoryApi = axios.create({
   baseURL: "https://valorant.iesdev.com/matchplayer/",
   params: {
     queues: "competitive",
   },
 });
+
+export const API = {
+  getMatch: async (matchId: string): Promise<AxiosResponse<Match>> => {
+    return matchApi.get<Match>(matchId);
+  },
+  getMatchHistory: async (matchId: string): Promise<AxiosResponse<readonly MatchHistoryMatch[]>> => {
+    return matchHistoryApi.get<readonly MatchHistoryMatch[]>(matchId);
+  },
+};

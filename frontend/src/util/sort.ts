@@ -1,7 +1,7 @@
 export type SortDirection = "Ascending" | "Descending";
 
 export function sortData<T>(
-  data: T[],
+  data: readonly T[],
   sortBy: keyof T,
   direction: SortDirection
 ) {

@@ -1,14 +1,85 @@
-import { CSSProperties } from "react";
 import { colors } from "../util/colorPalette";
+import { common } from "../util/styles";
+import type { CSSProperties } from "react";
 
 const styles: Record<string, CSSProperties> = {
+  active: {
+    color: colors.primary,
+    fontFamily: "LatoBlack",
+    fontSize: "1.2em",
+    textDecoration: "none",
+  },
   container: {
+    ...common.row,
+    alignItems: "flex-end",
+    justifyContent: "space-between",
+    padding: "1vw",
     width: "100vw",
-    height: "30px",
-    backgroundColor: colors.primary,
+  },
+  inactive: {
+    color: colors.primary,
+    fontFamily: "Lato",
+    fontSize: "1.2em",
+    textDecoration: "none",
+  },
+  logo: {
+    color: colors.primary,
+    fontFamily: "LatoBold",
+    fontSize: "1.8em",
+    textShadow: `0.01em 0.01em 0x ${colors.highlight}`,
+  },
+  subTitle: {
+    color: colors.primary,
+    fontFamily: "LatoBoldItalic",
+    fontSize: "0.8em",
+    textShadow: `0.01em 0.01em 0px ${colors.highlight}`,
+  },
+  title: {
+    color: colors.primary,
+    fontFamily: "LatoBoldItalic",
+    fontSize: "1.2em",
+    letterSpacing: "0.1em",
+    textShadow: `0.01em 0.01em 0px ${colors.highlight}`,
   },
 };
 
-export const Header = () => {
-  return <div style={styles.container}></div>;
+interface Props {
+  readonly activeRoute: string;
+}
+
+export const Header = ({ activeRoute }: Props) => {
+  return (
+    <div style={styles.container}>
+      <div>
+        <span style={{ ...styles.logo, marginRight: "5px" }}>VS</span>
+        <span style={styles.subTitle}>Valorant Stats</span>
+      </div>
+
+      <div
+        style={{
+          ...common.row,
+          flex: 1,
+          justifyContent: "space-around",
+          paddingLeft: "40px",
+          paddingRight: "40px",
+        }}
+      >
+        {/* Nav 
+        {ROUTES.map((route) => (
+          <Link to={route.path} style={{ textDecoration: "none" }}>
+            <span
+              style={
+                activeRoute === route.key ? styles.active : styles.inactive
+              }
+            >
+              {route.name}
+            </span>
+          </Link>
+        ))}*/}
+
+        {/* Search */}
+        <input />
+      </div>
+    </div>
+  );
 };

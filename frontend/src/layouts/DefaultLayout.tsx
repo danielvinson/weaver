@@ -1,25 +1,34 @@
-import { CSSProperties, ReactNode } from "react";
-import { colors } from "../util/colorPalette";
 import { Header } from "./Header";
+import { gradients } from "../util/colorPalette";
+import type { CSSProperties, ReactNode } from "react";
 
 const styles: Record<string, CSSProperties> = {
   container: {
-    backgroundColor: colors.background,
+    alignItems: "center",
+    background: gradients.mainBackground,
+    display: "flex",
+    flexDirection: "column",
+
     height: "100vh",
-    width: "100vw",
+    justifyContent: "flex-start",
     overflowX: "hidden",
+    width: "100vw",
   },
-}
+  main: {
+    
+  }
+};
 
 interface Props {
+  readonly activeRoute: string;
   readonly children: ReactNode;
 }
 
-export const DefaultLayout = ({ children }: Props) => {
+export const DefaultLayout = ({ activeRoute, children }: Props) => {
   return (
     <div style={styles.container}>
-      <Header />
-      {children}
+      <Header activeRoute={activeRoute} />
+      <div style={styles.main}>{children}</div>
     </div>
-  )
-}
+  );
+};

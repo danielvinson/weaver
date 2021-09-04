@@ -1,29 +1,34 @@
-import { CSSProperties } from "react";
-import { MatchHistoryMatch } from "../types/match";
-import { colors, colorScales } from "../util/colorPalette";
-import { AgentIcon, AgentId } from "./AgentIcon";
-import { maps } from "./Map";
+import { AgentIcon } from "./AgentIcon";
 import { RankIcon } from "./RankIcon";
+import { colorScales, colors } from "../util/colorPalette";
+import { maps } from "./Map";
+import type { AgentId } from "./AgentIcon";
+import type { CSSProperties } from "react";
+import type { MatchHistoryMatch } from "../types/match";
 
 const styles: Record<string, CSSProperties> = {
+  column: {
+    alignItems: "center",
+    display: "flex",
+    flexDirection: "column",
+    height: "100%",
+    justifyContent: "center",
+    marginRight: "20px",
+    // borderRight: "1px solid rgba(231, 215, 193, 0.5)",
+    padding: 5,
+  },
   container: {
-    width: "600px",
-    height: "150px",
+    alignItems: "center",
     border: `1px solid rgba(23, 29, 38, 0.2)`,
     borderRadius: "10px",
-    overflow: "hidden",
-    margin: "2px",
-
     display: "flex",
     flexDirection: "row",
-    alignItems: "center",
+    height: "150px",
+
     justifyContent: "flex-start",
-  },
-  ratingChange: {
-    fontWeight: "bold",
-  },
-  victoryText: {
-    color: "#049F23",
+    margin: "2px",
+    overflow: "hidden",
+    width: "600px",
   },
   defeatText: {
     color: "red",
@@ -34,15 +39,11 @@ const styles: Record<string, CSSProperties> = {
   mapName: {
     color: colors.highlight,
   },
-  column: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "100%",
-    marginRight: "20px",
-    // borderRight: "1px solid rgba(231, 215, 193, 0.5)",
-    padding: 5,
+  ratingChange: {
+    fontWeight: "bold",
+  },
+  victoryText: {
+    color: "#049F23",
   },
 };
 

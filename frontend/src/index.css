@@ -1,3 +1,45 @@
+/*--- RESET/NORMALIZE ---*/
+body, h1, h2, h3, h4, h5, h6, figure, pre, dl, dd, blockquote, input[type="radio"], input[type="checkbox"] {margin:0}
+legend {padding:0}
+fieldset, ul, ol {padding:0;margin:0}
+ul, ol {list-style:none}
+body {line-height:1}
+main, figure, figcaption, img {display:block} /*--- <main> for IE 11 ---*/
+img {max-width:100%;height:auto}
+a {text-decoration:none}
+fieldset {border:0}
+input, textarea, select, button {display:block;max-width:100%;font-family:inherit;font-size:inherit;color:inherit}
+label {display:table}
+input[type="text"], input[type="email"], input[type="password"], input[type="search"] {-webkit-appearance:none} /*--- for Safari (add/remove types as needed) ---*/
+button {line-height:inherit}
+button::-moz-focus-inner {border:0} /*--- for Firefox ---*/
+html {-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+
+
+@font-face {
+  font-family: "Lato";
+  src: local("Lato"), url(./assets/fonts/Lato-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "LatoBold";
+  font-weight: bold;
+  src: local("LatoBold"), url(./assets/fonts/Lato-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "LatoBoldItalic";
+  font-weight: bold;
+  font-style: italic;
+  src: local("LatoBold"), url(./assets/fonts/Lato-BoldItalic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "LatoBlack";
+  font-weight: 800;
+  src: local("LatoBlack"), url(./assets/fonts/Lato-Black.ttf) format("truetype");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,5 +51,5 @@ body {
 }
 
 body {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Lato";
 }

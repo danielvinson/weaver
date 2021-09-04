@@ -29,11 +29,11 @@ export interface PlayerDamage {
 }
 
 export interface PlayerKills {
-  readonly assistants: [];
+  readonly assistants: readonly [];
   readonly finishingDamage: {
-    damageItem: UUID;
-    damageType: "Weapon" | string;
-    isSecondaryFireMode: boolean;
+    readonly damageItem: UUID;
+    readonly damageType: string | "Weapon";
+    readonly isSecondaryFireMode: boolean;
   };
   readonly gameTime: number;
   readonly killer: UUID;
@@ -54,9 +54,9 @@ export interface PlayerStat {
     readonly ability2Effects: null;
     readonly ultimateEffects: null;
   };
-  readonly damage: PlayerDamage[];
+  readonly damage: readonly PlayerDamage[];
   readonly economy: Omit<PlayerEconomy, "subject">;
-  readonly kills: PlayerKills[];
+  readonly kills: readonly PlayerKills[];
   readonly score: number;
   readonly stayedInSpawn: boolean;
   readonly subject: UUID;
@@ -66,18 +66,18 @@ export interface PlayerStat {
 export interface Round {
   readonly bombPlanter: UUID | null;
   readonly defuseLocation: Coordinate | null;
-  readonly defusePlayerLocations: Coordinate[] | null;
+  readonly defusePlayerLocations: readonly Coordinate[] | null;
   readonly defuseRoundTime: number;
   readonly plantLocation: Coordinate;
-  readonly plantPlayerLocations: Coordinate[];
+  readonly plantPlayerLocations: readonly Coordinate[];
   readonly plantRoundTime: number;
   readonly plantSite: "A" | "B" | "C" | null;
-  readonly playerEconomies: PlayerEconomy[];
-  readonly playerScores: PlayerScore[];
-  readonly playerStats: PlayerStat[];
+  readonly playerEconomies: readonly PlayerEconomy[];
+  readonly playerScores: readonly PlayerScore[];
+  readonly playerStats: readonly PlayerStat[];
   readonly roundCeremony: string;
   readonly roundNum: number;
-  readonly roundResult: "Eliminated" | string;
-  readonly roundResultCode: "Elimination" | string;
-  readonly winningTeam: "Red" | "Blue";
+  readonly roundResult: string | "Eliminated";
+  readonly roundResultCode: string | "Elimination";
+  readonly winningTeam: "Blue" | "Red";
 }

@@ -1,16 +1,16 @@
-import { Round } from "../types/round";
+import type { Round } from "../types/round";
 
 /*
   Calculates if a round was a Save, Half buy, Force buy, Full buy, or Pistol round for each team
 */
 
-export type RoundType = "save" | "half" | "force" | "full" | "pistol";
+export type RoundType = "force" | "full" | "half" | "pistol" | "save";
 
 export const getRoundType = (
   round: Round
-): { red: RoundType; blue: RoundType } => {
+): { readonly red: RoundType; readonly blue: RoundType } => {
   return {
-    red: "save",
     blue: "full",
+    red: "save",
   };
 };

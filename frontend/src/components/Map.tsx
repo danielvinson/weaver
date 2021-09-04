@@ -1,18 +1,19 @@
-import Haven from "../assets/haven.jpeg";
-import Breeze from "../assets/breeze.jpeg";
-import Bind from "../assets/bind.jpeg";
-import Ascent from "../assets/ascent.jpeg";
-import Icebox from "../assets/icebox.png";
-import Split from "../assets/split.jpeg";
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+import Ascent from "../assets/images/ascent.jpeg";
+import Bind from "../assets/images/bind.jpeg";
+import Breeze from "../assets/images/breeze.jpeg";
+import Haven from "../assets/images/haven.jpeg";
+import Icebox from "../assets/images/icebox.png";
+import Split from "../assets/images/split.jpeg";
 
 export const maps = {
-  haven: Haven,
-  breeze: Breeze,
-  bind: Bind,
   ascent: Ascent,
+  bind: Bind,
+  breeze: Breeze,
+  haven: Haven,
   icebox: Icebox,
-  split: Split,
-  port: Icebox, // dev name
+  port: Icebox,
+  split: Split, // dev name
 };
 
 export type MapName = keyof typeof maps;
@@ -23,7 +24,7 @@ interface Props {
   readonly height?: number;
 }
 
-export const MapIcon = ({ mapName, width = 200, height = 100 }: Props) => {
+export const MapIcon = ({ height = 100, mapName, width = 200 }: Props) => {
   if (!(mapName in maps)) {
     console.log(mapName);
   }
@@ -33,7 +34,7 @@ export const MapIcon = ({ mapName, width = 200, height = 100 }: Props) => {
         src={maps[mapName]}
         width={width}
         height={height}
-        alt={`${maps[mapName]}`}
+        alt={maps[mapName]}
       />
     </div>
   );

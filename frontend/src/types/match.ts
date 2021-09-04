@@ -1,64 +1,64 @@
-import { Player } from "./player";
-import { Round } from "./round";
+import type { Player } from "./player";
+import type { Round } from "./round";
 
 // making UUID different type for later convenience
 type UUID = string;
 
-export type Map = "ascent" | "breeze" | "bind" | "icebox" | "haven";
+export type MapName = "ascent" | "bind" | "breeze" | "haven" | "icebox";
 export type Queue = "competitive" | "unrated";
 
 export interface Team {
   readonly numPoints: number;
   readonly roundsPlayed: number;
   readonly roundsWon: number;
-  readonly teamId: "Red" | "Blue";
+  readonly teamId: "Blue" | "Red";
 }
 
 export interface Match {
   readonly id: UUID;
   readonly length: number;
-  readonly map: Map;
+  readonly map: MapName;
   readonly mode: string;
-  readonly players: Player[];
+  readonly players: readonly Player[];
   readonly queue: Queue;
   readonly ranked: boolean;
-  readonly roundResults: Round[];
+  readonly roundResults: readonly Round[];
   readonly season: string;
   readonly startedAt: string;
-  readonly teams: Team[];
+  readonly teams: readonly Team[];
 }
 
 
 export interface MatchHistoryMatch {
-  playerId: string;
-  matchId: string;
-  tierAfterUpdate: number;
-  competitiveMovement: null | "PROMOTED" | "DEMOTED";
-  hsStats: {
-    all: {
-      last20Avg: number;
-      overallAvg: number;
+  readonly playerId: string;
+  readonly matchId: string;
+  readonly tierAfterUpdate: number;
+  readonly competitiveMovement: "DEMOTED" | "PROMOTED" | null;
+  readonly hsStats: {
+    readonly all: {
+      readonly last20Avg: number;
+      readonly overallAvg: number;
     },
-    current: number;
-    competitive: {
-      last20Avg: number;
+    readonly current: number;
+    readonly competitive: {
+      readonly last20Avg: number;
     }
   }
-  rankedRatingEarned: number;
-  map: Map;
-  queue: Queue
-  agentId: string;
-  season: string;
-  matchDate: string;
-  kills: number;
-  deaths: number;
-  assists: number;
-  damage: number;
-  score: number;
-  winStatus: "win" | "loss" | "draw";
-  roundsWon: number;
-  roundsPlayed: number;
-  playtimeMillis: number;
+  readonly rankedRatingEarned: number;
+  readonly map: MapName;
+  readonly queue: Queue
+  readonly agentId: string;
+  readonly season: string;
+  readonly matchDate: string;
+  readonly kills: number;
+  readonly deaths: number;
+  readonly assists: number;
+  readonly damage: number;
+  readonly score: number;
+  readonly winStatus: "draw" | "loss" | "win";
+  readonly roundsWon: number;
+  readonly roundsPlayed: number;
+  readonly playtimeMillis: number;
 
   // These seem unused
   /*

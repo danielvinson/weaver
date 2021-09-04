@@ -1,6 +1,9 @@
-import { Player } from "../types/player";
-import { Round } from "../types/round";
+/* eslint-disable functional/prefer-readonly-type */
+/* eslint-disable functional/immutable-data */
+/* eslint-disable functional/no-let */
 import { makeRoundTimeline } from "./roundTimeline";
+import type { Player } from "../types/player";
+import type { Round } from "../types/round";
 
 export interface Clutches {
   "1v1": number;
@@ -11,21 +14,21 @@ export interface Clutches {
 }
 
 interface Clutch {
-  player: string;
-  enemies: number;
-  team: "Red" | "Blue";
+  readonly player: string;
+  readonly enemies: number;
+  readonly team: "Blue" | "Red";
 }
 
 interface ClutchInProgress {
-  player?: string;
-  enemies?: number;
-  team?: "Red" | "Blue";
+  readonly player?: string;
+  readonly enemies?: number;
+  readonly team?: "Blue" | "Red";
 }
 
 export const getTeamPlayersAlive = (
-  team: "Red" | "Blue",
-  playersAlive: string[],
-  players: Player[]
+  team: "Blue" | "Red",
+  playersAlive: readonly string[],
+  players: readonly Player[]
 ) => {
   return playersAlive.filter((alive) => {
     const player = players.find((p) => p.subject === alive);
@@ -34,7 +37,7 @@ export const getTeamPlayersAlive = (
 };
 
 export const calculateRoundClutch = (
-  players: Player[],
+  players: readonly Player[],
   round: Round
 ): Clutch | false => {
   const timeline = makeRoundTimeline(round);
@@ -44,24 +47,23 @@ export const calculateRoundClutch = (
 
   let playersAlive = players.flatMap((p) => p.subject);
   let currentClutch: ClutchInProgress = {
-    player: undefined,
     enemies: undefined,
+    player: undefined,
     team: undefined,
   };
 
   let secondaryClutch: ClutchInProgress = {
-    player: undefined,
     enemies: undefined,
+    player: undefined,
     team: undefined,
   };
 
-  for (const i in timeline) {
-    const kill = timeline[i];
+  timeline.forEach((kill) => {
     const victim = players.find((player) => player.subject === kill.victim);
 
     if (victim === undefined) {
       console.log(`Couldn't find player ${kill.victim}`);
-      break;
+      return;
     }
 
     playersAlive = playersAlive.filter((p) => p !== victim.subject);
@@ -73,16 +75,16 @@ export const calculateRoundClutch = (
 
       if (redTeamAlive.length === 1) {
         currentClutch = {
-          player: redTeamAlive[0],
           enemies: blueTeamAlive.length,
+          player: redTeamAlive[0],
           team: "Red",
         };
       }
 
       if (blueTeamAlive.length === 1) {
         currentClutch = {
-          player: blueTeamAlive[0],
           enemies: redTeamAlive.length,
+          player: blueTeamAlive[0],
           team: "Blue",
         };
       }
@@ -97,16 +99,16 @@ export const calculateRoundClutch = (
       if (redTeamAlive.length === 1 && blueTeamAlive.length === 1) {
         if (currentClutch.team === "Red") {
           secondaryClutch = {
-            player: blueTeamAlive[0],
             enemies: 1,
+            player: blueTeamAlive[0],
             team: "Blue",
           };
         }
 
         if (currentClutch.team === "Blue") {
           secondaryClutch = {
-            player: redTeamAlive[0],
             enemies: 1,
+            player: redTeamAlive[0],
             team: "Red",
           };
         }
@@ -125,17 +127,22 @@ export const calculateRoundClutch = (
         (secondaryClutch.team === "Red" && blueTeamAlive.length === 0) ||
         (secondaryClutch.team === "Blue" && redTeamAlive.length === 0)
       ) {
-        return secondaryClutch as Clutch
+        return secondaryClutch as Clutch;
       }
     }
-  }
+  });
 
-  // Nobody clutched in this round
+  // No clutch!
   return false;
 };
 
-export const calculateClutches = (players: Player[], rounds: Round[]) => {
+export const calculateClutches = (
+  players: readonly Player[],
+  rounds: readonly Round[]
+) => {
+  // eslint-disable-next-line prefer-const
   let clutches: Record<Player["subject"], Clutches> = {};
+
   players.forEach((player) => {
     clutches[player.subject] = {
       "1v1": 0,

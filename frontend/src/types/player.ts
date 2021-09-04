@@ -1,6 +1,7 @@
 // making UUID different type for later convenience
 type UUID = string;
 
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface NewPlayerExperienceDetails {} // boring data, ignoring
 
 export interface PlatformInfo {
@@ -45,10 +46,10 @@ export interface Player {
   readonly platformInfo: PlatformInfo;
   readonly playerCard: UUID;
   readonly playerTitle: UUID;
-  readonly roundDamage: RoundDamage[];
+  readonly roundDamage: readonly RoundDamage[];
   readonly sessionPlaytimeMinutes: number;
   readonly stats: Stats;
   readonly subject: UUID;
   readonly tagLine: string;
-  readonly teamId: "Red" | "Blue";
+  readonly teamId: "Blue" | "Red";
 }

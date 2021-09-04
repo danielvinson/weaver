@@ -1,9 +1,10 @@
-import { Player } from "../types/player";
-import { Round } from "../types/round";
+/* eslint-disable functional/immutable-data */
 import { makeRoundTimeline } from "./roundTimeline";
+import type { Player } from "../types/player";
+import type { Round } from "../types/round";
 
-export const calculateFirstKills = (players: Player[], rounds: Round[]) => {
-  let firstKills: Record<Player["subject"], number> = {};
+export const calculateFirstKills = (players: readonly Player[], rounds: readonly Round[]) => {
+  const firstKills: Record<Player["subject"], number> = {};
 
   players.forEach((player) => {
     firstKills[player.subject] = 0;
