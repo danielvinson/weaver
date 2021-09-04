@@ -2,20 +2,20 @@
 /* eslint-disable functional/immutable-data */
 import { API } from "../api/api";
 import { AgentIcon } from "./AgentIcon";
+import { MatchTableCell } from "./MatchTableCell";
 import { PlayerName } from "./PlayerName";
 import { RankIcon } from "./RankIcon";
+import { SortableTable } from "./SortableTable";
 import { calculateClutches } from "../util/clutches";
 import { calculateFirstDeaths } from "../util/firstDeaths";
 import { calculateFirstKills } from "../util/firstKills";
 import { calculateRWS } from "../util/rws";
-import { colors, gradients } from "../util/colorPalette";
-import { sortData } from "../util/sort";
 import { useEffect, useState } from "react";
-import type { CSSProperties } from "react";
+import type { AgentId } from "./AgentIcon";
 import type { Match as MatchType } from "../types/match";
-import type { SortDirection } from "../util/sort";
+import type { RankNumber } from "./RankIcon";
 
-interface PlayerData {
+export interface PlayerData {
   readonly id: string;
   readonly team: "Blue" | "Red";
   readonly name: string;
@@ -38,55 +38,29 @@ interface PlayerData {
   readonly kast: number;
 }
 
-const styles: Record<string, CSSProperties> = {
-  table: {
-    border: "1px solid #222",
-    borderTop: "3px solid #222",
-    display: "grid",
-  },
-  tableHeader: {
-    backgroundColor: colors.shadow,
-    boxShadow: "0px 1px 1px rgba(255,255,255,0.2)",
-    color: colors.white,
-    cursor: "pointer",
-    fontWeight: "bold",
-  },
-  tableItem: {
-    alignItems: "center",
-    borderLeft: "1px solid rgba(0,0,0,.1)",
-    color: colors.white,
-
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "center",
-    padding: "4px",
-  },
-};
-
-const tableHeaders = {
-  agent: { display: true, name: "Agent", width: "70px" },
-  assists: { display: true, name: "A", width: "50px" },
-  clutch: { display: true, name: "Clutches", width: "auto" },
-  clutchv1: { display: true, name: "1v1", width: "auto" },
-  clutchv2: { display: true, name: "1v2", width: "auto" },
-  clutchv3: { display: true, name: "1v3", width: "auto" },
-  clutchv4: { display: true, name: "1v4", width: "auto" },
-  clutchv5: { display: true, name: "1v5", width: "auto" },
-  combat: { display: true, name: "Combat Score", width: "170px" },
-  deaths: { display: true, name: "D", width: "50px" },
-  fd: { display: true, key: "fd", name: "FD", width: "50px" },
-  fk: { display: true, key: "fk", name: "FK", width: "50px" },
-  id: { display: false, name: "ID", width: "auto" },
-  kast: { display: false, name: "KAST", width: "auto" },
-  kills: { display: true, name: "K", width: "50px" },
-  name: { display: true, name: "Name", width: "minmax(125px, 250px)" },
-  rank: { display: true, name: "Rank", width: "70px" },
-  rws: { display: true, name: "RWS", width: "90px" },
-  tag: { display: false, name: "Tag", width: "auto" },
-  team: { display: false, name: "Team", width: "auto" },
-};
-
-type TableHeaderKey = keyof typeof tableHeaders;
+// Ordered
+const tableHeaders = [
+  { display: false, key: "id", name: "ID", width: "auto" },
+  { display: false, key: "team", name: "Team", width: "auto" },
+  { display: true, key: "name", name: "Name", width: "minmax(125px, 250px)" },
+  { display: false, key: "tag", name: "Tag", width: "auto" },
+  { display: true, key: "rank", name: "Rank", width: "70px" },
+  { display: true, key: "agent", name: "Agent", width: "70px" },
+  { display: true, key: "combat", name: "Combat Score", width: "170px" },
+  { display: true, key: "rws", name: "RWS", width: "90px" },
+  { display: true, key: "kills", name: "K", width: "50px" },
+  { display: true, key: "deaths", name: "D", width: "50px" },
+  { display: true, key: "assists", name: "A", width: "50px" },
+  { display: true, key: "fd", name: "FD", width: "50px" },
+  { display: true, key: "fk", name: "FK", width: "50px" },
+  { display: true, key: "clutch", name: "Clutches", width: "auto" },
+  { display: true, key: "clutchv1", name: "1v1", width: "auto" },
+  { display: true, key: "clutchv2", name: "1v2", width: "auto" },
+  { display: true, key: "clutchv3", name: "1v3", width: "auto" },
+  { display: true, key: "clutchv4", name: "1v4", width: "auto" },
+  { display: true, key: "clutchv5", name: "1v5", width: "auto" },
+  { display: false, key: "kast", name: "KAST", width: "auto" },
+];
 
 interface Props {
   readonly matchId: string;
@@ -94,11 +68,7 @@ interface Props {
 
 export const Match = ({ matchId }: Props) => {
   const [match, setMatch] = useState<MatchType>();
-  const [matchTableData, setMatchTableData] = useState<readonly PlayerData[]>();
-  const [sortBy, setSortBy] = useState<{
-    readonly key: TableHeaderKey;
-    readonly direction: SortDirection;
-  }>({ direction: "Ascending", key: "combat" });
+  const [matchTableData, setMatchTableData] = useState<PlayerData[]>();
 
   // Fetch data from API - refreshes on UUID change
   useEffect(() => {
@@ -167,176 +137,26 @@ export const Match = ({ matchId }: Props) => {
       });
     });
 
-    setMatchTableData(matchTableData);
+    setMatchTableData(tableData);
   }, [match]);
-
-  const handleClickHeader = (key: TableHeaderKey) => {
-    setSortBy((prev) => {
-      if (key === prev.key) {
-        return {
-          direction:
-            prev.direction === "Ascending" ? "Descending" : "Ascending",
-          key: key,
-        };
-      }
-      return { direction: "Ascending", key: key };
-    });
-  };
 
   if (matchTableData === undefined) {
     return <div>Loading...</div>;
   }
 
-  const filteredHeaders = Object.keys(matchTableData[0]).filter(
-    (key) => tableHeaders[key as TableHeaderKey].display
-  );
-
-  const sortedData = sortData<PlayerData>(
-    matchTableData,
-    sortBy.key,
-    sortBy.direction
-  );
-
   return (
     <div style={{ marginTop: "5vh", width: "90vw" }}>
-      <div
-        style={{
-          ...styles.table,
-          gridTemplateColumns: Object.values(tableHeaders)
-            .filter((header) => header.display)
-            .flatMap((header) => header.width)
-            .join(" "),
+      <SortableTable
+        headers={tableHeaders}
+        data={matchTableData}
+        defaultSort={{
+          direction: "Descending",
+          key: "combat",
         }}
-      >
-        {/* Headers */}
-        {filteredHeaders.map((key) => (
-          <div
-            key={key}
-            style={{
-              ...styles.tableItem,
-              ...styles.tableHeader,
-            }}
-            onClick={() => {
-              handleClickHeader(key as TableHeaderKey);
-            }}
-          >
-            <div
-              style={{
-                alignItems: "center",
-                display: "flex",
-                flexDirection: "row",
-                justifyContent: "space-around",
-                width: "100%",
-              }}
-            >
-              <div style={{ width: "12px" }} />
-              {tableHeaders[key as TableHeaderKey].name}
-              {sortBy.key === key ? (
-                sortBy.direction === "Ascending" ? (
-                  <div style={{ width: "12px" }}>&#9650;</div>
-                ) : (
-                  <div style={{ width: "12px" }}>&#9660;</div>
-                )
-              ) : (
-                <div style={{ width: "12px" }} />
-              )}
-            </div>
-          </div>
-        ))}
-
-        {/* Data */}
-        {sortedData.map((player) => (
-          <div style={{ display: "contents" }}>
-            {Object.entries(player)
-              .filter(([key, _]) => tableHeaders[key as TableHeaderKey].display)
-              .map(([key, val]) => {
-                if (key === "name") {
-                  return (
-                    <div
-                      key={`${player.id}${key}${val}`}
-                      style={{
-                        ...styles.tableItem,
-                        background:
-                          player.team === "Blue"
-                            ? gradients.blueTeamBackground
-                            : gradients.redTeamBackground,
-                      }}
-                    >
-                      <PlayerName name={player.name} tag={player.tag} />
-                    </div>
-                  );
-                }
-                if (key === "rank") {
-                  return (
-                    <div
-                      key={`${player.id}${key}${val}`}
-                      style={{
-                        ...styles.tableItem,
-                        background:
-                          player.team === "Blue"
-                            ? gradients.blueTeamBackground
-                            : gradients.redTeamBackground,
-                      }}
-                    >
-                      <RankIcon rankNumber={val} />
-                    </div>
-                  );
-                }
-
-                if (key === "agent") {
-                  return (
-                    <div
-                      key={`${player.id}${key}${val}`}
-                      style={{
-                        ...styles.tableItem,
-                        background:
-                          player.team === "Blue"
-                            ? gradients.blueTeamBackground
-                            : gradients.redTeamBackground,
-                      }}
-                    >
-                      <AgentIcon agentId={val} />
-                    </div>
-                  );
-                }
-
-                if (typeof val === "number") {
-                  return (
-                    <div
-                      key={`${player.id}${key}${val}`}
-                      style={{
-                        ...styles.tableItem,
-                        background:
-                          player.team === "Blue"
-                            ? gradients.blueTeamBackground
-                            : gradients.redTeamBackground,
-                        color: colors.white,
-                      }}
-                    >
-                      {val.toFixed(0)}
-                    </div>
-                  );
-                }
-
-                return (
-                  <div
-                    key={`${player.id}${key}${val}`}
-                    style={{
-                      ...styles.tableItem,
-                      background:
-                        player.team === "Blue"
-                          ? gradients.blueTeamBackground
-                          : gradients.redTeamBackground,
-                      color: colors.white,
-                    }}
-                  >
-                    {val}
-                  </div>
-                );
-              })}
-          </div>
-        ))}
-      </div>
+        renderCell={(key, val, item) => (
+          <MatchTableCell dataKey={key} value={val} player={item} />
+        )}
+      />
     </div>
   );
 };

@@ -4,27 +4,27 @@ import { MatchDetail } from "./screens/MatchDetail";
 import { MatchHistory } from "./screens/MatchHistory";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
-export const ROUTES = [
-  { key: "home", name: "Home", path: "/" },
-  { key: "history", name: "History", path: "/matchHistory/:playerId" },
-  { key: "detail", name: "Match", path: "/match/:matchId" },
-];
+export const ROUTES = {
+  detail: { key: "detail", name: "Match", path: "/match/:matchId" },
+  history: { key: "history", name: "History", path: "/matchHistory/:playerId" },
+  home: { key: "home", name: "Home", path: "/" },
+};
 
 export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/match/:matchId">
+        <Route path={ROUTES.detail.path}>
           <DefaultLayout activeRoute="detail">
             <MatchDetail />
           </DefaultLayout>
         </Route>
-        <Route path="/matchHistory/:playerId">
+        <Route path={ROUTES.history.path}>
           <DefaultLayout activeRoute="history">
             <MatchHistory />
           </DefaultLayout>
         </Route>
-        <Route path="/">
+        <Route path={ROUTES.home.path}>
           <DefaultLayout activeRoute="home">
             <Home />
           </DefaultLayout>

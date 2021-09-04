@@ -1,5 +1,8 @@
+import { ROUTES } from "../App";
+import { SearchBar } from "../components/SearchBar";
 import { colors } from "../util/colorPalette";
 import { common } from "../util/styles";
+import { useHistory } from "react-router";
 import type { CSSProperties } from "react";
 
 const styles: Record<string, CSSProperties> = {
@@ -48,38 +51,16 @@ interface Props {
 }
 
 export const Header = ({ activeRoute }: Props) => {
+  const history = useHistory();
+  const handleLogoClick = () => history.push(ROUTES.home.path);
   return (
     <div style={styles.container}>
-      <div>
+      <div style={{ cursor: "pointer" }} onClick={handleLogoClick}>
         <span style={{ ...styles.logo, marginRight: "5px" }}>VS</span>
         <span style={styles.subTitle}>Valorant Stats</span>
       </div>
 
-      <div
-        style={{
-          ...common.row,
-          flex: 1,
-          justifyContent: "space-around",
-          paddingLeft: "40px",
-          paddingRight: "40px",
-        }}
-      >
-        {/* Nav 
-        {ROUTES.map((route) => (
-          <Link to={route.path} style={{ textDecoration: "none" }}>
-            <span
-              style={
-                activeRoute === route.key ? styles.active : styles.inactive
-              }
-            >
-              {route.name}
-            </span>
-          </Link>
-        ))}*/}
-
-        {/* Search */}
-        <input />
-      </div>
+      <SearchBar />
     </div>
   );
 };

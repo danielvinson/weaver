@@ -39,9 +39,10 @@ module.exports = {
     "@typescript-eslint/restrict-template-expressions": "off",
     "@typescript-eslint/prefer-readonly-parameter-types": "off",
     "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-confusing-void-expression": "off",
     // Sorting
     "sort-imports-es6-autofix/sort-imports-es6": "error",
-    "sort-keys-fix/sort-keys-fix": ["error", "asc", { natural: true }],
+    "sort-keys-fix/sort-keys-fix": ["warn", "asc", { natural: true }],
     "sort-destructure-keys/sort-destructure-keys": "error",
     // Functional
     "functional/functional-parameters": "off",
