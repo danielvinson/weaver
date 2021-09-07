@@ -20,7 +20,9 @@ export const colors = {
 export const gradients = {
   blueTeamBackground: `linear-gradient(0deg, ${colors.blueTeamDarker2}, ${colors.blueTeamDarker1})`,
   mainBackground: `linear-gradient(90deg, ${colors.background}, ${colors.shadow}, ${colors.background})`,
+  mainBackgroundVertical: `linear-gradient(0deg, ${colors.background}, ${colors.shadow}, ${colors.background})`,
   redTeamBackground: `linear-gradient(0deg, ${colors.redTeamDarker1}, ${colors.redTeam})`,
+  inputBackground: `linear-gradient(90deg, ${colors.blueTeamDarker1}, ${colors.redTeamDarker1})`,
 };
 
 export const colorScales = {

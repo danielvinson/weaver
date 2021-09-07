@@ -1,5 +1,6 @@
 import { ROUTES } from "../App";
 import { SearchBar } from "../components/SearchBar";
+import { Spacer } from "../components/Spacer";
 import { colors } from "../util/colorPalette";
 import { common } from "../util/styles";
 import { useHistory } from "react-router";
@@ -14,7 +15,7 @@ const styles: Record<string, CSSProperties> = {
   },
   container: {
     ...common.row,
-    alignItems: "flex-end",
+    alignItems: "center",
     justifyContent: "space-between",
     padding: "1vw",
     width: "100vw",
@@ -26,13 +27,13 @@ const styles: Record<string, CSSProperties> = {
     textDecoration: "none",
   },
   logo: {
-    color: colors.primary,
+    color: colors.white,
     fontFamily: "LatoBold",
     fontSize: "1.8em",
     textShadow: `0.01em 0.01em 0x ${colors.highlight}`,
   },
   subTitle: {
-    color: colors.primary,
+    color: colors.white,
     fontFamily: "LatoBoldItalic",
     fontSize: "0.8em",
     textShadow: `0.01em 0.01em 0px ${colors.highlight}`,
@@ -61,6 +62,8 @@ export const Header = ({ activeRoute }: Props) => {
       </div>
 
       <SearchBar />
+
+      <Spacer />
     </div>
   );
 };
