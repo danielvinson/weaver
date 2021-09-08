@@ -58,7 +58,7 @@ export const calculateRoundClutch = (
     team: undefined,
   };
 
-  timeline.forEach((kill) => {
+  const successfulClutches = timeline.map((kill) => {
     const victim = players.find((player) => player.subject === kill.victim);
 
     if (victim === undefined) {
@@ -115,25 +115,31 @@ export const calculateRoundClutch = (
       }
 
       // Check the normal case
-      if (
-        (currentClutch.team === "Red" && blueTeamAlive.length === 0) ||
-        (currentClutch.team === "Blue" && redTeamAlive.length === 0)
-      ) {
+      if (currentClutch.team === "Red" && blueTeamAlive.length === 0) {
+        return currentClutch as Clutch;
+      }
+
+      if (currentClutch.team === "Blue" && redTeamAlive.length === 0) {
         return currentClutch as Clutch;
       }
 
       // Check if the secondary clutch succeeded
-      if (
-        (secondaryClutch.team === "Red" && blueTeamAlive.length === 0) ||
-        (secondaryClutch.team === "Blue" && redTeamAlive.length === 0)
-      ) {
+      if (secondaryClutch.team === "Red" && blueTeamAlive.length === 0) {
+        return secondaryClutch as Clutch;
+      }
+
+      if (secondaryClutch.team === "Blue" && redTeamAlive.length === 0) {
         return secondaryClutch as Clutch;
       }
     }
-  });
+  }).filter(c => c !== undefined);
 
-  // No clutch!
-  return false;
+  if (successfulClutches.length === 0) {
+    return false;
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+  return successfulClutches[0]!;
 };
 
 export const calculateClutches = (
