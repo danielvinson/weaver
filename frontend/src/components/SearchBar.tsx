@@ -1,4 +1,5 @@
 import "../normalize.css";
+import "./SearchBar.css";
 import { ROUTES } from "../App";
 import { Spacer } from "./Spacer";
 import { colors, gradients } from "../util/colorPalette";
@@ -11,20 +12,6 @@ const TEXT_SIZE = "1em";
 const SEARCHBAR_HEIGHT = "40px";
 
 const styles: Record<string, CSSProperties> = {
-  button: {
-    background: colors.shadow,
-    color: colors.white,
-    cursor: "pointer",
-    fontSize: TEXT_SIZE,
-
-    height: SEARCHBAR_HEIGHT,
-    paddingLeft: "15px",
-    paddingRight: "15px",
-
-    ...common.row,
-    alignItems: "center",
-    justifyContent: "center",
-  },
   container: {
     ...common.row,
     alignItems: "flex-end",
@@ -96,7 +83,7 @@ export const SearchBar = () => {
         className="searchInput"
       />
 
-      <div onClick={handleSearch} style={styles.button}>
+      <div onClick={handleSearch} className="searchButton">
         Search{<Spacer width="10px" />}&#10148;
       </div>
     </div>

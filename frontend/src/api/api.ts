@@ -4,6 +4,10 @@ import type { Match, MatchHistoryMatch } from "../types/match";
 
 const matchApi = axios.create({
   baseURL: "https://valorant.iesdev.com/match/",
+  params: {
+    actId: "2a27e5d2-4d30-c9e2-b15a-93b8909a442c",
+    type: "subject"
+  }
 });
 
 const matchHistoryApi = axios.create({

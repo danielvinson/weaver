@@ -56,14 +56,14 @@ export const Header = ({ activeRoute }: Props) => {
   const handleLogoClick = () => history.push(ROUTES.home.path);
   return (
     <div style={styles.container}>
-      <div style={{ cursor: "pointer" }} onClick={handleLogoClick}>
+      <div style={{ cursor: "pointer", width: "150px" }} onClick={handleLogoClick}>
         <span style={{ ...styles.logo, marginRight: "5px" }}>VS</span>
         <span style={styles.subTitle}>Valorant Stats</span>
       </div>
 
       <SearchBar />
 
-      <Spacer />
+      <Spacer width="150px" />
     </div>
   );
 };
