@@ -9,7 +9,7 @@ export function sortData<T>(
     const val1 = a[sortBy];
     const val2 = b[sortBy];
     if (typeof val1 === "number" && typeof val2 === "number") {
-      return direction === "Descending" ? val1 - val2 : val2 - val1;
+      return direction === "Descending" ? val2 - val1 : val1 - val2;
     } else {
       if (val1 > val2) {
         return 1;
