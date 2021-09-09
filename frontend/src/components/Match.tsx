@@ -2,10 +2,14 @@
 import { API } from "../api/api";
 import { MatchTableCell } from "./MatchTableCell";
 import { SortableTable } from "./SortableTable";
+import { Spacer } from "./Spacer";
+import { Switch } from "./Switch";
 import { calculateClutches } from "../util/clutches";
 import { calculateFirstDeaths } from "../util/firstDeaths";
 import { calculateFirstKills } from "../util/firstKills";
 import { calculateRWS } from "../util/rws";
+import { colors } from "../util/colorPalette";
+import { common } from "../util/styles";
 import { useEffect, useState } from "react";
 import type { Match as MatchType } from "../types/match";
 
@@ -63,6 +67,7 @@ interface Props {
 export const Match = ({ matchId }: Props) => {
   const [match, setMatch] = useState<MatchType>();
   const [matchTableData, setMatchTableData] = useState<PlayerData[]>();
+  const [separateTeams, setSeparateTeams] = useState<boolean>(false);
 
   // Fetch data from API - refreshes on UUID change
   useEffect(() => {
@@ -139,18 +144,57 @@ export const Match = ({ matchId }: Props) => {
   }
 
   return (
-    <div style={{ marginTop: "5vh", width: "90vw" }}>
-      <SortableTable
-        headers={tableHeaders}
-        data={matchTableData}
-        defaultSort={{
-          direction: "Descending",
-          key: "combat",
-        }}
-        renderCell={(key, val, item) => (
-          <MatchTableCell dataKey={key} value={val} player={item} />
+    <>
+      <div style={{ ...common.row, alignItems: "center" }}>
+        <Switch
+          value={separateTeams}
+          onChange={(newValue: boolean) => setSeparateTeams(newValue)}
+        />
+        <Spacer width="5px" />
+        <span style={{ color: colors.white, fontSize: "0.9em" }}>
+          Separate Teams
+        </span>
+      </div>
+      <div style={{ marginTop: "5vh", width: "90vw" }}>
+        {separateTeams ? (
+          <>
+            <SortableTable
+              headers={tableHeaders}
+              data={matchTableData.filter((p) => p.team === "Blue")}
+              defaultSort={{
+                direction: "Descending",
+                key: "combat",
+              }}
+              renderCell={(key, val, item) => (
+                <MatchTableCell dataKey={key} value={val} player={item} />
+              )}
+            />
+            <SortableTable
+              headers={tableHeaders}
+              data={matchTableData.filter((p) => p.team === "Red")}
+              defaultSort={{
+                direction: "Descending",
+                key: "combat",
+              }}
+              renderCell={(key, val, item) => (
+                <MatchTableCell dataKey={key} value={val} player={item} />
+              )}
+            />
+          </>
+        ) : (
+          <SortableTable
+            headers={tableHeaders}
+            data={matchTableData}
+            defaultSort={{
+              direction: "Descending",
+              key: "combat",
+            }}
+            renderCell={(key, val, item) => (
+              <MatchTableCell dataKey={key} value={val} player={item} />
+            )}
+          />
         )}
-      />
-    </div>
+      </div>
+    </>
   );
 };

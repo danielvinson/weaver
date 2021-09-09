@@ -1,40 +1,30 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-import { AgentIcon } from "./AgentIcon";
-import { MatchTableCell } from "./MatchTableCell";
-import { PlayerName } from "./PlayerName";
-import { RankIcon } from "./RankIcon";
 import { Spacer } from "./Spacer";
 import { colors } from "../util/colorPalette";
 import { sortData } from "../util/sort";
 import { useState } from "react";
-import type { AgentId } from "./AgentIcon";
 import type { CSSProperties , ReactNode} from "react";
-import type { RankNumber } from "./RankIcon";
 import type { SortDirection } from "../util/sort";
 
 const styles: Record<string, CSSProperties> = {
   table: {
-    border: "1px solid #222",
-    borderTop: "3px solid #222",
     display: "grid",
   },
   tableHeader: {
     backgroundColor: colors.shadow,
-    boxShadow: "0px 1px 1px rgba(255,255,255,0.2)",
     color: colors.white,
     cursor: "pointer",
     fontWeight: "bold",
   },
   tableItem: {
     alignItems: "center",
-    borderLeft: "1px solid rgba(0,0,0,.1)",
     color: colors.white,
 
     display: "flex",
     flexDirection: "row",
     justifyContent: "center",
-    padding: "4px",
+    padding: "2px",
   },
 };
 

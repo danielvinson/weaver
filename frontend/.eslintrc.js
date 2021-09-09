@@ -42,7 +42,7 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": ["warn", { "varsIgnorePattern": "^_" }], // _ is legal for unused
     "@typescript-eslint/no-confusing-void-expression": "off",
     // Sorting
-    "sort-imports-es6-autofix/sort-imports-es6": "error",
+    "sort-imports-es6-autofix/sort-imports-es6": "warn",
     "sort-keys-fix/sort-keys-fix": ["warn", "asc", { natural: true }],
     "sort-destructure-keys/sort-destructure-keys": "error",
     // Functional
