@@ -30,6 +30,7 @@ module.exports = {
     tsconfigRootDir: __dirname,
   },
   rules: {
+    "no-unused-vars": "off",
     // TypeScript
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
@@ -38,7 +39,7 @@ module.exports = {
     "@typescript-eslint/no-type-alias": "off",
     "@typescript-eslint/restrict-template-expressions": "off",
     "@typescript-eslint/prefer-readonly-parameter-types": "off",
-    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-unused-vars": ["warn", { "varsIgnorePattern": "^_" }], // _ is legal for unused
     "@typescript-eslint/no-confusing-void-expression": "off",
     // Sorting
     "sort-imports-es6-autofix/sort-imports-es6": "error",
