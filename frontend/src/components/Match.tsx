@@ -1,19 +1,13 @@
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable functional/immutable-data */
 import { API } from "../api/api";
-import { AgentIcon } from "./AgentIcon";
 import { MatchTableCell } from "./MatchTableCell";
-import { PlayerName } from "./PlayerName";
-import { RankIcon } from "./RankIcon";
 import { SortableTable } from "./SortableTable";
 import { calculateClutches } from "../util/clutches";
 import { calculateFirstDeaths } from "../util/firstDeaths";
 import { calculateFirstKills } from "../util/firstKills";
 import { calculateRWS } from "../util/rws";
 import { useEffect, useState } from "react";
-import type { AgentId } from "./AgentIcon";
 import type { Match as MatchType } from "../types/match";
-import type { RankNumber } from "./RankIcon";
 
 export interface PlayerData {
   readonly id: string;
@@ -89,7 +83,6 @@ export const Match = ({ matchId }: Props) => {
     const tableData: PlayerData[] = [];
 
     const clutches = calculateClutches(match.players, match.roundResults);
-    console.log(clutches);
     const firstKills = calculateFirstKills(match.players, match.roundResults);
     const firstDeaths = calculateFirstDeaths(match.players, match.roundResults);
 
@@ -109,7 +102,8 @@ export const Match = ({ matchId }: Props) => {
       const totalClutches = Object.entries(
         clutches[player.subject]
       ).reduce<number>((prev, cur) => {
-        const [key, val] = cur;
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+        const [_, val] = cur;
         return prev + (val as number);
       }, 0);
 
