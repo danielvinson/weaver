@@ -16,7 +16,7 @@ export const RoundInfo = ({ match }: Props) => {
               <div>{round.roundNum}</div>
               <div>{round.winningTeam}</div>
               <div>
-                {getRoundType(round).blue} {getRoundType(round).red}
+                {getRoundType(round, match.players).blue} {getRoundType(round, match.players).red}
               </div>
             </div>
           );

@@ -2,7 +2,7 @@
 /* eslint-disable functional/immutable-data */
 /* eslint-disable functional/no-let */
 import { makeRoundTimeline } from "./roundTimeline";
-import type { Player } from "../types/player";
+import type { Player } from "../types/match";
 import type { Round } from "../types/round";
 
 export interface Clutches {

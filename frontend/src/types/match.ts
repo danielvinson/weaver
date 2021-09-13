@@ -1,4 +1,3 @@
-import type { Player } from "./player";
 import type { Round } from "./round";
 
 // making UUID different type for later convenience
@@ -6,6 +5,59 @@ type UUID = string;
 
 export type MapName = "ascent" | "bind" | "breeze" | "haven" | "icebox";
 export type Queue = "competitive" | "unrated";
+
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface NewPlayerExperienceDetails {} // boring data, ignoring
+
+export interface PlatformInfo {
+  readonly platformChipset: string;
+  readonly platformOS: string;
+  readonly platformOSVersion: string;
+  readonly platformType: string;
+}
+
+export interface RoundDamage {
+  readonly damage: number;
+  readonly receiver: UUID;
+  readonly round: number;
+}
+
+export interface PlayerStats {
+  readonly abilityCasts: {
+    readonly ability1Casts: number;
+    readonly ability2Casts: number;
+    readonly grenadeCasts: number;
+    readonly ultimateCasts: number;
+  };
+  readonly assists: number;
+  readonly deaths: number;
+  readonly kills: number;
+  readonly playtimeMillis: number;
+  readonly roundsPlayed: number;
+  readonly score: number;
+}
+
+export interface Player {
+  readonly accountLevel: number;
+  readonly behaviorFactors: {
+    readonly afkRounds: number;
+    readonly statedInSpawnRounds: 0;
+  };
+  readonly characterId: string;
+  readonly competitiveTier: number;
+  readonly gameName: string;
+  readonly newPlayerExperienceDetails: NewPlayerExperienceDetails;
+  readonly partyId: UUID;
+  readonly platformInfo: PlatformInfo;
+  readonly playerCard: UUID;
+  readonly playerTitle: UUID;
+  readonly roundDamage: readonly RoundDamage[];
+  readonly sessionPlaytimeMinutes: number;
+  readonly stats: PlayerStats;
+  readonly subject: UUID;
+  readonly tagLine: string;
+  readonly teamId: "Blue" | "Red";
+}
 
 export interface Team {
   readonly numPoints: number;
@@ -27,7 +79,6 @@ export interface Match {
   readonly startedAt: string;
   readonly teams: readonly Team[];
 }
-
 
 export interface MatchHistoryMatch {
   readonly playerId: string;

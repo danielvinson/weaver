@@ -41,6 +41,7 @@ module.exports = {
     "@typescript-eslint/prefer-readonly-parameter-types": "off",
     "@typescript-eslint/no-unused-vars": ["warn", { "varsIgnorePattern": "^_" }], // _ is legal for unused
     "@typescript-eslint/no-confusing-void-expression": "off",
+    "@typescript-eslint/no-unsafe-assignment": "warn",
     // Sorting
     "sort-imports-es6-autofix/sort-imports-es6": "warn",
     "sort-keys-fix/sort-keys-fix": ["warn", "asc", { natural: true }],

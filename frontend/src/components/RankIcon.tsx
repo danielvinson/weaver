@@ -19,8 +19,10 @@ import radiant from "../assets/icons/radiant.svg";
 import silver1 from "../assets/icons/silver1.svg";
 import silver2 from "../assets/icons/silver2.svg";
 import silver3 from "../assets/icons/silver3.svg";
+import unrated from "../assets/icons/unrated.svg";
 
 export const ranks = {
+  0: unrated,
   3: iron1,
   4: iron2,
   5: iron3,
@@ -61,7 +63,6 @@ export const RankIcon = ({ height = 35, rankNumber, width = 35 }: Props) => (
       borderRadius: "5px / 45px",
       boxShadow:
         "inset 2px 2px 4px rgba(0,0,0,0.8), 0px 0px 2px rgba(0,0,0,0.5)",
-
       display: "flex",
       justifyContent: "center",
       overflow: "hidden",

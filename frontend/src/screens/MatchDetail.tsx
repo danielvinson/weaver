@@ -1,4 +1,4 @@
-import { Match } from "../components/Match";
+import { MatchTable } from "../components/MatchTable";
 import { useParams } from "react-router-dom";
 
 const testUUID = "8af8c964-4736-492f-b90d-daf7ef12a400";
@@ -11,5 +11,5 @@ interface Params {
 export const MatchDetail = () => {
   const { matchId } = useParams<Params>();
 
-  return <Match matchId={matchId} />;
+  return <MatchTable matchId={matchId} />;
 };

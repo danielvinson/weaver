@@ -1,8 +1,11 @@
 import { colors, makeAlpha } from "../util/colorPalette";
 import { useState } from "react";
-import type { CSSProperties} from "react";
+import type { CSSProperties } from "react";
 
 const styles: Record<string, CSSProperties> = {
+  container: {
+    position: "relative",
+  },
   name: {},
   tooltip: {
     background: colors.background,
@@ -34,9 +37,13 @@ export const PlayerName = ({ name, tag }: Props) => {
 
   return (
     <div
-      onMouseEnter={() => { handleTooltip(true); }}
-      onMouseLeave={() => { handleTooltip(false); }}
-      style={{ position: "relative" }}
+      onMouseEnter={() => {
+        handleTooltip(true);
+      }}
+      onMouseLeave={() => {
+        handleTooltip(false);
+      }}
+      style={styles.container}
     >
       <span style={styles.name}>{name}</span>
 

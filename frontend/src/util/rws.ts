@@ -5,7 +5,7 @@
   RWS (Round Win Share) is the player's combat score if they won, or 0 if they did not
 */
 
-import type { Player } from "../types/player";
+import type { Player } from "../types/match";
 import type { Round } from "../types/round"
 
 export type RWSMap = Record<string, number>;

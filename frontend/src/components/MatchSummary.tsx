@@ -1,33 +1,26 @@
 import { AgentIcon } from "./AgentIcon";
 import { RankIcon } from "./RankIcon";
+import { Spacer } from "./Spacer";
 import { colorScales, colors } from "../util/colorPalette";
+import { common } from "../util/styles";
 import { maps } from "./Map";
+import { normalizeRange } from "../util/normalizeRange";
+import moment from "moment";
 import type { AgentId } from "./AgentIcon";
 import type { CSSProperties } from "react";
 import type { MatchHistoryMatch } from "../types/match";
 
 const styles: Record<string, CSSProperties> = {
-  column: {
-    alignItems: "center",
-    display: "flex",
-    flexDirection: "column",
-    height: "100%",
-    justifyContent: "center",
-    marginRight: "20px",
-    // borderRight: "1px solid rgba(231, 215, 193, 0.5)",
-    padding: 5,
-  },
   container: {
-    alignItems: "center",
     border: `1px solid rgba(23, 29, 38, 0.2)`,
     borderRadius: "10px",
     display: "flex",
-    flexDirection: "row",
-    height: "150px",
-
-    justifyContent: "flex-start",
+    flexDirection: "column",
+    height: "100px",
     margin: "2px",
     overflow: "hidden",
+
+    paddingLeft: "10px",
     width: "600px",
   },
   defeatText: {
@@ -42,6 +35,11 @@ const styles: Record<string, CSSProperties> = {
   ratingChange: {
     fontWeight: "bold",
   },
+  time: {
+    color: colors.white,
+    fontFamily: "LatoBoldItalic",
+    fontSize: "0.7em",
+  },
   victoryText: {
     color: "#049F23",
   },
@@ -50,18 +48,6 @@ const styles: Record<string, CSSProperties> = {
 interface Props {
   readonly match: MatchHistoryMatch;
 }
-
-const normalizeRange = (
-  oldValue: number,
-  oMin: number,
-  oMax: number,
-  nMin: number,
-  nMax: number
-): number => {
-  return parseInt(
-    (((oldValue - oMin) / (oMax - oMin)) * (nMax - nMin) + nMin).toFixed(0)
-  );
-};
 
 export const MatchSummary = ({ match }: Props) => {
   const combatScore = match.score / match.roundsPlayed;
@@ -89,71 +75,84 @@ export const MatchSummary = ({ match }: Props) => {
         backgroundSize: "cover, cover, 300px",
       }}
     >
-      {/* Rank */}
-      <div style={styles.column}>
-        <RankIcon rankNumber={22} />
-        {}
+      <div style={common.row}>
+        {/* Queue Type */}
+        <span style={styles.time}>{match.queue.toUpperCase()}</span>
+
+        <Spacer width="15px" />
+
+        {/* Time */}
+        <span style={styles.time}>{moment(match.matchDate).calendar()}</span>
       </div>
 
-      {/* Agent Icon */}
-      <div style={styles.column}>
+      <div
+        style={{
+          ...common.row,
+          alignItems: "center",
+          flex: 1,
+          justifyContent: "flex-start",
+        }}
+      >
         <AgentIcon agentId={match.agentId as AgentId} width={50} height={50} />
-      </div>
+        <RankIcon rankNumber={22} />
 
-      {/* Win/Loss and RR change */}
-      <div style={styles.column}>
-        {match.winStatus === "win" && (
-          <div style={styles.victoryText}>Victory</div>
-        )}
-        {match.winStatus === "draw" && <div style={styles.drawText}>Draw</div>}
-        {match.winStatus === "loss" && (
-          <div style={styles.defeatText}>Defeat</div>
-        )}
-        <span
-          style={{
-            ...styles.ratingChange,
-            color: colorScales.greenToRed[normalizedRatingChange],
-          }}
-        >
-          {match.rankedRatingEarned > 0
-            ? `+${match.rankedRatingEarned} RR`
-            : `${match.rankedRatingEarned} RR`}
-        </span>
-      </div>
-
-      {/* Combat Score and KDA */}
-      <div style={styles.column}>
-        <span
-          style={{ color: colorScales.neutralToGreen[normalizedCombatScore] }}
-        >
-          {combatScore.toFixed(0)}
-        </span>
-
-        <div>
+        {/* Win/Loss and RR change */}
+        <>
+          {match.winStatus === "win" && (
+            <div style={styles.victoryText}>Victory</div>
+          )}
+          {match.winStatus === "draw" && (
+            <div style={styles.drawText}>Draw</div>
+          )}
+          {match.winStatus === "loss" && (
+            <div style={styles.defeatText}>Defeat</div>
+          )}
           <span
             style={{
-              color: colorScales.neutralToGreen[normalizedKills],
+              ...styles.ratingChange,
+              color: colorScales.greenToRed[normalizedRatingChange],
             }}
           >
-            {match.kills}
+            {match.rankedRatingEarned > 0
+              ? `+${match.rankedRatingEarned} RR`
+              : `${match.rankedRatingEarned} RR`}
           </span>
-          <span> / </span>
+        </>
+
+        {/* Combat Score and KDA */}
+        <>
           <span
-            style={{
-              color: colorScales.neutralToRed[normalizedDeaths],
-            }}
+            style={{ color: colorScales.neutralToGreen[normalizedCombatScore] }}
           >
-            {match.deaths}
+            {combatScore.toFixed(0)}
           </span>
-          <span> / </span>
-          <span
-            style={{
-              color: colorScales.neutralToGreen[normalizedAssists],
-            }}
-          >
-            {match.assists}
-          </span>
-        </div>
+
+          <div>
+            <span
+              style={{
+                color: colorScales.neutralToGreen[normalizedKills],
+              }}
+            >
+              {match.kills}
+            </span>
+            <span> / </span>
+            <span
+              style={{
+                color: colorScales.neutralToRed[normalizedDeaths],
+              }}
+            >
+              {match.deaths}
+            </span>
+            <span> / </span>
+            <span
+              style={{
+                color: colorScales.neutralToGreen[normalizedAssists],
+              }}
+            >
+              {match.assists}
+            </span>
+          </div>
+        </>
       </div>
     </div>
   );

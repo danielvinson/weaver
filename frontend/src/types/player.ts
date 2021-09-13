@@ -1,55 +1,36 @@
-// making UUID different type for later convenience
-type UUID = string;
-
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface NewPlayerExperienceDetails {} // boring data, ignoring
-
-export interface PlatformInfo {
-  readonly platformChipset: string;
-  readonly platformOS: string;
-  readonly platformOSVersion: string;
-  readonly platformType: string;
+export interface Match {
+  readonly won: boolean;
+  readonly rank: number;
+  readonly matchId: string;
+  readonly startedAt: string;
 }
-
-export interface RoundDamage {
-  readonly damage: number;
-  readonly receiver: UUID;
-  readonly round: number;
-}
-
-export interface Stats {
-  readonly abilityCasts: {
-    readonly ability1Casts: number;
-    readonly ability2Casts: number;
-    readonly grenadeCasts: number;
-    readonly ultimateCasts: number;
-  };
-  readonly assists: number;
-  readonly deaths: number;
-  readonly kills: number;
-  readonly playtimeMillis: number;
-  readonly roundsPlayed: number;
-  readonly score: number;
-}
-
+export type SeasonRank = Record<
+  string,
+  {
+    readonly topMatches: Match[];
+    readonly totalMatchesPlayed: number;
+    readonly nonPlacementMatchesWon: number;
+    readonly nonPlacementMatchesPlayed: number;
+  }
+>;
 export interface Player {
-  readonly accountLevel: number;
-  readonly behaviorFactors: {
-    readonly afkRounds: number;
-    readonly statedInSpawnRounds: 0;
-  };
-  readonly characterId: string;
-  readonly competitiveTier: number;
-  readonly gameName: string;
-  readonly newPlayerExperienceDetails: NewPlayerExperienceDetails;
-  readonly partyId: UUID;
-  readonly platformInfo: PlatformInfo;
-  readonly playerCard: UUID;
-  readonly playerTitle: UUID;
-  readonly roundDamage: readonly RoundDamage[];
-  readonly sessionPlaytimeMinutes: number;
-  readonly stats: Stats;
-  readonly subject: UUID;
-  readonly tagLine: string;
-  readonly teamId: "Blue" | "Red";
+  readonly id: string;
+  readonly subject: string;
+  readonly name: string;
+  readonly tag: string;
+  readonly puuid: string;
+  readonly rank: number;
+  readonly seasonRanks: SeasonRank[];
+  readonly createdAt: string;
+  readonly lastPlayed: string;
+  readonly rankedRating: number;
+  readonly region: "na";
+  readonly updatedMPs: boolean;
+  readonly level: null;
+  readonly xp: null;
+  readonly ranks: {
+    readonly competitive: {
+      readonly tier: number;
+    };
+  }
 }

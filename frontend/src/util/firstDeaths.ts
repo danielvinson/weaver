@@ -1,6 +1,6 @@
 /* eslint-disable functional/immutable-data */
 import { makeRoundTimeline } from "./roundTimeline";
-import type { Player } from "../types/player";
+import type { Player } from "../types/match";
 import type { Round } from "../types/round";
 
 export const calculateFirstDeaths= (players: readonly Player[], rounds: readonly Round[]) => {
