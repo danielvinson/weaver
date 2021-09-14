@@ -9,9 +9,10 @@ import { calculateClutches } from "../../util/clutches";
 import { calculateFirstDeaths } from "../../util/firstDeaths";
 import { calculateFirstKills } from "../../util/firstKills";
 import { calculateMatchMultikills } from "../../util/multiKills";
-import { calculateRWS } from "../../util/rws";
+import { calculateRWS, calculateWeightedRWS } from "../../util/rws";
 import { colors } from "../../util/colorPalette";
 import { common } from "../../util/styles";
+import { getRoundType } from "../../util/roundType";
 import { default as lodash } from "lodash";
 import { useEffect, useState } from "react";
 import type { Match as MatchType } from "../../types/match";
@@ -44,6 +45,10 @@ export interface PlayerData {
   readonly multiKills3: number;
   readonly multiKills4: number;
   readonly multiKills5: number;
+  readonly ecoKills: number;
+  readonly gunRoundKills: number;
+  readonly pistolKills: number;
+  readonly forceKills: number;
 }
 
 // Ordered - order is added by func on load
@@ -84,8 +89,8 @@ const defaultTableHeaders = [
   { display: true, key: "clutchv1", name: "1v1", width: "auto" },
   { display: true, key: "clutchv2", name: "1v2", width: "auto" },
   { display: true, key: "clutchv3", name: "1v3", width: "auto" },
-  { display: true, key: "clutchv4", name: "1v4", width: "auto" },
-  { display: true, key: "clutchv5", name: "1v5", width: "auto" },
+  { display: false, key: "clutchv4", name: "1v4", width: "auto" },
+  { display: false, key: "clutchv5", name: "1v5", width: "auto" },
   { display: false, key: "kast", name: "KAST", width: "auto" },
   {
     display: false,
@@ -122,6 +127,34 @@ const defaultTableHeaders = [
     tooltip: "Penta Kill Rounds",
     width: "auto",
   },
+  {
+    display: true,
+    key: "ecoKills",
+    name: "Eco",
+    tooltip: "Kills against players who were saving",
+    width: "auto",
+  },
+  {
+    display: true,
+    key: "gunRoundKills",
+    name: "Gun",
+    tooltip: "Kills against players who had a full buy",
+    width: "auto",
+  },
+  {
+    display: true,
+    key: "pistolKills",
+    name: "Pistol",
+    tooltip: "Kills on pistol rounds",
+    width: "auto",
+  },
+  {
+    display: true,
+    key: "forceKills",
+    name: "Force",
+    tooltip: "Kills against players who were force buying",
+    width: "auto",
+  },
 ];
 
 interface Props {
@@ -141,8 +174,7 @@ export const MatchTable = ({ matchId }: Props) => {
   useEffect(() => {
     const getMatch = async () => {
       const res = await API.getMatch(matchId);
-      setMatch(res.data);
-      console.log(res.data);
+      setMatch(res);
     };
 
     void getMatch();
@@ -162,7 +194,7 @@ export const MatchTable = ({ matchId }: Props) => {
 
     const rwsData: Record<string, number> = {};
     match.roundResults.forEach((round) => {
-      const rws = calculateRWS(round, match.players);
+      const rws = calculateWeightedRWS(round, match.players);
       Object.entries(rws).forEach(([key, val]) => {
         if (!(key in rwsData)) {
           rwsData[key] = val;
@@ -175,6 +207,37 @@ export const MatchTable = ({ matchId }: Props) => {
       match.players,
       match.roundResults
     );
+
+    interface EcoData {
+      force: number;
+      full: number;
+      pistol: number;
+      save: number;
+    }
+
+    const ecoKillData: Record<string, EcoData> = {};
+    match.players.forEach((player) => {
+      ecoKillData[player.subject] = {
+        force: 0,
+        full: 0,
+        pistol: 0,
+        save: 0,
+      };
+    });
+    match.roundResults.forEach((round) => {
+      const roundTypes = getRoundType(round, match.players);
+      const kills = round.playerStats.flatMap((stats) => stats.kills);
+      kills.forEach((kill) => {
+        const killer = match.players.find((p) => p.subject === kill.killer);
+        const victim = match.players.find((p) => p.subject === kill.victim);
+        if (killer === undefined || victim === undefined) {
+          return; //impossible
+        }
+        const victimRoundType =
+          roundTypes[victim.teamId === "Blue" ? "blue" : "red"];
+        ecoKillData[kill.killer][victimRoundType] += 1;
+      });
+    });
 
     // Build table data
     match.players.forEach((player) => {
@@ -197,8 +260,11 @@ export const MatchTable = ({ matchId }: Props) => {
         clutchv5: clutches[player.subject]["1v5"],
         combat: player.stats.score / player.stats.roundsPlayed,
         deaths: player.stats.deaths,
+        ecoKills: ecoKillData[player.subject].save,
         fd: firstDeaths[player.subject],
         fk: firstKills[player.subject],
+        forceKills: ecoKillData[player.subject].force,
+        gunRoundKills: ecoKillData[player.subject].full,
         id: player.subject,
         kast: 0,
         kills: player.stats.kills,
@@ -208,6 +274,7 @@ export const MatchTable = ({ matchId }: Props) => {
         multiKills4: multiKills[player.subject]["4"],
         multiKills5: multiKills[player.subject]["5"],
         name: player.gameName,
+        pistolKills: ecoKillData[player.subject].pistol,
         rank: player.competitiveTier,
         rws: rwsData[player.subject] / player.stats.roundsPlayed,
         tag: player.tagLine,

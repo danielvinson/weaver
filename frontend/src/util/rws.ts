@@ -5,16 +5,22 @@
   RWS (Round Win Share) is the player's combat score if they won, or 0 if they did not
 */
 
+import { getRoundType } from "./roundType";
 import type { Player } from "../types/match";
-import type { Round } from "../types/round"
+import type { Round } from "../types/round";
 
 export type RWSMap = Record<string, number>;
 
-export const calculateRWS = (round: Round, players: readonly Player[]): RWSMap => {
+export const calculateRWS = (
+  round: Round,
+  players: readonly Player[]
+): RWSMap => {
   const rws: RWSMap = {};
 
-  players.forEach(player => {
-    const score = round.playerScores.find(r => r.subject === player.subject)?.score;
+  players.forEach((player) => {
+    const score = round.playerScores.find(
+      (r) => r.subject === player.subject
+    )?.score;
     if (score !== undefined) {
       const finalScore = player.teamId === round.winningTeam ? score : 0;
       rws[player.subject] = finalScore;
@@ -22,4 +28,37 @@ export const calculateRWS = (round: Round, players: readonly Player[]): RWSMap =
   });
 
   return rws;
-}
+};
+
+export const calculateWeightedRWS = (
+  round: Round,
+  players: readonly Player[]
+): RWSMap => {
+  const WEIGHTS = {
+    force: 0.8,
+    full: 1.2,
+    pistol: 2,
+    save: 0.5,
+  };
+
+  const rws: RWSMap = {};
+  players.forEach((player) => {
+    const score = round.playerScores.find(
+      (r) => r.subject === player.subject
+    )?.score;
+    if (score === undefined) {
+      return; // not possible
+    }
+
+    if (player.teamId !== round.winningTeam) {
+      return 0;
+    }
+
+    const enemyBuyType = getRoundType(round, players)[
+      player.teamId === "Blue" ? "red" : "blue"
+    ];
+    rws[player.subject] = score * WEIGHTS[enemyBuyType];
+  });
+
+  return rws;
+};

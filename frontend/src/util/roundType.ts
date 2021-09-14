@@ -12,8 +12,8 @@ import type { Round } from "../types/round";
 */
 
 const THRESHOLDS = {
-  FORCE: 3500,
-  SAVE: 1200,
+  FORCE: 3200,
+  SAVE: 1500,
 };
 
 export type RoundType = "force" | "full" | "pistol" | "save";
@@ -21,7 +21,7 @@ export type RoundType = "force" | "full" | "pistol" | "save";
 const calculateTeamEconomy = (
   economies: Round["playerEconomies"]
 ): RoundType => {
-  const averageSpend = economies.reduce((prev, cur) => prev + cur.spent, 0);
+  const averageSpend = economies.reduce((prev, cur) => prev + cur.spent, 0) / 5;
   if (averageSpend <= THRESHOLDS.SAVE) {
     return "save";
   }
@@ -45,14 +45,10 @@ export const getRoundType = (
     };
   }
 
-  const redTeamPlayers = players.filter((p) => p.teamId === "Red");
-  const blueTeamPlayers = players.filter((p) => p.teamId === "Blue");
-  const redEconomies = round.playerEconomies.filter(
-    (pe) => pe.subject in redTeamPlayers
-  );
-  const blueEconomies = round.playerEconomies.filter(
-    (pe) => pe.subject in blueTeamPlayers
-  );
+  const redTeamPlayerIds = players.filter((p) => p.teamId === "Red").map(p => p.subject);
+  const blueTeamPlayerIds = players.filter((p) => p.teamId === "Blue").map(p => p.subject);
+  const redEconomies = round.playerEconomies.filter((pe) => redTeamPlayerIds.includes(pe.subject));
+  const blueEconomies = round.playerEconomies.filter((pe) => blueTeamPlayerIds.includes(pe.subject));
 
   return {
     blue: calculateTeamEconomy(blueEconomies),
