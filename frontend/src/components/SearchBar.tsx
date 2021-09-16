@@ -49,7 +49,7 @@ const styles: Record<string, CSSProperties> = {
 export const SearchBar = () => {
   const history = useHistory();
   const [inputText, setInputText] = useState<string>("");
-  const [option, setOption] = useState<string>("");
+  const [option, setOption] = useState<string>("match");
 
   const handleSearch = () => {
     if (inputText === "") {
@@ -61,8 +61,12 @@ export const SearchBar = () => {
         ? generatePath(ROUTES.history.path, { playerId: inputText })
         : generatePath(ROUTES.detail.path, { matchId: inputText });
 
+    console.log(linkLocation);
+
     history.push(linkLocation);
   };
+
+  const placeholderText = option === "player" ? "Player UUID" : "Match UUID";
 
   return (
     <div style={styles.container}>
@@ -70,16 +74,17 @@ export const SearchBar = () => {
         value={option}
         onChange={(e) => setOption(e.target.value)}
         style={styles.select}
+        defaultValue={option}
       >
-        <option value="player">Player</option>
         <option value="match">Match</option>
+        <option value="player">Player</option>
       </select>
       <input
         type="text"
         style={styles.input}
         value={inputText}
         onChange={(e) => setInputText(e.target.value)}
-        placeholder={option === "player" ? "Player UUID" : "Match UUID"}
+        placeholder={placeholderText}
         className="searchInput"
       />
 

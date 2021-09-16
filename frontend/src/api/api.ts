@@ -1,16 +1,8 @@
+import { cache } from "./cache";
 import axios from "axios";
 import type { AxiosResponse } from "axios";
-import type { Match, MatchHistoryMatch } from "../types/match";
+import type { Match, MatchHistoryMatch, QueueType } from "../types/match";
 import type { Player } from "../types/player";
-import { cache } from "./cache";
-
-type QueueType =
-  | "competitive"
-  | "custom"
-  | "newmap"
-  | "onefa"
-  | "spikerush"
-  | "unrated";
 
 const episodeIds = {
   episode1: {},

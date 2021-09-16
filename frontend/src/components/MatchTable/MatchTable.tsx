@@ -8,6 +8,7 @@ import { Switch } from "../Switch";
 import { calculateClutches } from "../../util/clutches";
 import { calculateFirstDeaths } from "../../util/firstDeaths";
 import { calculateFirstKills } from "../../util/firstKills";
+import { calculateKastPercents, calculateKastNumbers } from "../../util/kast";
 import { calculateMatchMultikills } from "../../util/multiKills";
 import { calculateRWS, calculateWeightedRWS } from "../../util/rws";
 import { colors } from "../../util/colorPalette";
@@ -31,6 +32,7 @@ export interface PlayerData {
   readonly deaths: number;
   readonly assists: number;
   readonly rws: number;
+  readonly wrws: number;
   readonly fk: number;
   readonly fd: number;
   readonly clutch: number;
@@ -49,6 +51,11 @@ export interface PlayerData {
   readonly gunRoundKills: number;
   readonly pistolKills: number;
   readonly forceKills: number;
+
+  readonly kastKills: number;
+  readonly kastAssists: number;
+  readonly kastTrades: number;
+  readonly kastSurvived: number;
 }
 
 // Ordered - order is added by func on load
@@ -66,6 +73,14 @@ const defaultTableHeaders = [
     name: "RWS",
     tooltip:
       "Round Win Share calculated by average combat scores for only rounds which that player's team won",
+    width: "90px",
+  },
+  {
+    display: true,
+    key: "wrws",
+    name: "WRWS",
+    tooltip:
+      "Weighted Round Win Share calculated by average combat scores for only rounds which that player's team won, weighted to make kills on pistol rounds and against full buys more valuable.",
     width: "90px",
   },
   { display: true, key: "kills", name: "K", width: "50px" },
@@ -86,12 +101,19 @@ const defaultTableHeaders = [
     width: "50px",
   },
   { display: true, key: "clutch", name: "Clutches", width: "auto" },
-  { display: true, key: "clutchv1", name: "1v1", width: "auto" },
-  { display: true, key: "clutchv2", name: "1v2", width: "auto" },
-  { display: true, key: "clutchv3", name: "1v3", width: "auto" },
+  { display: false, key: "clutchv1", name: "1v1", width: "auto" },
+  { display: false, key: "clutchv2", name: "1v2", width: "auto" },
+  { display: false, key: "clutchv3", name: "1v3", width: "auto" },
   { display: false, key: "clutchv4", name: "1v4", width: "auto" },
   { display: false, key: "clutchv5", name: "1v5", width: "auto" },
-  { display: false, key: "kast", name: "KAST", width: "auto" },
+  {
+    display: true,
+    key: "kast",
+    name: "KAST",
+    tooltip:
+      "Percentage of rounds where the player got a kill, got an assist, survived, or was traded",
+    width: "auto",
+  },
   {
     display: false,
     key: "multiKills1",
@@ -128,32 +150,60 @@ const defaultTableHeaders = [
     width: "auto",
   },
   {
-    display: true,
+    display: false,
     key: "ecoKills",
     name: "Eco",
     tooltip: "Kills against players who were saving",
     width: "auto",
   },
   {
-    display: true,
+    display: false,
     key: "gunRoundKills",
     name: "Gun",
     tooltip: "Kills against players who had a full buy",
     width: "auto",
   },
   {
-    display: true,
+    display: false,
     key: "pistolKills",
     name: "Pistol",
     tooltip: "Kills on pistol rounds",
     width: "auto",
   },
   {
-    display: true,
+    display: false,
     key: "forceKills",
     name: "Force",
     tooltip: "Kills against players who were force buying",
     width: "auto",
+  },
+  {
+    display: true,
+    key: "kastKills",
+    name: "KAST Kills",
+    width: "auto",
+    tooltip: "Number of rounds which the player got a kill"
+  },
+  {
+    display: true,
+    key: "kastAssists",
+    name: "KAST Assists",
+    width: "auto",
+    tooltip: "Number of rounds which the player got an assist but not a kill"
+  },
+  {
+    display: true,
+    key: "kastTrades",
+    name: "KAST Trades",
+    width: "auto",
+    tooltip: "Number of rounds which the player did not get a kill or assist but was traded"
+  },
+  {
+    display: true,
+    key: "kastSurvived",
+    name: "KAST Survived",
+    width: "auto",
+    tooltip: "Number of rounds which the player survived and did not get a kill or assist"
   },
 ];
 
@@ -175,6 +225,7 @@ export const MatchTable = ({ matchId }: Props) => {
     const getMatch = async () => {
       const res = await API.getMatch(matchId);
       setMatch(res);
+      console.log(res);
     };
 
     void getMatch();
@@ -194,12 +245,23 @@ export const MatchTable = ({ matchId }: Props) => {
 
     const rwsData: Record<string, number> = {};
     match.roundResults.forEach((round) => {
-      const rws = calculateWeightedRWS(round, match.players);
+      const rws = calculateRWS(round, match.players);
       Object.entries(rws).forEach(([key, val]) => {
         if (!(key in rwsData)) {
           rwsData[key] = val;
         }
         rwsData[key] += val;
+      });
+    });
+
+    const wrwsData: Record<string, number> = {};
+    match.roundResults.forEach((round) => {
+      const rws = calculateWeightedRWS(round, match.players);
+      Object.entries(rws).forEach(([key, val]) => {
+        if (!(key in wrwsData)) {
+          wrwsData[key] = val;
+        }
+        wrwsData[key] += val;
       });
     });
 
@@ -224,6 +286,7 @@ export const MatchTable = ({ matchId }: Props) => {
         save: 0,
       };
     });
+
     match.roundResults.forEach((round) => {
       const roundTypes = getRoundType(round, match.players);
       const kills = round.playerStats.flatMap((stats) => stats.kills);
@@ -239,8 +302,18 @@ export const MatchTable = ({ matchId }: Props) => {
       });
     });
 
+    const kastPercents = calculateKastPercents(
+      match.roundResults,
+      match.players
+    );
+
+    const kastNumbers = calculateKastNumbers(match.roundResults, match.players);
+
     // Build table data
     match.players.forEach((player) => {
+      const teamRoundsWon = match.roundResults.filter(
+        (r) => r.winningTeam === player.teamId
+      ).length;
       const totalClutches = Object.entries(
         clutches[player.subject]
       ).reduce<number>((prev, cur) => {
@@ -266,7 +339,7 @@ export const MatchTable = ({ matchId }: Props) => {
         forceKills: ecoKillData[player.subject].force,
         gunRoundKills: ecoKillData[player.subject].full,
         id: player.subject,
-        kast: 0,
+        kast: kastPercents[player.subject],
         kills: player.stats.kills,
         multiKills1: multiKills[player.subject]["1"],
         multiKills2: multiKills[player.subject]["2"],
@@ -276,9 +349,15 @@ export const MatchTable = ({ matchId }: Props) => {
         name: player.gameName,
         pistolKills: ecoKillData[player.subject].pistol,
         rank: player.competitiveTier,
-        rws: rwsData[player.subject] / player.stats.roundsPlayed,
+        rws: rwsData[player.subject] / teamRoundsWon,
         tag: player.tagLine,
         team: player.teamId,
+        wrws: wrwsData[player.subject] / teamRoundsWon,
+
+        kastKills: kastNumbers[player.subject].kill,
+        kastAssists: kastNumbers[player.subject].assist,
+        kastTrades: kastNumbers[player.subject].trade,
+        kastSurvived: kastNumbers[player.subject].survive,
       });
     });
 

@@ -32,6 +32,9 @@ const renderMatchCell = (
     case "rank": {
       return <RankIcon rankNumber={val as RankNumber} />;
     }
+    case "kast": {
+      return `${Math.round(val as number)}%`
+    }
     default:
       return typeof val === "number" ? val.toFixed(0) : val;
   }

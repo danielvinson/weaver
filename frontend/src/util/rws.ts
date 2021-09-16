@@ -36,9 +36,9 @@ export const calculateWeightedRWS = (
 ): RWSMap => {
   const WEIGHTS = {
     force: 0.8,
-    full: 1.2,
-    pistol: 2,
-    save: 0.5,
+    full: 1.3,
+    pistol: 1.3,
+    save: 0.6,
   };
 
   const rws: RWSMap = {};

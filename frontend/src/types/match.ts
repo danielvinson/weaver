@@ -4,7 +4,13 @@ import type { Round } from "./round";
 type UUID = string;
 
 export type MapName = "ascent" | "bind" | "breeze" | "haven" | "icebox";
-export type Queue = "competitive" | "unrated";
+export type QueueType =
+  | "competitive"
+  | "custom"
+  | "newmap"
+  | "onefa"
+  | "spikerush"
+  | "unrated";
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface NewPlayerExperienceDetails {} // boring data, ignoring
@@ -72,7 +78,7 @@ export interface Match {
   readonly map: MapName;
   readonly mode: string;
   readonly players: readonly Player[];
-  readonly queue: Queue;
+  readonly queue: QueueType;
   readonly ranked: boolean;
   readonly roundResults: readonly Round[];
   readonly season: string;
@@ -89,15 +95,15 @@ export interface MatchHistoryMatch {
     readonly all: {
       readonly last20Avg: number;
       readonly overallAvg: number;
-    },
+    };
     readonly current: number;
     readonly competitive: {
       readonly last20Avg: number;
-    }
-  }
+    };
+  };
   readonly rankedRatingEarned: number;
   readonly map: MapName;
-  readonly queue: Queue
+  readonly queue: QueueType;
   readonly agentId: string;
   readonly season: string;
   readonly matchDate: string;
