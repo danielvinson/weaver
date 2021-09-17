@@ -17,6 +17,7 @@ import { defaultTableHeaders } from "./tableHeaders";
 import { getRoundType } from "../../util/roundType";
 import { default as lodash } from "lodash";
 import { useEffect, useState } from "react";
+import Modal from "react-modal";
 import type { Match as MatchType, TeamName } from "../../types/match";
 import type { Setting } from "./MatchTableSettings";
 import type { TableHeader } from "../SortableTable";
@@ -80,8 +81,8 @@ export const MatchTable = ({ matchId }: Props) => {
       // Filter out spectators
       const matchWithNoSpectators = {
         ...res,
-        players: res.players.filter(p => p.teamId !== "Neutral")
-      }
+        players: res.players.filter((p) => p.teamId !== "Neutral"),
+      };
 
       setMatch(matchWithNoSpectators);
       console.log(res);
@@ -279,15 +280,45 @@ export const MatchTable = ({ matchId }: Props) => {
             &#x2699;
           </span>
           {settingsOpen && (
-            <MatchTableSettings
-              onChangeSetting={handleChangeSetting}
-              settings={tableHeaders.map<Setting>((th) => ({
-                group: th.group,
-                key: th.key,
-                name: th.name,
-                value: th.display,
-              }))}
-            />
+            <Modal
+              shouldCloseOnOverlayClick={true}
+              isOpen={settingsOpen}
+              onRequestClose={() => handleSettingsClick()}
+              style={{
+                content: {
+                  alignItems: "center",
+                  background: "none",
+                  border: "none",
+                  borderRadius: 0,
+                  display: "flex",
+                  flexDirection: "row",
+                  height: "auto",
+                  inset: 0,
+                  justifyContent: "center",
+                  margin: 0,
+                  padding: 0,
+                  position: "relative",
+                  width: "auto",
+                },
+                overlay: {
+                  alignItems: "center",
+                  background: "rgba(0,0,0,0.7)",
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "center"
+                },
+              }}
+            >
+              <MatchTableSettings
+                onChangeSetting={handleChangeSetting}
+                settings={tableHeaders.map<Setting>((th) => ({
+                  group: th.group,
+                  key: th.key,
+                  name: th.name,
+                  value: th.display,
+                }))}
+              />
+            </Modal>
           )}
         </div>
       </div>
