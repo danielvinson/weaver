@@ -1,7 +1,7 @@
 import { AgentIcon } from "../AgentIcon";
 import { PlayerName } from "../PlayerName";
 import { RankIcon } from "../RankIcon";
-import { colors, gradients } from "../../util/colorPalette";
+import { colors } from "../../util/colorPalette";
 import type { AgentId } from "../AgentIcon";
 import type { PlayerData } from "./MatchTable";
 import type { RankNumber } from "../RankIcon";

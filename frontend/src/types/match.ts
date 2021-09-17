@@ -3,6 +3,7 @@ import type { Round } from "./round";
 // making UUID different type for later convenience
 type UUID = string;
 
+export type TeamName = "Blue" | "Neutral" | "Red";
 export type MapName = "ascent" | "bind" | "breeze" | "haven" | "icebox";
 export type QueueType =
   | "competitive"
@@ -62,14 +63,14 @@ export interface Player {
   readonly stats: PlayerStats;
   readonly subject: UUID;
   readonly tagLine: string;
-  readonly teamId: "Blue" | "Red";
+  readonly teamId: TeamName;
 }
 
 export interface Team {
   readonly numPoints: number;
   readonly roundsPlayed: number;
   readonly roundsWon: number;
-  readonly teamId: "Blue" | "Red";
+  readonly teamId: TeamName
 }
 
 export interface Match {

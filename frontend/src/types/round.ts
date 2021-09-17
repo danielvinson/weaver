@@ -1,3 +1,5 @@
+import type { TeamName } from "./match";
+
 // making UUID different type for later convenience
 type UUID = string;
 
@@ -79,5 +81,5 @@ export interface Round {
   readonly roundNum: number;
   readonly roundResult: string | "Eliminated";
   readonly roundResultCode: string | "Elimination";
-  readonly winningTeam: "Blue" | "Red";
+  readonly winningTeam: TeamName;
 }

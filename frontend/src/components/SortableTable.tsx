@@ -7,12 +7,13 @@ import { sortData } from "../util/sort";
 import { useState } from "react";
 import _ from "lodash";
 import type { CSSProperties, ReactNode } from "react";
+import type { SettingsGroupName } from "./MatchTable/MatchTableSettings";
 import type { SortDirection } from "../util/sort";
 
 const styles: Record<string, CSSProperties> = {
   table: {
-    display: "grid",
     border: "1px solid rgba(255,255,255,0.1)",
+    display: "grid",
   },
   tableHeader: {
     backgroundColor: colors.background,
@@ -65,6 +66,7 @@ export interface TableHeader {
   readonly width: string;
   readonly tooltip?: string;
   readonly order: number;
+  readonly group?: SettingsGroupName;
 }
 
 export function SortableTable<DataType>({
