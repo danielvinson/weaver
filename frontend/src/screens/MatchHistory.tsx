@@ -1,14 +1,18 @@
 import { API } from "../api/api";
 import { MatchSummary } from "../components/MatchSummary";
+import { PlayerName } from "../components/PlayerName";
+import { ROUTES } from "../App";
 import { RankIcon } from "../components/RankIcon";
+import { Row } from "../components/Row";
 import { colors } from "../util/colorPalette";
 import { common } from "../util/styles";
+import { generatePath, useHistory, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import type { CSSProperties } from "react";
 import type { MatchHistoryMatch } from "../types/match";
 import type { Player } from "../types/player";
 import type { RankNumber } from "../components/RankIcon";
+import { Spacer } from "../components/Spacer";
 
 const styles: Record<string, CSSProperties> = {
   matches: {
@@ -26,7 +30,8 @@ interface Params {
 }
 
 export const MatchHistory = () => {
-  const { playerId, playerName, playerTag } = useParams<Params>();
+  const history = useHistory();
+  const { playerName, playerTag } = useParams<Params>();
   const [matchHistory, setMatchHistory] =
     useState<readonly MatchHistoryMatch[]>();
   const [playerData, setPlayerData] = useState<Player>();
@@ -34,44 +39,61 @@ export const MatchHistory = () => {
   // This API is stupid and requires playerName and playerTag instead of an id...
   useEffect(() => {
     const getPlayer = async () => {
-      const player = await API.getPlayer(playerName, playerTag);
+      const player = await API.getPlayer(
+        playerName.toLowerCase(),
+        playerTag.toLowerCase()
+      );
       setPlayerData(player.data);
     };
 
     void getPlayer();
-  }, [playerId]);
+  }, [playerName, playerTag]);
 
   useEffect(() => {
     const getHistory = async () => {
-      const history = await API.getMatchHistory(playerId, ["competitive"]);
-      setMatchHistory(history.data);
+      if (playerData !== undefined) {
+        const historyResponse = await API.getMatchHistory(playerData.id, [
+          "competitive",
+        ]);
+        setMatchHistory(historyResponse.data);
+      }
     };
 
     void getHistory();
-  }, [playerId]);
+  }, [playerData]);
 
   return (
     <>
       <div style={{ ...common.column, color: colors.white }}>
-        <div style={{ ...common.row }}>
-          <span>
-            Player: {playerData?.name} {playerData?.tag}
-          </span>
-        </div>
-        <div style={{ ...common.row }}>
-          <span>Rank:</span>
+        <Row>
           {playerData && (
-            <RankIcon
-              rankNumber={playerData.rank as RankNumber}
-              width={60}
-              height={60}
-            />
+            <>
+              <span>Name: </span>
+              <PlayerName name={playerData.name} tag={playerData.tag} />
+              <Spacer width="15px" />
+              <span>Rank:</span>
+              <RankIcon
+                rankNumber={playerData.rank as RankNumber}
+                width={25}
+                height={25}
+              />
+              <Spacer width="15px" />
+              <span>RR: </span>
+              <span>{playerData.rankedRating}</span>
+            </>
           )}
-        </div>
+        </Row>
       </div>
       <div style={styles.matches}>
         {matchHistory?.map((match) => (
-          <div>
+          <div
+            onClick={() =>
+              history.push(
+                generatePath(ROUTES.detail.path, { matchId: match.matchId })
+              )
+            }
+            style={{ cursor: "pointer" }}
+          >
             <MatchSummary match={match} />
           </div>
         ))}

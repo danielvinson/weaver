@@ -50,46 +50,69 @@ export const SearchBar = () => {
   const history = useHistory();
   const [inputText, setInputText] = useState<string>("");
   const [option, setOption] = useState<string>("match");
+  const [errorText, setErrorText] = useState<string>();
 
   const handleSearch = () => {
     if (inputText === "") {
       return;
     }
 
-    const linkLocation =
-      option === "player"
-        ? generatePath(ROUTES.history.path, { playerId: inputText })
-        : generatePath(ROUTES.detail.path, { matchId: inputText });
+    if (option === "player") {
+      if (!inputText.includes("#")) {
+        setErrorText("Please use format player#tag");
+        return;
+      }
 
-    console.log(linkLocation);
+      const [playerName, tag] = inputText.split("#");
+      const linkLocation = generatePath(ROUTES.history.path, {
+        playerName: playerName,
+        playerTag: tag,
+      });
+      setErrorText(undefined);
+      history.push(linkLocation);
+    }
 
-    history.push(linkLocation);
+    if (option === "match") {
+      const linkLocation = generatePath(ROUTES.detail.path, {
+        matchId: inputText,
+      });
+      setErrorText(undefined);
+      history.push(linkLocation);
+    }
   };
 
   const placeholderText = option === "player" ? "Player UUID" : "Match UUID";
 
   return (
-    <div style={styles.container}>
-      <select
-        value={option}
-        onChange={(e) => setOption(e.target.value)}
-        style={styles.select}
-        defaultValue={option}
-      >
-        <option value="match">Match</option>
-        <option value="player">Player</option>
-      </select>
-      <input
-        type="text"
-        style={styles.input}
-        value={inputText}
-        onChange={(e) => setInputText(e.target.value)}
-        placeholder={placeholderText}
-        className="searchInput"
-      />
+    <div style={common.column}>
+      <div style={styles.container}>
+        <select
+          value={option}
+          onChange={(e) => {
+            setOption(e.target.value);
+            setInputText("");
+          }}
+          style={styles.select}
+          defaultValue={option}
+        >
+          <option value="match">Match</option>
+          <option value="player">Player</option>
+        </select>
+        <input
+          type="text"
+          style={styles.input}
+          value={inputText}
+          onChange={(e) => setInputText(e.target.value)}
+          placeholder={placeholderText}
+          className="searchInput"
+        />
 
-      <div onClick={handleSearch} className="searchButton">
-        Search{<Spacer width="10px" />}&#10148;
+        <div onClick={handleSearch} className="searchButton">
+          Search{<Spacer width="10px" />}&#10148;
+        </div>
+      </div>
+      <div>
+        <span style={{ color: colors.white }}>{errorText}</span>
       </div>
     </div>
   );

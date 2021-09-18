@@ -305,7 +305,7 @@ export const MatchTable = ({ matchId }: Props) => {
                   background: "rgba(0,0,0,0.7)",
                   display: "flex",
                   flexDirection: "row",
-                  justifyContent: "center"
+                  justifyContent: "center",
                 },
               }}
             >

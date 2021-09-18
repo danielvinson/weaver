@@ -6,7 +6,7 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 export const ROUTES = {
   detail: { key: "detail", name: "Match", path: "/match/:matchId" },
-  history: { key: "history", name: "History", path: "/matchHistory/:playerId/:playerName/:playerTag" },
+  history: { key: "history", name: "History", path: "/matchHistory/:playerName/:playerTag" },
   home: { key: "home", name: "Home", path: "/" },
 };
 
