@@ -28,8 +28,8 @@ const styles: Record<string, CSSProperties> = {
   },
   logo: {
     color: colors.white,
-    fontFamily: "LatoBold",
-    fontSize: "1.8em",
+    fontFamily: "LatoBoldItalic",
+    fontSize: "1.7em",
     textShadow: `0.01em 0.01em 0x ${colors.highlight}`,
   },
   subTitle: {
@@ -56,8 +56,11 @@ export const Header = ({ activeRoute }: Props) => {
   const handleLogoClick = () => history.push(ROUTES.home.path);
   return (
     <div style={styles.container}>
-      <div style={{ cursor: "pointer", width: "150px" }} onClick={handleLogoClick}>
-        <span style={{ ...styles.logo, marginRight: "5px" }}>VS</span>
+      <div
+        style={{ ...common.row, alignItems: "flex-end", cursor: "pointer", width: "200px" }}
+        onClick={handleLogoClick}
+      >
+        <span style={{ ...styles.logo, marginRight: "5px" }}>WEAVER</span>
         <span style={styles.subTitle}>Valorant Stats</span>
       </div>
 

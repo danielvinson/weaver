@@ -9,6 +9,13 @@ import { getRoundType } from "./roundType";
 import type { Player } from "../types/match";
 import type { Round } from "../types/round";
 
+const WEIGHTS = {
+  force: 0.8,
+  full: 1.3,
+  pistol: 1.3,
+  save: 0.6,
+};
+
 export type RWSMap = Record<string, number>;
 
 export const calculateRWS = (
@@ -34,13 +41,6 @@ export const calculateWeightedRWS = (
   round: Round,
   players: readonly Player[]
 ): RWSMap => {
-  const WEIGHTS = {
-    force: 0.8,
-    full: 1.3,
-    pistol: 1.3,
-    save: 0.6,
-  };
-
   const rws: RWSMap = {};
   players.forEach((player) => {
     const score = round.playerScores.find(
