@@ -44,7 +44,7 @@ export const API = {
         params: {
           actId: episodeIds.episode3.act2,
           offset: 0,
-          queues: queueTypes.join(","),
+          queues: queueTypes.join(",") + ",",
           type: "subject",
           updatedMPs: true,
         },

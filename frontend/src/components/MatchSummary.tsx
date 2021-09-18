@@ -77,7 +77,9 @@ export const MatchSummary = ({ match }: Props) => {
     >
       <div style={common.row}>
         {/* Queue Type */}
-        <span style={styles.time}>{match.queue.toUpperCase()}</span>
+        <span style={styles.time}>
+          {match.queue === "" ? "CUSTOM" : match.queue.toUpperCase()}
+        </span>
 
         <Spacer width="15px" />
 
@@ -94,7 +96,7 @@ export const MatchSummary = ({ match }: Props) => {
         }}
       >
         <AgentIcon agentId={match.agentId as AgentId} width={50} height={50} />
-        <RankIcon rankNumber={22} />
+        {match.queue === "competitive" && <RankIcon rankNumber={22} />}
 
         {/* Win/Loss and RR change */}
         <>
@@ -107,16 +109,18 @@ export const MatchSummary = ({ match }: Props) => {
           {match.winStatus === "loss" && (
             <div style={styles.defeatText}>Defeat</div>
           )}
-          <span
-            style={{
-              ...styles.ratingChange,
-              color: colorScales.greenToRed[normalizedRatingChange],
-            }}
-          >
-            {match.rankedRatingEarned > 0
-              ? `+${match.rankedRatingEarned} RR`
-              : `${match.rankedRatingEarned} RR`}
-          </span>
+          {match.queue === "competitive" && (
+            <span
+              style={{
+                ...styles.ratingChange,
+                color: colorScales.greenToRed[normalizedRatingChange],
+              }}
+            >
+              {match.rankedRatingEarned > 0
+                ? `+${match.rankedRatingEarned} RR`
+                : `${match.rankedRatingEarned} RR`}
+            </span>
+          )}
         </>
 
         {/* Combat Score and KDA */}

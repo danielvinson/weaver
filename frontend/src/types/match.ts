@@ -6,12 +6,7 @@ type UUID = string;
 export type TeamName = "Blue" | "Neutral" | "Red";
 export type MapName = "ascent" | "bind" | "breeze" | "haven" | "icebox";
 export type QueueType =
-  | "competitive"
-  | "custom"
-  | "newmap"
-  | "onefa"
-  | "spikerush"
-  | "unrated";
+  "" | "competitive" | "custom" | "deathmatch" | "newmap" | "onefa" | "spikerush" | "unrated";
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface NewPlayerExperienceDetails {} // boring data, ignoring
@@ -70,7 +65,7 @@ export interface Team {
   readonly numPoints: number;
   readonly roundsPlayed: number;
   readonly roundsWon: number;
-  readonly teamId: TeamName
+  readonly teamId: TeamName;
 }
 
 export interface Match {
