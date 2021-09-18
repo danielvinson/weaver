@@ -21,7 +21,7 @@ export const API = {
   getMatch: async (matchId: string): Promise<Match> => {
     const cachedMatch = cache.getMatch(matchId);
     if (cachedMatch !== null) return cachedMatch;
-    
+
     const axiosResponse = await baseApi.get<Match>("match/" + matchId, {
       params: {
         actId: episodeIds.episode3.act2,
@@ -44,7 +44,9 @@ export const API = {
         params: {
           actId: episodeIds.episode3.act2,
           offset: 0,
-          queues: queueTypes.join(",") + ",",
+          queues: queueTypes.includes("custom")
+            ? queueTypes.join(",") + ","
+            : queueTypes.join(","),
           type: "subject",
           updatedMPs: true,
         },

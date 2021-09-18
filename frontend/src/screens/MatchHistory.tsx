@@ -1,11 +1,7 @@
 import { API } from "../api/api";
 import { MatchSummary } from "../components/MatchSummary";
-import { PlayerName } from "../components/PlayerName";
 import { PlayerStats } from "../components/PlayerStats";
 import { ROUTES } from "../App";
-import { RankIcon } from "../components/RankIcon";
-import { Row } from "../components/Row";
-import { Spacer } from "../components/Spacer";
 import { colors } from "../util/colorPalette";
 import { common } from "../util/styles";
 import { generatePath, useHistory, useParams } from "react-router-dom";
@@ -13,7 +9,6 @@ import { useEffect, useState } from "react";
 import type { CSSProperties } from "react";
 import type { MatchHistoryMatch, QueueType } from "../types/match";
 import type { Player } from "../types/player";
-import type { RankNumber } from "../components/RankIcon";
 
 const styles: Record<string, CSSProperties> = {
   matches: {
