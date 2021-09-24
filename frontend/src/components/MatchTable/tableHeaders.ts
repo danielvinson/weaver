@@ -214,4 +214,20 @@ export const defaultTableHeaders = [
       "Number of rounds which the player survived and did not get a kill or assist",
     width: "135px",
   },
+  {
+    display: true,
+    group: "computed",
+    key: "hsPercentBullet",
+    name: "Headshot %",
+    tooltip: "Percent of bullets which hit which were headshots",
+    width: "120px",
+  },
+  {
+    display: false,
+    group: "computed",
+    key: "hsPercentKill",
+    name: "Headshot Kill %",
+    tooltip: "Percent of kills which included a headshot",
+    width: "140px",
+  },
 ];

@@ -65,7 +65,6 @@ export const MatchHistory = () => {
         );
 
         setMatchHistory(historyResponse.data);
-        console.log(historyResponse);
       }
     };
 

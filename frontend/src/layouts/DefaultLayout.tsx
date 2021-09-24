@@ -14,9 +14,7 @@ const styles: Record<string, CSSProperties> = {
     overflowX: "hidden",
     width: "100vw",
   },
-  main: {
-    
-  }
+  main: {},
 };
 
 interface Props {

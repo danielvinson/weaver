@@ -8,6 +8,7 @@ import { Switch } from "../Switch";
 import { calculateClutches } from "../../util/clutches";
 import { calculateFirstDeaths } from "../../util/firstDeaths";
 import { calculateFirstKills } from "../../util/firstKills";
+import { calculateHeadshotData } from "../../util/headshot";
 import { calculateKastNumbers, calculateKastPercents } from "../../util/kast";
 import { calculateMatchMultikills } from "../../util/multiKills";
 import { calculateRWS, calculateWeightedRWS } from "../../util/rws";
@@ -58,14 +59,15 @@ export interface PlayerData {
   readonly kastTrades: number;
   readonly kastSurvived: number;
   readonly kda: string;
+  readonly hsPercentBullet: number;
+  readonly hsPercentKill: number;
 }
 
 interface Props {
-  readonly matchId: string;
+  readonly match: MatchType;
 }
 
-export const MatchTable = ({ matchId }: Props) => {
-  const [match, setMatch] = useState<MatchType>();
+export const MatchTable = ({ match }: Props) => {
   const [matchTableData, setMatchTableData] = useState<PlayerData[]>();
   const [separateTeams, setSeparateTeams] = useState<boolean>(false);
   const [settingsOpen, setSettingsOpen] = useState<boolean>(false);
@@ -73,35 +75,14 @@ export const MatchTable = ({ matchId }: Props) => {
     defaultTableHeaders.map((th, index) => ({ ...th, order: index }))
   );
 
-  // Fetch data from API - refreshes on UUID change
-  useEffect(() => {
-    const getMatch = async () => {
-      const res = await API.getMatch(matchId);
-
-      // Filter out spectators
-      const matchWithNoSpectators = {
-        ...res,
-        players: res.players.filter((p) => p.teamId !== "Neutral"),
-      };
-
-      setMatch(matchWithNoSpectators);
-      console.log(res);
-    };
-
-    void getMatch();
-  }, [matchId]);
-
   // Calculate data and build table
   useEffect(() => {
-    if (match === undefined) {
-      return;
-    }
-
     const tableData: PlayerData[] = [];
 
     const clutches = calculateClutches(match.players, match.roundResults);
     const firstKills = calculateFirstKills(match.players, match.roundResults);
     const firstDeaths = calculateFirstDeaths(match.players, match.roundResults);
+    const headshotPercents = calculateHeadshotData(match);
 
     const rwsData: Record<string, number> = {};
     match.roundResults.forEach((round) => {
@@ -198,6 +179,8 @@ export const MatchTable = ({ matchId }: Props) => {
         fk: firstKills[player.subject],
         forceKills: ecoKillData[player.subject].force,
         gunRoundKills: ecoKillData[player.subject].full,
+        hsPercentBullet: headshotPercents[player.subject].bullet * 100,
+        hsPercentKill: headshotPercents[player.subject].kill * 100,
         id: player.subject,
         kast: kastPercents[player.subject],
         kastAssists: kastNumbers[player.subject].assist,

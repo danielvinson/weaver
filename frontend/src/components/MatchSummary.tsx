@@ -9,6 +9,7 @@ import moment from "moment";
 import type { AgentId } from "./AgentIcon";
 import type { CSSProperties } from "react";
 import type { MatchHistoryMatch } from "../types/match";
+import type { RankNumber } from "./RankIcon";
 
 const styles: Record<string, CSSProperties> = {
   container: {
@@ -96,7 +97,9 @@ export const MatchSummary = ({ match }: Props) => {
         }}
       >
         <AgentIcon agentId={match.agentId as AgentId} width={50} height={50} />
-        {match.queue === "competitive" && <RankIcon rankNumber={22} />}
+        {match.queue === "competitive" && (
+          <RankIcon rankNumber={match.tierAfterUpdate as RankNumber} />
+        )}
 
         {/* Win/Loss and RR change */}
         <>

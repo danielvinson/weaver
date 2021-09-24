@@ -35,6 +35,12 @@ const renderMatchCell = (
     case "kast": {
       return `${Math.round(val as number)}%`
     }
+    case "hsPercentBullet": {
+      return (val as number).toFixed(2) + "%"
+    }
+    case "hsPercentKill": {
+      return (val as number).toFixed(2) + "%"
+    }
     default:
       return typeof val === "number" ? val.toFixed(0) : val;
   }

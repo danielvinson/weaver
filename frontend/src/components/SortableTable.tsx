@@ -44,7 +44,7 @@ const styles: Record<string, CSSProperties> = {
     bottom: "2.5em",
 
     boxShadow: "2px 2px 1px rgba(0,0,0,0.4)",
-    color: colors.primary,
+    color: colors.white,
     fontFamily: "LatoBlack",
     fontSize: "0.7em",
     maxWidth: "400px",
