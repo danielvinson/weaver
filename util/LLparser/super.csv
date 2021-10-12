@@ -1,0 +1,273 @@
+week,home_team_id,away_team_id,home_team_name,away_team_name,home_score,away_score
+1,9822639,9822655,Plebmobile (PLE),Not Anyone Can Frag (NCF),-3,5
+1,9822656,9822641,Fake Flashers (FF),I Remember Cal (IRC),16,14
+1,9822636,9822637,Teen Titans (TT),Nox Nieman (NOX),13,8
+1,9769353,9822655,You Know The Vibes (YKV),Not Anyone Can Frag (NCF),13,11
+1,9822637,9822656,Nox Nieman (NOX),Fake Flashers (FF),13,4
+1,9769354,9822638,RFA (RFA),Ript Gaming (RG),3,13
+1,9769353,9822641,You Know The Vibes (YKV),I Remember Cal (IRC),13,6
+1,9822641,9823963,I Remember Cal (IRC),Sussy Baka (SSB),13,5
+1,9822636,9769365,Teen Titans (TT),Frands (FRA),13,8
+1,9769355,9822640,Collective Chaos (CC),Bona Fide (BF),13,7
+1,9822640,9769358,Bona Fide (BF),Trash Pandas (TP),7,13
+1,9822639,9769365,Plebmobile (PLE),Frands (FRA),13,8
+1,9822654,9822638,Total System Control (TSC),Ript Gaming (RG),6,13
+1,9769352,9769353,Brain Bots (BRB),You Know The Vibes (YKV),13,11
+1,9769356,9769352,WAIFU (WAF),Brain Bots (BRB),5,13
+1,9822654,9769358,Total System Control (TSC),Trash Pandas (TP),15,17
+1,9823963,9822638,Sussy Baka (SSB),Ript Gaming (RG),9,13
+1,9769354,9769356,RFA (RFA),WAIFU (WAF),13,7
+2,9823963,9769358,Sussy Baka (SSB),Trash Pandas (TP),0,0
+2,9822638,9822639,Ript Gaming (RG),Plebmobile (PLE),5,-3
+2,9769365,9822641,Frands (FRA),I Remember Cal (IRC),13,10
+2,9822637,9822636,Nox Nieman (NOX),Teen Titans (TT),13,9
+2,9822655,9822637,Not Anyone Can Frag (NCF),Nox Nieman (NOX),10,13
+2,9822638,9769352,Ript Gaming (RG),Brain Bots (BRB),13,2
+2,9822641,9769356,I Remember Cal (IRC),WAIFU (WAF),11,13
+2,9769354,9769355,RFA (RFA),Collective Chaos (CC),13,5
+2,9822655,9823963,Not Anyone Can Frag (NCF),Sussy Baka (SSB),13,6
+2,9822640,9822655,Bona Fide (BF),Not Anyone Can Frag (NCF),10,13
+2,9822637,9822654,Nox Nieman (NOX),Total System Control (TSC),-3,5
+2,9822656,9822654,Fake Flashers (FF),Total System Control (TSC),13,8
+2,9769353,9769365,You Know The Vibes (YKV),Frands (FRA),13,7
+2,9769352,9769354,Brain Bots (BRB),RFA (RFA),13,11
+2,9822640,9769353,Bona Fide (BF),You Know The Vibes (YKV),13,7
+2,9822640,9769352,Bona Fide (BF),Brain Bots (BRB),10,13
+2,9769356,9822639,WAIFU (WAF),Plebmobile (PLE),1,13
+2,9769358,9822636,Trash Pandas (TP),Teen Titans (TT),14,12
+3,9822639,9822638,Plebmobile (PLE),Ript Gaming (RG),-3,5
+3,9769354,9822641,RFA (RFA),I Remember Cal (IRC),13,8
+3,9769356,9769365,WAIFU (WAF),Frands (FRA),13,6
+3,9769355,9822637,Collective Chaos (CC),Nox Nieman (NOX),13,5
+3,9769358,9822637,Trash Pandas (TP),Nox Nieman (NOX),-3,5
+3,9822638,9769353,Ript Gaming (RG),You Know The Vibes (YKV),13,6
+3,9823963,9769353,Sussy Baka (SSB),You Know The Vibes (YKV),11,13
+3,9822655,9822640,Not Anyone Can Frag (NCF),Bona Fide (BF),5,13
+3,9769365,9822654,Frands (FRA),Total System Control (TSC),10,13
+3,9822640,9822636,Bona Fide (BF),Teen Titans (TT),13,7
+3,9822636,9822639,Teen Titans (TT),Plebmobile (PLE),13,8
+3,9822639,9769354,Plebmobile (PLE),RFA (RFA),5,13
+3,9769355,9823963,Collective Chaos (CC),Sussy Baka (SSB),14,12
+3,9822640,9769356,Bona Fide (BF),WAIFU (WAF),13,4
+3,9769352,9822656,Brain Bots (BRB),Fake Flashers (FF),5,13
+3,9769352,9769356,Brain Bots (BRB),WAIFU (WAF),13,6
+3,9822656,9823963,Fake Flashers (FF),Sussy Baka (SSB),13,4
+3,9769358,9822654,Trash Pandas (TP),Total System Control (TSC),0,0
+3,9822655,9822641,Not Anyone Can Frag (NCF),I Remember Cal (IRC),-3,5
+4,9822638,9769356,Ript Gaming (RG),WAIFU (WAF),13,7
+4,9822638,9769354,Ript Gaming (RG),RFA (RFA),13,9
+4,9769358,9769354,Trash Pandas (TP),RFA (RFA),0,0
+4,9822637,9823963,Nox Nieman (NOX),Sussy Baka (SSB),0,0
+4,9822641,9822639,I Remember Cal (IRC),Plebmobile (PLE),,
+4,9769365,9769358,Frands (FRA),Trash Pandas (TP),0,0
+4,9822656,9769354,Fake Flashers (FF),RFA (RFA),13,1
+4,9769352,9822641,Brain Bots (BRB),I Remember Cal (IRC),13,3
+4,9822655,9822656,Not Anyone Can Frag (NCF),Fake Flashers (FF),4,13
+4,9822637,9822655,Nox Nieman (NOX),Not Anyone Can Frag (NCF),14,12
+4,9822637,9769356,Nox Nieman (NOX),WAIFU (WAF),13,6
+4,9769352,9769365,Brain Bots (BRB),Frands (FRA),13,6
+4,9769355,9822636,Collective Chaos (CC),Teen Titans (TT),4,13
+4,9769355,9769353,Collective Chaos (CC),You Know The Vibes (YKV),13,9
+4,9822639,9822654,Plebmobile (PLE),Total System Control (TSC),7,13
+4,9769353,9822640,You Know The Vibes (YKV),Bona Fide (BF),13,7
+4,9822636,9822640,Teen Titans (TT),Bona Fide (BF),14,16
+4,9823963,9822656,Sussy Baka (SSB),Fake Flashers (FF),-3,5
+4,9822655,9822654,Not Anyone Can Frag (NCF),Total System Control (TSC),,
+5,9822641,9822638,I Remember Cal (IRC),Ript Gaming (RG),0,13
+5,9822654,9823963,Total System Control (TSC),Sussy Baka (SSB),5,-3
+5,9822636,9769358,Teen Titans (TT),Trash Pandas (TP),0,0
+5,9769358,9769365,Trash Pandas (TP),Frands (FRA),0,0
+5,9823963,9822636,Sussy Baka (SSB),Teen Titans (TT),0,0
+5,9769353,9769358,You Know The Vibes (YKV),Trash Pandas (TP),0,0
+5,9822655,9769354,Not Anyone Can Frag (NCF),RFA (RFA),,
+5,9822655,9822639,Not Anyone Can Frag (NCF),Plebmobile (PLE),,
+5,9822641,9822640,I Remember Cal (IRC),Bona Fide (BF),,
+5,9822656,9822639,Fake Flashers (FF),Plebmobile (PLE),,
+5,9822636,9769354,Teen Titans (TT),RFA (RFA),13,11
+5,9769365,9769356,Frands (FRA),WAIFU (WAF),13,6
+5,9822640,9822637,Bona Fide (BF),Nox Nieman (NOX),13,7
+5,9822638,9769355,Ript Gaming (RG),Collective Chaos (CC),13,5
+5,9769365,9822637,Frands (FRA),Nox Nieman (NOX),11,13
+5,9769352,9822655,Brain Bots (BRB),Not Anyone Can Frag (NCF),13,5
+5,9769353,9822654,You Know The Vibes (YKV),Total System Control (TSC),,
+5,9769352,9769355,Brain Bots (BRB),Collective Chaos (CC),,
+6,9822638,9822655,Ript Gaming (RG),Not Anyone Can Frag (NCF),13,6
+6,9822636,9769352,Teen Titans (TT),Brain Bots (BRB),,
+6,9822637,9769354,Nox Nieman (NOX),RFA (RFA),,
+6,9769365,9823963,Frands (FRA),Sussy Baka (SSB),0,0
+6,9769355,9769352,Collective Chaos (CC),Brain Bots (BRB),,
+6,9769358,9822655,Trash Pandas (TP),Not Anyone Can Frag (NCF),0,0
+6,9823963,9822639,Sussy Baka (SSB),Plebmobile (PLE),0,0
+6,9769354,9822654,RFA (RFA),Total System Control (TSC),,
+6,9822654,9769356,Total System Control (TSC),WAIFU (WAF),,
+6,9769355,9769365,Collective Chaos (CC),Frands (FRA),,
+6,9822656,9822640,Fake Flashers (FF),Bona Fide (BF),,
+6,9822654,9822640,Total System Control (TSC),Bona Fide (BF),,
+6,9769358,9769355,Trash Pandas (TP),Collective Chaos (CC),0,0
+6,9769356,9769353,WAIFU (WAF),You Know The Vibes (YKV),,
+6,9822641,9822636,I Remember Cal (IRC),Teen Titans (TT),,
+6,9769353,9822638,You Know The Vibes (YKV),Ript Gaming (RG),,
+6,9822641,9822656,I Remember Cal (IRC),Fake Flashers (FF),,
+6,9822639,9822637,Plebmobile (PLE),Nox Nieman (NOX),,
+7,9769356,9822656,WAIFU (WAF),Fake Flashers (FF),,
+7,9822655,9769355,Not Anyone Can Frag (NCF),Collective Chaos (CC),,
+7,9769353,9822637,You Know The Vibes (YKV),Nox Nieman (NOX),,
+7,9822636,9822641,Teen Titans (TT),I Remember Cal (IRC),,
+7,9822654,9822639,Total System Control (TSC),Plebmobile (PLE),,
+7,9769365,9822638,Frands (FRA),Ript Gaming (RG),,
+7,9822638,9822637,Ript Gaming (RG),Nox Nieman (NOX),,
+7,9769365,9822636,Frands (FRA),Teen Titans (TT),,
+7,9769354,9822640,RFA (RFA),Bona Fide (BF),,
+7,9769358,9822641,Trash Pandas (TP),I Remember Cal (IRC),0,0
+7,9769353,9822656,You Know The Vibes (YKV),Fake Flashers (FF),,
+7,9769352,9822640,Brain Bots (BRB),Bona Fide (BF),,
+7,9822654,9769355,Total System Control (TSC),Collective Chaos (CC),,
+7,9769352,9822639,Brain Bots (BRB),Plebmobile (PLE),,
+7,9822639,9769356,Plebmobile (PLE),WAIFU (WAF),,
+7,9822636,9822655,Teen Titans (TT),Not Anyone Can Frag (NCF),,
+7,9769358,9823963,Trash Pandas (TP),Sussy Baka (SSB),0,0
+7,9769354,9823963,RFA (RFA),Sussy Baka (SSB),0,0
+8,9822641,9822637,I Remember Cal (IRC),Nox Nieman (NOX),,
+8,9822639,9769355,Plebmobile (PLE),Collective Chaos (CC),,
+8,9822654,9769352,Total System Control (TSC),Brain Bots (BRB),,
+8,9822655,9769365,Not Anyone Can Frag (NCF),Frands (FRA),,
+8,9822640,9822638,Bona Fide (BF),Ript Gaming (RG),,
+8,9769356,9822636,WAIFU (WAF),Teen Titans (TT),,
+8,9769358,9822656,Trash Pandas (TP),Fake Flashers (FF),0,0
+8,9822638,9822656,Ript Gaming (RG),Fake Flashers (FF),,
+8,9823963,9769356,Sussy Baka (SSB),WAIFU (WAF),0,0
+8,9822640,9769355,Bona Fide (BF),Collective Chaos (CC),,
+8,9822655,9769353,Not Anyone Can Frag (NCF),You Know The Vibes (YKV),,
+8,9769352,9769358,Brain Bots (BRB),Trash Pandas (TP),0,0
+8,9769353,9769354,You Know The Vibes (YKV),RFA (RFA),,
+8,9822639,9822641,Plebmobile (PLE),I Remember Cal (IRC),,
+8,9822654,9822636,Total System Control (TSC),Teen Titans (TT),,
+8,9822656,9769365,Fake Flashers (FF),Frands (FRA),,
+8,9823963,9822637,Sussy Baka (SSB),Nox Nieman (NOX),0,0
+8,9769356,9769354,WAIFU (WAF),RFA (RFA),,
+9,9822637,9822639,Nox Nieman (NOX),Plebmobile (PLE),,
+9,9822655,9822638,Not Anyone Can Frag (NCF),Ript Gaming (RG),,
+9,9822654,9769354,Total System Control (TSC),RFA (RFA),,
+9,9769355,9769358,Collective Chaos (CC),Trash Pandas (TP),0,0
+9,9769354,9822637,RFA (RFA),Nox Nieman (NOX),,
+9,9769358,9822639,Trash Pandas (TP),Plebmobile (PLE),0,0
+9,9823963,9769355,Sussy Baka (SSB),Collective Chaos (CC),0,0
+9,9822656,9769355,Fake Flashers (FF),Collective Chaos (CC),,
+9,9823963,9769365,Sussy Baka (SSB),Frands (FRA),0,0
+9,9769356,9822640,WAIFU (WAF),Bona Fide (BF),,
+9,9822640,9822656,Bona Fide (BF),Fake Flashers (FF),,
+9,9769352,9822636,Brain Bots (BRB),Teen Titans (TT),,
+9,9822654,9822655,Total System Control (TSC),Not Anyone Can Frag (NCF),,
+9,9822639,9822636,Plebmobile (PLE),Teen Titans (TT),,
+9,9822641,9769365,I Remember Cal (IRC),Frands (FRA),,
+9,9822638,9822641,Ript Gaming (RG),I Remember Cal (IRC),,
+9,9769353,9769356,You Know The Vibes (YKV),WAIFU (WAF),,
+9,9769353,9769352,You Know The Vibes (YKV),Brain Bots (BRB),,
+10,9822637,9822640,Nox Nieman (NOX),Bona Fide (BF),,
+10,9769355,9769356,Collective Chaos (CC),WAIFU (WAF),,
+10,9822638,9822636,Ript Gaming (RG),Teen Titans (TT),,
+10,9769355,9822655,Collective Chaos (CC),Not Anyone Can Frag (NCF),,
+10,9769353,9822639,You Know The Vibes (YKV),Plebmobile (PLE),,
+10,9822636,9822656,Teen Titans (TT),Fake Flashers (FF),,
+10,9822654,9769365,Total System Control (TSC),Frands (FRA),,
+10,9769354,9822655,RFA (RFA),Not Anyone Can Frag (NCF),,
+10,9769365,9822640,Frands (FRA),Bona Fide (BF),,
+10,9822641,9769353,I Remember Cal (IRC),You Know The Vibes (YKV),,
+10,9823963,9769352,Sussy Baka (SSB),Brain Bots (BRB),0,0
+10,9769365,9769354,Frands (FRA),RFA (RFA),,
+10,9769356,9769358,WAIFU (WAF),Trash Pandas (TP),0,0
+10,9769352,9822654,Brain Bots (BRB),Total System Control (TSC),,
+10,9822656,9822637,Fake Flashers (FF),Nox Nieman (NOX),,
+10,9822639,9823963,Plebmobile (PLE),Sussy Baka (SSB),0,0
+10,9769358,9822638,Trash Pandas (TP),Ript Gaming (RG),0,0
+10,9823963,9822641,Sussy Baka (SSB),I Remember Cal (IRC),0,0
+11,9769355,9822641,Collective Chaos (CC),I Remember Cal (IRC),,
+11,9822656,9822638,Fake Flashers (FF),Ript Gaming (RG),,
+11,9822640,9769365,Bona Fide (BF),Frands (FRA),,
+11,9822639,9769358,Plebmobile (PLE),Trash Pandas (TP),0,0
+11,9822641,9822654,I Remember Cal (IRC),Total System Control (TSC),,
+11,9822637,9769352,Nox Nieman (NOX),Brain Bots (BRB),,
+11,9822636,9769353,Teen Titans (TT),You Know The Vibes (YKV),,
+11,9769356,9822655,WAIFU (WAF),Not Anyone Can Frag (NCF),,
+11,9769352,9822637,Brain Bots (BRB),Nox Nieman (NOX),,
+11,9822656,9822636,Fake Flashers (FF),Teen Titans (TT),,
+11,9769356,9769355,WAIFU (WAF),Collective Chaos (CC),,
+11,9822654,9822637,Total System Control (TSC),Nox Nieman (NOX),,
+11,9822638,9822654,Ript Gaming (RG),Total System Control (TSC),,
+11,9822641,9769354,I Remember Cal (IRC),RFA (RFA),,
+11,9823963,9769354,Sussy Baka (SSB),RFA (RFA),0,0
+11,9769358,9822640,Trash Pandas (TP),Bona Fide (BF),0,0
+11,9769365,9769353,Frands (FRA),You Know The Vibes (YKV),,
+11,9823963,9822655,Sussy Baka (SSB),Not Anyone Can Frag (NCF),0,0
+12,9769358,9769356,Trash Pandas (TP),WAIFU (WAF),0,0
+12,9769354,9769353,RFA (RFA),You Know The Vibes (YKV),,
+12,9822637,9822641,Nox Nieman (NOX),I Remember Cal (IRC),,
+12,9822641,9769355,I Remember Cal (IRC),Collective Chaos (CC),,
+12,9769365,9822655,Frands (FRA),Not Anyone Can Frag (NCF),,
+12,9769356,9822654,WAIFU (WAF),Total System Control (TSC),,
+12,9769354,9769365,RFA (RFA),Frands (FRA),,
+12,9822638,9822640,Ript Gaming (RG),Bona Fide (BF),,
+12,9769354,9822656,RFA (RFA),Fake Flashers (FF),,
+12,9822639,9769353,Plebmobile (PLE),You Know The Vibes (YKV),,
+12,9823963,9822640,Sussy Baka (SSB),Bona Fide (BF),0,0
+12,9769352,9822638,Brain Bots (BRB),Ript Gaming (RG),,
+12,9822636,9769355,Teen Titans (TT),Collective Chaos (CC),,
+12,9822656,9769358,Fake Flashers (FF),Trash Pandas (TP),0,0
+12,9769356,9823963,WAIFU (WAF),Sussy Baka (SSB),0,0
+12,9769355,9822639,Collective Chaos (CC),Plebmobile (PLE),,
+12,9822656,9769352,Fake Flashers (FF),Brain Bots (BRB),,
+12,9822636,9822654,Teen Titans (TT),Total System Control (TSC),,
+13,9769355,9769354,Collective Chaos (CC),RFA (RFA),,
+13,9769354,9822636,RFA (RFA),Teen Titans (TT),,
+13,9822636,9823963,Teen Titans (TT),Sussy Baka (SSB),0,0
+13,9822654,9822641,Total System Control (TSC),I Remember Cal (IRC),,
+13,9822655,9769352,Not Anyone Can Frag (NCF),Brain Bots (BRB),,
+13,9822640,9822641,Bona Fide (BF),I Remember Cal (IRC),,
+13,9769355,9822638,Collective Chaos (CC),Ript Gaming (RG),,
+13,9822638,9769358,Ript Gaming (RG),Trash Pandas (TP),0,0
+13,9822637,9769365,Nox Nieman (NOX),Frands (FRA),,
+13,9823963,9822654,Sussy Baka (SSB),Total System Control (TSC),0,0
+13,9769365,9769352,Frands (FRA),Brain Bots (BRB),,
+13,9822640,9822639,Bona Fide (BF),Plebmobile (PLE),,
+13,9769358,9769353,Trash Pandas (TP),You Know The Vibes (YKV),0,0
+13,9822639,9822656,Plebmobile (PLE),Fake Flashers (FF),,
+13,9822655,9769356,Not Anyone Can Frag (NCF),WAIFU (WAF),,
+13,9769353,9769355,You Know The Vibes (YKV),Collective Chaos (CC),,
+13,9822656,9769353,Fake Flashers (FF),You Know The Vibes (YKV),,
+13,9769356,9822637,WAIFU (WAF),Nox Nieman (NOX),,
+14,9822637,9822638,Nox Nieman (NOX),Ript Gaming (RG),,
+14,9769365,9769355,Frands (FRA),Collective Chaos (CC),,
+14,9822641,9822655,I Remember Cal (IRC),Not Anyone Can Frag (NCF),,
+14,9769358,9769352,Trash Pandas (TP),Brain Bots (BRB),0,0
+14,9769356,9822641,WAIFU (WAF),I Remember Cal (IRC),,
+14,9822640,9822654,Bona Fide (BF),Total System Control (TSC),,
+14,9769354,9822639,RFA (RFA),Plebmobile (PLE),,
+14,9822639,9822640,Plebmobile (PLE),Bona Fide (BF),,
+14,9769365,9822656,Frands (FRA),Fake Flashers (FF),,
+14,9769355,9822656,Collective Chaos (CC),Fake Flashers (FF),,
+14,9822637,9769358,Nox Nieman (NOX),Trash Pandas (TP),0,0
+14,9769352,9823963,Brain Bots (BRB),Sussy Baka (SSB),0,0
+14,9769354,9769358,RFA (RFA),Trash Pandas (TP),0,0
+14,9769353,9822636,You Know The Vibes (YKV),Teen Titans (TT),,
+14,9822656,9822655,Fake Flashers (FF),Not Anyone Can Frag (NCF),,
+14,9822654,9769353,Total System Control (TSC),You Know The Vibes (YKV),,
+14,9822636,9769356,Teen Titans (TT),WAIFU (WAF),,
+14,9822638,9823963,Ript Gaming (RG),Sussy Baka (SSB),0,0
+14,9822639,9769352,Plebmobile (PLE),Brain Bots (BRB),,
+15,9822641,9769358,I Remember Cal (IRC),Trash Pandas (TP),0,0
+15,9769355,9822654,Collective Chaos (CC),Total System Control (TSC),,
+15,9822640,9823963,Bona Fide (BF),Sussy Baka (SSB),0,0
+15,9822638,9769365,Ript Gaming (RG),Frands (FRA),,
+15,9822637,9769355,Nox Nieman (NOX),Collective Chaos (CC),,
+15,9769353,9823963,You Know The Vibes (YKV),Sussy Baka (SSB),0,0
+15,9769356,9822638,WAIFU (WAF),Ript Gaming (RG),,
+15,9822655,9822636,Not Anyone Can Frag (NCF),Teen Titans (TT),,
+15,9822640,9769354,Bona Fide (BF),RFA (RFA),,
+15,9822654,9822656,Total System Control (TSC),Fake Flashers (FF),,
+15,9822655,9769358,Not Anyone Can Frag (NCF),Trash Pandas (TP),0,0
+15,9822637,9769353,Nox Nieman (NOX),You Know The Vibes (YKV),,
+15,9822641,9769352,I Remember Cal (IRC),Brain Bots (BRB),,
+15,9822636,9822638,Teen Titans (TT),Ript Gaming (RG),,
+15,9769354,9769352,RFA (RFA),Brain Bots (BRB),,
+15,9769365,9822639,Frands (FRA),Plebmobile (PLE),,
+15,9822656,9769356,Fake Flashers (FF),WAIFU (WAF),,

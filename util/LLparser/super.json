@@ -1,0 +1,2450 @@
+[
+  {
+    "week": "1",
+    "home_team_id": "9822639",
+    "away_team_id": "9822655",
+    "home_team_name": "Plebmobile (PLE)",
+    "away_team_name": "Not Anyone Can Frag (NCF)",
+    "home_score": "-3",
+    "away_score": "5"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9822656",
+    "away_team_id": "9822641",
+    "home_team_name": "Fake Flashers (FF)",
+    "away_team_name": "I Remember Cal (IRC)",
+    "home_score": "16",
+    "away_score": "14"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9822636",
+    "away_team_id": "9822637",
+    "home_team_name": "Teen Titans (TT)",
+    "away_team_name": "Nox Nieman (NOX)",
+    "home_score": "13",
+    "away_score": "8"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769353",
+    "away_team_id": "9822655",
+    "home_team_name": "You Know The Vibes (YKV)",
+    "away_team_name": "Not Anyone Can Frag (NCF)",
+    "home_score": "13",
+    "away_score": "11"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9822637",
+    "away_team_id": "9822656",
+    "home_team_name": "Nox Nieman (NOX)",
+    "away_team_name": "Fake Flashers (FF)",
+    "home_score": "13",
+    "away_score": "4"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769354",
+    "away_team_id": "9822638",
+    "home_team_name": "RFA (RFA)",
+    "away_team_name": "Ript Gaming (RG)",
+    "home_score": "3",
+    "away_score": "13"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769353",
+    "away_team_id": "9822641",
+    "home_team_name": "You Know The Vibes (YKV)",
+    "away_team_name": "I Remember Cal (IRC)",
+    "home_score": "13",
+    "away_score": "6"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9822641",
+    "away_team_id": "9823963",
+    "home_team_name": "I Remember Cal (IRC)",
+    "away_team_name": "Sussy Baka (SSB)",
+    "home_score": "13",
+    "away_score": "5"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9822636",
+    "away_team_id": "9769365",
+    "home_team_name": "Teen Titans (TT)",
+    "away_team_name": "Frands (FRA)",
+    "home_score": "13",
+    "away_score": "8"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769355",
+    "away_team_id": "9822640",
+    "home_team_name": "Collective Chaos (CC)",
+    "away_team_name": "Bona Fide (BF)",
+    "home_score": "13",
+    "away_score": "7"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9822640",
+    "away_team_id": "9769358",
+    "home_team_name": "Bona Fide (BF)",
+    "away_team_name": "Trash Pandas (TP)",
+    "home_score": "7",
+    "away_score": "13"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9822639",
+    "away_team_id": "9769365",
+    "home_team_name": "Plebmobile (PLE)",
+    "away_team_name": "Frands (FRA)",
+    "home_score": "13",
+    "away_score": "8"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9822654",
+    "away_team_id": "9822638",
+    "home_team_name": "Total System Control (TSC)",
+    "away_team_name": "Ript Gaming (RG)",
+    "home_score": "6",
+    "away_score": "13"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769352",
+    "away_team_id": "9769353",
+    "home_team_name": "Brain Bots (BRB)",
+    "away_team_name": "You Know The Vibes (YKV)",
+    "home_score": "13",
+    "away_score": "11"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769356",
+    "away_team_id": "9769352",
+    "home_team_name": "WAIFU (WAF)",
+    "away_team_name": "Brain Bots (BRB)",
+    "home_score": "5",
+    "away_score": "13"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9822654",
+    "away_team_id": "9769358",
+    "home_team_name": "Total System Control (TSC)",
+    "away_team_name": "Trash Pandas (TP)",
+    "home_score": "15",
+    "away_score": "17"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9823963",
+    "away_team_id": "9822638",
+    "home_team_name": "Sussy Baka (SSB)",
+    "away_team_name": "Ript Gaming (RG)",
+    "home_score": "9",
+    "away_score": "13"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769354",
+    "away_team_id": "9769356",
+    "home_team_name": "RFA (RFA)",
+    "away_team_name": "WAIFU (WAF)",
+    "home_score": "13",
+    "away_score": "7"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9823963",
+    "away_team_id": "9769358",
+    "home_team_name": "Sussy Baka (SSB)",
+    "away_team_name": "Trash Pandas (TP)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9822638",
+    "away_team_id": "9822639",
+    "home_team_name": "Ript Gaming (RG)",
+    "away_team_name": "Plebmobile (PLE)",
+    "home_score": "5",
+    "away_score": "-3"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769365",
+    "away_team_id": "9822641",
+    "home_team_name": "Frands (FRA)",
+    "away_team_name": "I Remember Cal (IRC)",
+    "home_score": "13",
+    "away_score": "10"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9822637",
+    "away_team_id": "9822636",
+    "home_team_name": "Nox Nieman (NOX)",
+    "away_team_name": "Teen Titans (TT)",
+    "home_score": "13",
+    "away_score": "9"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9822655",
+    "away_team_id": "9822637",
+    "home_team_name": "Not Anyone Can Frag (NCF)",
+    "away_team_name": "Nox Nieman (NOX)",
+    "home_score": "10",
+    "away_score": "13"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9822638",
+    "away_team_id": "9769352",
+    "home_team_name": "Ript Gaming (RG)",
+    "away_team_name": "Brain Bots (BRB)",
+    "home_score": "13",
+    "away_score": "2"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9822641",
+    "away_team_id": "9769356",
+    "home_team_name": "I Remember Cal (IRC)",
+    "away_team_name": "WAIFU (WAF)",
+    "home_score": "11",
+    "away_score": "13"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769354",
+    "away_team_id": "9769355",
+    "home_team_name": "RFA (RFA)",
+    "away_team_name": "Collective Chaos (CC)",
+    "home_score": "13",
+    "away_score": "5"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9822655",
+    "away_team_id": "9823963",
+    "home_team_name": "Not Anyone Can Frag (NCF)",
+    "away_team_name": "Sussy Baka (SSB)",
+    "home_score": "13",
+    "away_score": "6"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9822640",
+    "away_team_id": "9822655",
+    "home_team_name": "Bona Fide (BF)",
+    "away_team_name": "Not Anyone Can Frag (NCF)",
+    "home_score": "10",
+    "away_score": "13"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9822637",
+    "away_team_id": "9822654",
+    "home_team_name": "Nox Nieman (NOX)",
+    "away_team_name": "Total System Control (TSC)",
+    "home_score": "-3",
+    "away_score": "5"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9822656",
+    "away_team_id": "9822654",
+    "home_team_name": "Fake Flashers (FF)",
+    "away_team_name": "Total System Control (TSC)",
+    "home_score": "13",
+    "away_score": "8"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769353",
+    "away_team_id": "9769365",
+    "home_team_name": "You Know The Vibes (YKV)",
+    "away_team_name": "Frands (FRA)",
+    "home_score": "13",
+    "away_score": "7"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769352",
+    "away_team_id": "9769354",
+    "home_team_name": "Brain Bots (BRB)",
+    "away_team_name": "RFA (RFA)",
+    "home_score": "13",
+    "away_score": "11"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9822640",
+    "away_team_id": "9769353",
+    "home_team_name": "Bona Fide (BF)",
+    "away_team_name": "You Know The Vibes (YKV)",
+    "home_score": "13",
+    "away_score": "7"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9822640",
+    "away_team_id": "9769352",
+    "home_team_name": "Bona Fide (BF)",
+    "away_team_name": "Brain Bots (BRB)",
+    "home_score": "10",
+    "away_score": "13"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769356",
+    "away_team_id": "9822639",
+    "home_team_name": "WAIFU (WAF)",
+    "away_team_name": "Plebmobile (PLE)",
+    "home_score": "1",
+    "away_score": "13"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769358",
+    "away_team_id": "9822636",
+    "home_team_name": "Trash Pandas (TP)",
+    "away_team_name": "Teen Titans (TT)",
+    "home_score": "14",
+    "away_score": "12"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9822639",
+    "away_team_id": "9822638",
+    "home_team_name": "Plebmobile (PLE)",
+    "away_team_name": "Ript Gaming (RG)",
+    "home_score": "-3",
+    "away_score": "5"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769354",
+    "away_team_id": "9822641",
+    "home_team_name": "RFA (RFA)",
+    "away_team_name": "I Remember Cal (IRC)",
+    "home_score": "13",
+    "away_score": "8"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769356",
+    "away_team_id": "9769365",
+    "home_team_name": "WAIFU (WAF)",
+    "away_team_name": "Frands (FRA)",
+    "home_score": "13",
+    "away_score": "6"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769355",
+    "away_team_id": "9822637",
+    "home_team_name": "Collective Chaos (CC)",
+    "away_team_name": "Nox Nieman (NOX)",
+    "home_score": "13",
+    "away_score": "5"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769358",
+    "away_team_id": "9822637",
+    "home_team_name": "Trash Pandas (TP)",
+    "away_team_name": "Nox Nieman (NOX)",
+    "home_score": "-3",
+    "away_score": "5"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9822638",
+    "away_team_id": "9769353",
+    "home_team_name": "Ript Gaming (RG)",
+    "away_team_name": "You Know The Vibes (YKV)",
+    "home_score": "13",
+    "away_score": "6"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9823963",
+    "away_team_id": "9769353",
+    "home_team_name": "Sussy Baka (SSB)",
+    "away_team_name": "You Know The Vibes (YKV)",
+    "home_score": "11",
+    "away_score": "13"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9822655",
+    "away_team_id": "9822640",
+    "home_team_name": "Not Anyone Can Frag (NCF)",
+    "away_team_name": "Bona Fide (BF)",
+    "home_score": "5",
+    "away_score": "13"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769365",
+    "away_team_id": "9822654",
+    "home_team_name": "Frands (FRA)",
+    "away_team_name": "Total System Control (TSC)",
+    "home_score": "10",
+    "away_score": "13"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9822640",
+    "away_team_id": "9822636",
+    "home_team_name": "Bona Fide (BF)",
+    "away_team_name": "Teen Titans (TT)",
+    "home_score": "13",
+    "away_score": "7"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9822636",
+    "away_team_id": "9822639",
+    "home_team_name": "Teen Titans (TT)",
+    "away_team_name": "Plebmobile (PLE)",
+    "home_score": "13",
+    "away_score": "8"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9822639",
+    "away_team_id": "9769354",
+    "home_team_name": "Plebmobile (PLE)",
+    "away_team_name": "RFA (RFA)",
+    "home_score": "5",
+    "away_score": "13"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769355",
+    "away_team_id": "9823963",
+    "home_team_name": "Collective Chaos (CC)",
+    "away_team_name": "Sussy Baka (SSB)",
+    "home_score": "14",
+    "away_score": "12"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9822640",
+    "away_team_id": "9769356",
+    "home_team_name": "Bona Fide (BF)",
+    "away_team_name": "WAIFU (WAF)",
+    "home_score": "13",
+    "away_score": "4"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769352",
+    "away_team_id": "9822656",
+    "home_team_name": "Brain Bots (BRB)",
+    "away_team_name": "Fake Flashers (FF)",
+    "home_score": "5",
+    "away_score": "13"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769352",
+    "away_team_id": "9769356",
+    "home_team_name": "Brain Bots (BRB)",
+    "away_team_name": "WAIFU (WAF)",
+    "home_score": "13",
+    "away_score": "6"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9822656",
+    "away_team_id": "9823963",
+    "home_team_name": "Fake Flashers (FF)",
+    "away_team_name": "Sussy Baka (SSB)",
+    "home_score": "13",
+    "away_score": "4"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769358",
+    "away_team_id": "9822654",
+    "home_team_name": "Trash Pandas (TP)",
+    "away_team_name": "Total System Control (TSC)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9822655",
+    "away_team_id": "9822641",
+    "home_team_name": "Not Anyone Can Frag (NCF)",
+    "away_team_name": "I Remember Cal (IRC)",
+    "home_score": "-3",
+    "away_score": "5"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9822638",
+    "away_team_id": "9769356",
+    "home_team_name": "Ript Gaming (RG)",
+    "away_team_name": "WAIFU (WAF)",
+    "home_score": "13",
+    "away_score": "7"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9822638",
+    "away_team_id": "9769354",
+    "home_team_name": "Ript Gaming (RG)",
+    "away_team_name": "RFA (RFA)",
+    "home_score": "13",
+    "away_score": "9"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769358",
+    "away_team_id": "9769354",
+    "home_team_name": "Trash Pandas (TP)",
+    "away_team_name": "RFA (RFA)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9822637",
+    "away_team_id": "9823963",
+    "home_team_name": "Nox Nieman (NOX)",
+    "away_team_name": "Sussy Baka (SSB)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9822641",
+    "away_team_id": "9822639",
+    "home_team_name": "I Remember Cal (IRC)",
+    "away_team_name": "Plebmobile (PLE)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769365",
+    "away_team_id": "9769358",
+    "home_team_name": "Frands (FRA)",
+    "away_team_name": "Trash Pandas (TP)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9822656",
+    "away_team_id": "9769354",
+    "home_team_name": "Fake Flashers (FF)",
+    "away_team_name": "RFA (RFA)",
+    "home_score": "13",
+    "away_score": "1"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769352",
+    "away_team_id": "9822641",
+    "home_team_name": "Brain Bots (BRB)",
+    "away_team_name": "I Remember Cal (IRC)",
+    "home_score": "13",
+    "away_score": "3"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9822655",
+    "away_team_id": "9822656",
+    "home_team_name": "Not Anyone Can Frag (NCF)",
+    "away_team_name": "Fake Flashers (FF)",
+    "home_score": "4",
+    "away_score": "13"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9822637",
+    "away_team_id": "9822655",
+    "home_team_name": "Nox Nieman (NOX)",
+    "away_team_name": "Not Anyone Can Frag (NCF)",
+    "home_score": "14",
+    "away_score": "12"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9822637",
+    "away_team_id": "9769356",
+    "home_team_name": "Nox Nieman (NOX)",
+    "away_team_name": "WAIFU (WAF)",
+    "home_score": "13",
+    "away_score": "6"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769352",
+    "away_team_id": "9769365",
+    "home_team_name": "Brain Bots (BRB)",
+    "away_team_name": "Frands (FRA)",
+    "home_score": "13",
+    "away_score": "6"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769355",
+    "away_team_id": "9822636",
+    "home_team_name": "Collective Chaos (CC)",
+    "away_team_name": "Teen Titans (TT)",
+    "home_score": "4",
+    "away_score": "13"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769355",
+    "away_team_id": "9769353",
+    "home_team_name": "Collective Chaos (CC)",
+    "away_team_name": "You Know The Vibes (YKV)",
+    "home_score": "13",
+    "away_score": "9"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9822639",
+    "away_team_id": "9822654",
+    "home_team_name": "Plebmobile (PLE)",
+    "away_team_name": "Total System Control (TSC)",
+    "home_score": "7",
+    "away_score": "13"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769353",
+    "away_team_id": "9822640",
+    "home_team_name": "You Know The Vibes (YKV)",
+    "away_team_name": "Bona Fide (BF)",
+    "home_score": "13",
+    "away_score": "7"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9822636",
+    "away_team_id": "9822640",
+    "home_team_name": "Teen Titans (TT)",
+    "away_team_name": "Bona Fide (BF)",
+    "home_score": "14",
+    "away_score": "16"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9823963",
+    "away_team_id": "9822656",
+    "home_team_name": "Sussy Baka (SSB)",
+    "away_team_name": "Fake Flashers (FF)",
+    "home_score": "-3",
+    "away_score": "5"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9822655",
+    "away_team_id": "9822654",
+    "home_team_name": "Not Anyone Can Frag (NCF)",
+    "away_team_name": "Total System Control (TSC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9822641",
+    "away_team_id": "9822638",
+    "home_team_name": "I Remember Cal (IRC)",
+    "away_team_name": "Ript Gaming (RG)",
+    "home_score": "0",
+    "away_score": "13"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9822654",
+    "away_team_id": "9823963",
+    "home_team_name": "Total System Control (TSC)",
+    "away_team_name": "Sussy Baka (SSB)",
+    "home_score": "5",
+    "away_score": "-3"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9822636",
+    "away_team_id": "9769358",
+    "home_team_name": "Teen Titans (TT)",
+    "away_team_name": "Trash Pandas (TP)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769358",
+    "away_team_id": "9769365",
+    "home_team_name": "Trash Pandas (TP)",
+    "away_team_name": "Frands (FRA)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9823963",
+    "away_team_id": "9822636",
+    "home_team_name": "Sussy Baka (SSB)",
+    "away_team_name": "Teen Titans (TT)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769353",
+    "away_team_id": "9769358",
+    "home_team_name": "You Know The Vibes (YKV)",
+    "away_team_name": "Trash Pandas (TP)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9822655",
+    "away_team_id": "9769354",
+    "home_team_name": "Not Anyone Can Frag (NCF)",
+    "away_team_name": "RFA (RFA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9822655",
+    "away_team_id": "9822639",
+    "home_team_name": "Not Anyone Can Frag (NCF)",
+    "away_team_name": "Plebmobile (PLE)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9822641",
+    "away_team_id": "9822640",
+    "home_team_name": "I Remember Cal (IRC)",
+    "away_team_name": "Bona Fide (BF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9822656",
+    "away_team_id": "9822639",
+    "home_team_name": "Fake Flashers (FF)",
+    "away_team_name": "Plebmobile (PLE)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9822636",
+    "away_team_id": "9769354",
+    "home_team_name": "Teen Titans (TT)",
+    "away_team_name": "RFA (RFA)",
+    "home_score": "13",
+    "away_score": "11"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769365",
+    "away_team_id": "9769356",
+    "home_team_name": "Frands (FRA)",
+    "away_team_name": "WAIFU (WAF)",
+    "home_score": "13",
+    "away_score": "6"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9822640",
+    "away_team_id": "9822637",
+    "home_team_name": "Bona Fide (BF)",
+    "away_team_name": "Nox Nieman (NOX)",
+    "home_score": "13",
+    "away_score": "7"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9822638",
+    "away_team_id": "9769355",
+    "home_team_name": "Ript Gaming (RG)",
+    "away_team_name": "Collective Chaos (CC)",
+    "home_score": "13",
+    "away_score": "5"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769365",
+    "away_team_id": "9822637",
+    "home_team_name": "Frands (FRA)",
+    "away_team_name": "Nox Nieman (NOX)",
+    "home_score": "11",
+    "away_score": "13"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769352",
+    "away_team_id": "9822655",
+    "home_team_name": "Brain Bots (BRB)",
+    "away_team_name": "Not Anyone Can Frag (NCF)",
+    "home_score": "13",
+    "away_score": "5"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769353",
+    "away_team_id": "9822654",
+    "home_team_name": "You Know The Vibes (YKV)",
+    "away_team_name": "Total System Control (TSC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769352",
+    "away_team_id": "9769355",
+    "home_team_name": "Brain Bots (BRB)",
+    "away_team_name": "Collective Chaos (CC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9822638",
+    "away_team_id": "9822655",
+    "home_team_name": "Ript Gaming (RG)",
+    "away_team_name": "Not Anyone Can Frag (NCF)",
+    "home_score": "13",
+    "away_score": "6"
+  },
+  {
+    "week": "6",
+    "home_team_id": "9822636",
+    "away_team_id": "9769352",
+    "home_team_name": "Teen Titans (TT)",
+    "away_team_name": "Brain Bots (BRB)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9822637",
+    "away_team_id": "9769354",
+    "home_team_name": "Nox Nieman (NOX)",
+    "away_team_name": "RFA (RFA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769365",
+    "away_team_id": "9823963",
+    "home_team_name": "Frands (FRA)",
+    "away_team_name": "Sussy Baka (SSB)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769355",
+    "away_team_id": "9769352",
+    "home_team_name": "Collective Chaos (CC)",
+    "away_team_name": "Brain Bots (BRB)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769358",
+    "away_team_id": "9822655",
+    "home_team_name": "Trash Pandas (TP)",
+    "away_team_name": "Not Anyone Can Frag (NCF)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "6",
+    "home_team_id": "9823963",
+    "away_team_id": "9822639",
+    "home_team_name": "Sussy Baka (SSB)",
+    "away_team_name": "Plebmobile (PLE)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769354",
+    "away_team_id": "9822654",
+    "home_team_name": "RFA (RFA)",
+    "away_team_name": "Total System Control (TSC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9822654",
+    "away_team_id": "9769356",
+    "home_team_name": "Total System Control (TSC)",
+    "away_team_name": "WAIFU (WAF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769355",
+    "away_team_id": "9769365",
+    "home_team_name": "Collective Chaos (CC)",
+    "away_team_name": "Frands (FRA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9822656",
+    "away_team_id": "9822640",
+    "home_team_name": "Fake Flashers (FF)",
+    "away_team_name": "Bona Fide (BF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9822654",
+    "away_team_id": "9822640",
+    "home_team_name": "Total System Control (TSC)",
+    "away_team_name": "Bona Fide (BF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769358",
+    "away_team_id": "9769355",
+    "home_team_name": "Trash Pandas (TP)",
+    "away_team_name": "Collective Chaos (CC)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769356",
+    "away_team_id": "9769353",
+    "home_team_name": "WAIFU (WAF)",
+    "away_team_name": "You Know The Vibes (YKV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9822641",
+    "away_team_id": "9822636",
+    "home_team_name": "I Remember Cal (IRC)",
+    "away_team_name": "Teen Titans (TT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769353",
+    "away_team_id": "9822638",
+    "home_team_name": "You Know The Vibes (YKV)",
+    "away_team_name": "Ript Gaming (RG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9822641",
+    "away_team_id": "9822656",
+    "home_team_name": "I Remember Cal (IRC)",
+    "away_team_name": "Fake Flashers (FF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9822639",
+    "away_team_id": "9822637",
+    "home_team_name": "Plebmobile (PLE)",
+    "away_team_name": "Nox Nieman (NOX)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769356",
+    "away_team_id": "9822656",
+    "home_team_name": "WAIFU (WAF)",
+    "away_team_name": "Fake Flashers (FF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9822655",
+    "away_team_id": "9769355",
+    "home_team_name": "Not Anyone Can Frag (NCF)",
+    "away_team_name": "Collective Chaos (CC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769353",
+    "away_team_id": "9822637",
+    "home_team_name": "You Know The Vibes (YKV)",
+    "away_team_name": "Nox Nieman (NOX)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9822636",
+    "away_team_id": "9822641",
+    "home_team_name": "Teen Titans (TT)",
+    "away_team_name": "I Remember Cal (IRC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9822654",
+    "away_team_id": "9822639",
+    "home_team_name": "Total System Control (TSC)",
+    "away_team_name": "Plebmobile (PLE)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769365",
+    "away_team_id": "9822638",
+    "home_team_name": "Frands (FRA)",
+    "away_team_name": "Ript Gaming (RG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9822638",
+    "away_team_id": "9822637",
+    "home_team_name": "Ript Gaming (RG)",
+    "away_team_name": "Nox Nieman (NOX)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769365",
+    "away_team_id": "9822636",
+    "home_team_name": "Frands (FRA)",
+    "away_team_name": "Teen Titans (TT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769354",
+    "away_team_id": "9822640",
+    "home_team_name": "RFA (RFA)",
+    "away_team_name": "Bona Fide (BF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769358",
+    "away_team_id": "9822641",
+    "home_team_name": "Trash Pandas (TP)",
+    "away_team_name": "I Remember Cal (IRC)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769353",
+    "away_team_id": "9822656",
+    "home_team_name": "You Know The Vibes (YKV)",
+    "away_team_name": "Fake Flashers (FF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769352",
+    "away_team_id": "9822640",
+    "home_team_name": "Brain Bots (BRB)",
+    "away_team_name": "Bona Fide (BF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9822654",
+    "away_team_id": "9769355",
+    "home_team_name": "Total System Control (TSC)",
+    "away_team_name": "Collective Chaos (CC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769352",
+    "away_team_id": "9822639",
+    "home_team_name": "Brain Bots (BRB)",
+    "away_team_name": "Plebmobile (PLE)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9822639",
+    "away_team_id": "9769356",
+    "home_team_name": "Plebmobile (PLE)",
+    "away_team_name": "WAIFU (WAF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9822636",
+    "away_team_id": "9822655",
+    "home_team_name": "Teen Titans (TT)",
+    "away_team_name": "Not Anyone Can Frag (NCF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769358",
+    "away_team_id": "9823963",
+    "home_team_name": "Trash Pandas (TP)",
+    "away_team_name": "Sussy Baka (SSB)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769354",
+    "away_team_id": "9823963",
+    "home_team_name": "RFA (RFA)",
+    "away_team_name": "Sussy Baka (SSB)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "8",
+    "home_team_id": "9822641",
+    "away_team_id": "9822637",
+    "home_team_name": "I Remember Cal (IRC)",
+    "away_team_name": "Nox Nieman (NOX)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9822639",
+    "away_team_id": "9769355",
+    "home_team_name": "Plebmobile (PLE)",
+    "away_team_name": "Collective Chaos (CC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9822654",
+    "away_team_id": "9769352",
+    "home_team_name": "Total System Control (TSC)",
+    "away_team_name": "Brain Bots (BRB)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9822655",
+    "away_team_id": "9769365",
+    "home_team_name": "Not Anyone Can Frag (NCF)",
+    "away_team_name": "Frands (FRA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9822640",
+    "away_team_id": "9822638",
+    "home_team_name": "Bona Fide (BF)",
+    "away_team_name": "Ript Gaming (RG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769356",
+    "away_team_id": "9822636",
+    "home_team_name": "WAIFU (WAF)",
+    "away_team_name": "Teen Titans (TT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769358",
+    "away_team_id": "9822656",
+    "home_team_name": "Trash Pandas (TP)",
+    "away_team_name": "Fake Flashers (FF)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "8",
+    "home_team_id": "9822638",
+    "away_team_id": "9822656",
+    "home_team_name": "Ript Gaming (RG)",
+    "away_team_name": "Fake Flashers (FF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9823963",
+    "away_team_id": "9769356",
+    "home_team_name": "Sussy Baka (SSB)",
+    "away_team_name": "WAIFU (WAF)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "8",
+    "home_team_id": "9822640",
+    "away_team_id": "9769355",
+    "home_team_name": "Bona Fide (BF)",
+    "away_team_name": "Collective Chaos (CC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9822655",
+    "away_team_id": "9769353",
+    "home_team_name": "Not Anyone Can Frag (NCF)",
+    "away_team_name": "You Know The Vibes (YKV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769352",
+    "away_team_id": "9769358",
+    "home_team_name": "Brain Bots (BRB)",
+    "away_team_name": "Trash Pandas (TP)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769353",
+    "away_team_id": "9769354",
+    "home_team_name": "You Know The Vibes (YKV)",
+    "away_team_name": "RFA (RFA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9822639",
+    "away_team_id": "9822641",
+    "home_team_name": "Plebmobile (PLE)",
+    "away_team_name": "I Remember Cal (IRC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9822654",
+    "away_team_id": "9822636",
+    "home_team_name": "Total System Control (TSC)",
+    "away_team_name": "Teen Titans (TT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9822656",
+    "away_team_id": "9769365",
+    "home_team_name": "Fake Flashers (FF)",
+    "away_team_name": "Frands (FRA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9823963",
+    "away_team_id": "9822637",
+    "home_team_name": "Sussy Baka (SSB)",
+    "away_team_name": "Nox Nieman (NOX)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769356",
+    "away_team_id": "9769354",
+    "home_team_name": "WAIFU (WAF)",
+    "away_team_name": "RFA (RFA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9822637",
+    "away_team_id": "9822639",
+    "home_team_name": "Nox Nieman (NOX)",
+    "away_team_name": "Plebmobile (PLE)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9822655",
+    "away_team_id": "9822638",
+    "home_team_name": "Not Anyone Can Frag (NCF)",
+    "away_team_name": "Ript Gaming (RG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9822654",
+    "away_team_id": "9769354",
+    "home_team_name": "Total System Control (TSC)",
+    "away_team_name": "RFA (RFA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769355",
+    "away_team_id": "9769358",
+    "home_team_name": "Collective Chaos (CC)",
+    "away_team_name": "Trash Pandas (TP)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769354",
+    "away_team_id": "9822637",
+    "home_team_name": "RFA (RFA)",
+    "away_team_name": "Nox Nieman (NOX)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769358",
+    "away_team_id": "9822639",
+    "home_team_name": "Trash Pandas (TP)",
+    "away_team_name": "Plebmobile (PLE)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "9",
+    "home_team_id": "9823963",
+    "away_team_id": "9769355",
+    "home_team_name": "Sussy Baka (SSB)",
+    "away_team_name": "Collective Chaos (CC)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "9",
+    "home_team_id": "9822656",
+    "away_team_id": "9769355",
+    "home_team_name": "Fake Flashers (FF)",
+    "away_team_name": "Collective Chaos (CC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9823963",
+    "away_team_id": "9769365",
+    "home_team_name": "Sussy Baka (SSB)",
+    "away_team_name": "Frands (FRA)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769356",
+    "away_team_id": "9822640",
+    "home_team_name": "WAIFU (WAF)",
+    "away_team_name": "Bona Fide (BF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9822640",
+    "away_team_id": "9822656",
+    "home_team_name": "Bona Fide (BF)",
+    "away_team_name": "Fake Flashers (FF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769352",
+    "away_team_id": "9822636",
+    "home_team_name": "Brain Bots (BRB)",
+    "away_team_name": "Teen Titans (TT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9822654",
+    "away_team_id": "9822655",
+    "home_team_name": "Total System Control (TSC)",
+    "away_team_name": "Not Anyone Can Frag (NCF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9822639",
+    "away_team_id": "9822636",
+    "home_team_name": "Plebmobile (PLE)",
+    "away_team_name": "Teen Titans (TT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9822641",
+    "away_team_id": "9769365",
+    "home_team_name": "I Remember Cal (IRC)",
+    "away_team_name": "Frands (FRA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9822638",
+    "away_team_id": "9822641",
+    "home_team_name": "Ript Gaming (RG)",
+    "away_team_name": "I Remember Cal (IRC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769353",
+    "away_team_id": "9769356",
+    "home_team_name": "You Know The Vibes (YKV)",
+    "away_team_name": "WAIFU (WAF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769353",
+    "away_team_id": "9769352",
+    "home_team_name": "You Know The Vibes (YKV)",
+    "away_team_name": "Brain Bots (BRB)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9822637",
+    "away_team_id": "9822640",
+    "home_team_name": "Nox Nieman (NOX)",
+    "away_team_name": "Bona Fide (BF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769355",
+    "away_team_id": "9769356",
+    "home_team_name": "Collective Chaos (CC)",
+    "away_team_name": "WAIFU (WAF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9822638",
+    "away_team_id": "9822636",
+    "home_team_name": "Ript Gaming (RG)",
+    "away_team_name": "Teen Titans (TT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769355",
+    "away_team_id": "9822655",
+    "home_team_name": "Collective Chaos (CC)",
+    "away_team_name": "Not Anyone Can Frag (NCF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769353",
+    "away_team_id": "9822639",
+    "home_team_name": "You Know The Vibes (YKV)",
+    "away_team_name": "Plebmobile (PLE)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9822636",
+    "away_team_id": "9822656",
+    "home_team_name": "Teen Titans (TT)",
+    "away_team_name": "Fake Flashers (FF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9822654",
+    "away_team_id": "9769365",
+    "home_team_name": "Total System Control (TSC)",
+    "away_team_name": "Frands (FRA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769354",
+    "away_team_id": "9822655",
+    "home_team_name": "RFA (RFA)",
+    "away_team_name": "Not Anyone Can Frag (NCF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769365",
+    "away_team_id": "9822640",
+    "home_team_name": "Frands (FRA)",
+    "away_team_name": "Bona Fide (BF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9822641",
+    "away_team_id": "9769353",
+    "home_team_name": "I Remember Cal (IRC)",
+    "away_team_name": "You Know The Vibes (YKV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9823963",
+    "away_team_id": "9769352",
+    "home_team_name": "Sussy Baka (SSB)",
+    "away_team_name": "Brain Bots (BRB)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769365",
+    "away_team_id": "9769354",
+    "home_team_name": "Frands (FRA)",
+    "away_team_name": "RFA (RFA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769356",
+    "away_team_id": "9769358",
+    "home_team_name": "WAIFU (WAF)",
+    "away_team_name": "Trash Pandas (TP)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769352",
+    "away_team_id": "9822654",
+    "home_team_name": "Brain Bots (BRB)",
+    "away_team_name": "Total System Control (TSC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9822656",
+    "away_team_id": "9822637",
+    "home_team_name": "Fake Flashers (FF)",
+    "away_team_name": "Nox Nieman (NOX)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9822639",
+    "away_team_id": "9823963",
+    "home_team_name": "Plebmobile (PLE)",
+    "away_team_name": "Sussy Baka (SSB)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769358",
+    "away_team_id": "9822638",
+    "home_team_name": "Trash Pandas (TP)",
+    "away_team_name": "Ript Gaming (RG)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "10",
+    "home_team_id": "9823963",
+    "away_team_id": "9822641",
+    "home_team_name": "Sussy Baka (SSB)",
+    "away_team_name": "I Remember Cal (IRC)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769355",
+    "away_team_id": "9822641",
+    "home_team_name": "Collective Chaos (CC)",
+    "away_team_name": "I Remember Cal (IRC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9822656",
+    "away_team_id": "9822638",
+    "home_team_name": "Fake Flashers (FF)",
+    "away_team_name": "Ript Gaming (RG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9822640",
+    "away_team_id": "9769365",
+    "home_team_name": "Bona Fide (BF)",
+    "away_team_name": "Frands (FRA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9822639",
+    "away_team_id": "9769358",
+    "home_team_name": "Plebmobile (PLE)",
+    "away_team_name": "Trash Pandas (TP)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "11",
+    "home_team_id": "9822641",
+    "away_team_id": "9822654",
+    "home_team_name": "I Remember Cal (IRC)",
+    "away_team_name": "Total System Control (TSC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9822637",
+    "away_team_id": "9769352",
+    "home_team_name": "Nox Nieman (NOX)",
+    "away_team_name": "Brain Bots (BRB)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9822636",
+    "away_team_id": "9769353",
+    "home_team_name": "Teen Titans (TT)",
+    "away_team_name": "You Know The Vibes (YKV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769356",
+    "away_team_id": "9822655",
+    "home_team_name": "WAIFU (WAF)",
+    "away_team_name": "Not Anyone Can Frag (NCF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769352",
+    "away_team_id": "9822637",
+    "home_team_name": "Brain Bots (BRB)",
+    "away_team_name": "Nox Nieman (NOX)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9822656",
+    "away_team_id": "9822636",
+    "home_team_name": "Fake Flashers (FF)",
+    "away_team_name": "Teen Titans (TT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769356",
+    "away_team_id": "9769355",
+    "home_team_name": "WAIFU (WAF)",
+    "away_team_name": "Collective Chaos (CC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9822654",
+    "away_team_id": "9822637",
+    "home_team_name": "Total System Control (TSC)",
+    "away_team_name": "Nox Nieman (NOX)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9822638",
+    "away_team_id": "9822654",
+    "home_team_name": "Ript Gaming (RG)",
+    "away_team_name": "Total System Control (TSC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9822641",
+    "away_team_id": "9769354",
+    "home_team_name": "I Remember Cal (IRC)",
+    "away_team_name": "RFA (RFA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9823963",
+    "away_team_id": "9769354",
+    "home_team_name": "Sussy Baka (SSB)",
+    "away_team_name": "RFA (RFA)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769358",
+    "away_team_id": "9822640",
+    "home_team_name": "Trash Pandas (TP)",
+    "away_team_name": "Bona Fide (BF)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769365",
+    "away_team_id": "9769353",
+    "home_team_name": "Frands (FRA)",
+    "away_team_name": "You Know The Vibes (YKV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9823963",
+    "away_team_id": "9822655",
+    "home_team_name": "Sussy Baka (SSB)",
+    "away_team_name": "Not Anyone Can Frag (NCF)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769358",
+    "away_team_id": "9769356",
+    "home_team_name": "Trash Pandas (TP)",
+    "away_team_name": "WAIFU (WAF)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769354",
+    "away_team_id": "9769353",
+    "home_team_name": "RFA (RFA)",
+    "away_team_name": "You Know The Vibes (YKV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9822637",
+    "away_team_id": "9822641",
+    "home_team_name": "Nox Nieman (NOX)",
+    "away_team_name": "I Remember Cal (IRC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9822641",
+    "away_team_id": "9769355",
+    "home_team_name": "I Remember Cal (IRC)",
+    "away_team_name": "Collective Chaos (CC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769365",
+    "away_team_id": "9822655",
+    "home_team_name": "Frands (FRA)",
+    "away_team_name": "Not Anyone Can Frag (NCF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769356",
+    "away_team_id": "9822654",
+    "home_team_name": "WAIFU (WAF)",
+    "away_team_name": "Total System Control (TSC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769354",
+    "away_team_id": "9769365",
+    "home_team_name": "RFA (RFA)",
+    "away_team_name": "Frands (FRA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9822638",
+    "away_team_id": "9822640",
+    "home_team_name": "Ript Gaming (RG)",
+    "away_team_name": "Bona Fide (BF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769354",
+    "away_team_id": "9822656",
+    "home_team_name": "RFA (RFA)",
+    "away_team_name": "Fake Flashers (FF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9822639",
+    "away_team_id": "9769353",
+    "home_team_name": "Plebmobile (PLE)",
+    "away_team_name": "You Know The Vibes (YKV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9823963",
+    "away_team_id": "9822640",
+    "home_team_name": "Sussy Baka (SSB)",
+    "away_team_name": "Bona Fide (BF)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769352",
+    "away_team_id": "9822638",
+    "home_team_name": "Brain Bots (BRB)",
+    "away_team_name": "Ript Gaming (RG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9822636",
+    "away_team_id": "9769355",
+    "home_team_name": "Teen Titans (TT)",
+    "away_team_name": "Collective Chaos (CC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9822656",
+    "away_team_id": "9769358",
+    "home_team_name": "Fake Flashers (FF)",
+    "away_team_name": "Trash Pandas (TP)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769356",
+    "away_team_id": "9823963",
+    "home_team_name": "WAIFU (WAF)",
+    "away_team_name": "Sussy Baka (SSB)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769355",
+    "away_team_id": "9822639",
+    "home_team_name": "Collective Chaos (CC)",
+    "away_team_name": "Plebmobile (PLE)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9822656",
+    "away_team_id": "9769352",
+    "home_team_name": "Fake Flashers (FF)",
+    "away_team_name": "Brain Bots (BRB)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9822636",
+    "away_team_id": "9822654",
+    "home_team_name": "Teen Titans (TT)",
+    "away_team_name": "Total System Control (TSC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769355",
+    "away_team_id": "9769354",
+    "home_team_name": "Collective Chaos (CC)",
+    "away_team_name": "RFA (RFA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769354",
+    "away_team_id": "9822636",
+    "home_team_name": "RFA (RFA)",
+    "away_team_name": "Teen Titans (TT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9822636",
+    "away_team_id": "9823963",
+    "home_team_name": "Teen Titans (TT)",
+    "away_team_name": "Sussy Baka (SSB)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "13",
+    "home_team_id": "9822654",
+    "away_team_id": "9822641",
+    "home_team_name": "Total System Control (TSC)",
+    "away_team_name": "I Remember Cal (IRC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9822655",
+    "away_team_id": "9769352",
+    "home_team_name": "Not Anyone Can Frag (NCF)",
+    "away_team_name": "Brain Bots (BRB)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9822640",
+    "away_team_id": "9822641",
+    "home_team_name": "Bona Fide (BF)",
+    "away_team_name": "I Remember Cal (IRC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769355",
+    "away_team_id": "9822638",
+    "home_team_name": "Collective Chaos (CC)",
+    "away_team_name": "Ript Gaming (RG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9822638",
+    "away_team_id": "9769358",
+    "home_team_name": "Ript Gaming (RG)",
+    "away_team_name": "Trash Pandas (TP)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "13",
+    "home_team_id": "9822637",
+    "away_team_id": "9769365",
+    "home_team_name": "Nox Nieman (NOX)",
+    "away_team_name": "Frands (FRA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9823963",
+    "away_team_id": "9822654",
+    "home_team_name": "Sussy Baka (SSB)",
+    "away_team_name": "Total System Control (TSC)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769365",
+    "away_team_id": "9769352",
+    "home_team_name": "Frands (FRA)",
+    "away_team_name": "Brain Bots (BRB)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9822640",
+    "away_team_id": "9822639",
+    "home_team_name": "Bona Fide (BF)",
+    "away_team_name": "Plebmobile (PLE)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769358",
+    "away_team_id": "9769353",
+    "home_team_name": "Trash Pandas (TP)",
+    "away_team_name": "You Know The Vibes (YKV)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "13",
+    "home_team_id": "9822639",
+    "away_team_id": "9822656",
+    "home_team_name": "Plebmobile (PLE)",
+    "away_team_name": "Fake Flashers (FF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9822655",
+    "away_team_id": "9769356",
+    "home_team_name": "Not Anyone Can Frag (NCF)",
+    "away_team_name": "WAIFU (WAF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769353",
+    "away_team_id": "9769355",
+    "home_team_name": "You Know The Vibes (YKV)",
+    "away_team_name": "Collective Chaos (CC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9822656",
+    "away_team_id": "9769353",
+    "home_team_name": "Fake Flashers (FF)",
+    "away_team_name": "You Know The Vibes (YKV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769356",
+    "away_team_id": "9822637",
+    "home_team_name": "WAIFU (WAF)",
+    "away_team_name": "Nox Nieman (NOX)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9822637",
+    "away_team_id": "9822638",
+    "home_team_name": "Nox Nieman (NOX)",
+    "away_team_name": "Ript Gaming (RG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769365",
+    "away_team_id": "9769355",
+    "home_team_name": "Frands (FRA)",
+    "away_team_name": "Collective Chaos (CC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9822641",
+    "away_team_id": "9822655",
+    "home_team_name": "I Remember Cal (IRC)",
+    "away_team_name": "Not Anyone Can Frag (NCF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769358",
+    "away_team_id": "9769352",
+    "home_team_name": "Trash Pandas (TP)",
+    "away_team_name": "Brain Bots (BRB)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769356",
+    "away_team_id": "9822641",
+    "home_team_name": "WAIFU (WAF)",
+    "away_team_name": "I Remember Cal (IRC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9822640",
+    "away_team_id": "9822654",
+    "home_team_name": "Bona Fide (BF)",
+    "away_team_name": "Total System Control (TSC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769354",
+    "away_team_id": "9822639",
+    "home_team_name": "RFA (RFA)",
+    "away_team_name": "Plebmobile (PLE)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9822639",
+    "away_team_id": "9822640",
+    "home_team_name": "Plebmobile (PLE)",
+    "away_team_name": "Bona Fide (BF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769365",
+    "away_team_id": "9822656",
+    "home_team_name": "Frands (FRA)",
+    "away_team_name": "Fake Flashers (FF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769355",
+    "away_team_id": "9822656",
+    "home_team_name": "Collective Chaos (CC)",
+    "away_team_name": "Fake Flashers (FF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9822637",
+    "away_team_id": "9769358",
+    "home_team_name": "Nox Nieman (NOX)",
+    "away_team_name": "Trash Pandas (TP)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769352",
+    "away_team_id": "9823963",
+    "home_team_name": "Brain Bots (BRB)",
+    "away_team_name": "Sussy Baka (SSB)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769354",
+    "away_team_id": "9769358",
+    "home_team_name": "RFA (RFA)",
+    "away_team_name": "Trash Pandas (TP)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769353",
+    "away_team_id": "9822636",
+    "home_team_name": "You Know The Vibes (YKV)",
+    "away_team_name": "Teen Titans (TT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9822656",
+    "away_team_id": "9822655",
+    "home_team_name": "Fake Flashers (FF)",
+    "away_team_name": "Not Anyone Can Frag (NCF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9822654",
+    "away_team_id": "9769353",
+    "home_team_name": "Total System Control (TSC)",
+    "away_team_name": "You Know The Vibes (YKV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9822636",
+    "away_team_id": "9769356",
+    "home_team_name": "Teen Titans (TT)",
+    "away_team_name": "WAIFU (WAF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9822638",
+    "away_team_id": "9823963",
+    "home_team_name": "Ript Gaming (RG)",
+    "away_team_name": "Sussy Baka (SSB)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "14",
+    "home_team_id": "9822639",
+    "away_team_id": "9769352",
+    "home_team_name": "Plebmobile (PLE)",
+    "away_team_name": "Brain Bots (BRB)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9822641",
+    "away_team_id": "9769358",
+    "home_team_name": "I Remember Cal (IRC)",
+    "away_team_name": "Trash Pandas (TP)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769355",
+    "away_team_id": "9822654",
+    "home_team_name": "Collective Chaos (CC)",
+    "away_team_name": "Total System Control (TSC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9822640",
+    "away_team_id": "9823963",
+    "home_team_name": "Bona Fide (BF)",
+    "away_team_name": "Sussy Baka (SSB)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "15",
+    "home_team_id": "9822638",
+    "away_team_id": "9769365",
+    "home_team_name": "Ript Gaming (RG)",
+    "away_team_name": "Frands (FRA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9822637",
+    "away_team_id": "9769355",
+    "home_team_name": "Nox Nieman (NOX)",
+    "away_team_name": "Collective Chaos (CC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769353",
+    "away_team_id": "9823963",
+    "home_team_name": "You Know The Vibes (YKV)",
+    "away_team_name": "Sussy Baka (SSB)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769356",
+    "away_team_id": "9822638",
+    "home_team_name": "WAIFU (WAF)",
+    "away_team_name": "Ript Gaming (RG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9822655",
+    "away_team_id": "9822636",
+    "home_team_name": "Not Anyone Can Frag (NCF)",
+    "away_team_name": "Teen Titans (TT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9822640",
+    "away_team_id": "9769354",
+    "home_team_name": "Bona Fide (BF)",
+    "away_team_name": "RFA (RFA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9822654",
+    "away_team_id": "9822656",
+    "home_team_name": "Total System Control (TSC)",
+    "away_team_name": "Fake Flashers (FF)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9822655",
+    "away_team_id": "9769358",
+    "home_team_name": "Not Anyone Can Frag (NCF)",
+    "away_team_name": "Trash Pandas (TP)",
+    "home_score": "0",
+    "away_score": "0"
+  },
+  {
+    "week": "15",
+    "home_team_id": "9822637",
+    "away_team_id": "9769353",
+    "home_team_name": "Nox Nieman (NOX)",
+    "away_team_name": "You Know The Vibes (YKV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9822641",
+    "away_team_id": "9769352",
+    "home_team_name": "I Remember Cal (IRC)",
+    "away_team_name": "Brain Bots (BRB)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9822636",
+    "away_team_id": "9822638",
+    "home_team_name": "Teen Titans (TT)",
+    "away_team_name": "Ript Gaming (RG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769354",
+    "away_team_id": "9769352",
+    "home_team_name": "RFA (RFA)",
+    "away_team_name": "Brain Bots (BRB)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769365",
+    "away_team_id": "9822639",
+    "home_team_name": "Frands (FRA)",
+    "away_team_name": "Plebmobile (PLE)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9822656",
+    "away_team_id": "9769356",
+    "home_team_name": "Fake Flashers (FF)",
+    "away_team_name": "WAIFU (WAF)",
+    "home_score": "",
+    "away_score": ""
+  }
+]

@@ -1,0 +1,2450 @@
+[
+  {
+    "week": "1",
+    "home_team_id": "9769505",
+    "away_team_id": "9769504",
+    "home_team_name": "Hardstuck Anonymous (HSA)",
+    "away_team_name": "We Love Cats ALOT (WLC)",
+    "home_score": "4",
+    "away_score": "13"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769481",
+    "away_team_id": "9769478",
+    "home_team_name": "Can't Rank Up (CRU)",
+    "away_team_name": "GG Go Next (G3N)",
+    "home_score": "1",
+    "away_score": "13"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769480",
+    "away_team_id": "9769476",
+    "home_team_name": "Tremendously Tasty Toasties (TTT)",
+    "away_team_name": "YMC9 (YMC9)",
+    "home_score": "12",
+    "away_score": "14"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769479",
+    "away_team_id": "9769502",
+    "home_team_name": "Lilith (LIL)",
+    "away_team_name": "Where We Going (WWG)",
+    "home_score": "0",
+    "away_score": "13"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769482",
+    "away_team_id": "9769476",
+    "home_team_name": "Chronologically Gifted (CG)",
+    "away_team_name": "YMC9 (YMC9)",
+    "home_score": "14",
+    "away_score": "12"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769475",
+    "away_team_id": "9769504",
+    "home_team_name": "Awakened (AWK)",
+    "away_team_name": "We Love Cats ALOT (WLC)",
+    "home_score": "9",
+    "away_score": "13"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769478",
+    "away_team_id": "9769504",
+    "home_team_name": "GG Go Next (G3N)",
+    "away_team_name": "We Love Cats ALOT (WLC)",
+    "home_score": "12",
+    "away_score": "14"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769501",
+    "away_team_id": "9769481",
+    "home_team_name": "Spectre Gaming (SG)",
+    "away_team_name": "Can't Rank Up (CRU)",
+    "home_score": "13",
+    "away_score": "4"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9821638",
+    "away_team_id": "9821627",
+    "home_team_name": "Scarra's Better Than Us (SCA)",
+    "away_team_name": "My Little PogChamp (MLP)",
+    "home_score": "6",
+    "away_score": "13"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769503",
+    "away_team_id": "9769474",
+    "home_team_name": "Revitalize (REV)",
+    "away_team_name": "Team Counter Spike (TCS)",
+    "home_score": "8",
+    "away_score": "13"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769475",
+    "away_team_id": "9821627",
+    "home_team_name": "Awakened (AWK)",
+    "away_team_name": "My Little PogChamp (MLP)",
+    "home_score": "13",
+    "away_score": "8"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769479",
+    "away_team_id": "9769506",
+    "home_team_name": "Lilith (LIL)",
+    "away_team_name": "FNW eSports (FNW)",
+    "home_score": "2",
+    "away_score": "13"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769502",
+    "away_team_id": "9769501",
+    "home_team_name": "Where We Going (WWG)",
+    "away_team_name": "Spectre Gaming (SG)",
+    "home_score": "13",
+    "away_score": "5"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769477",
+    "away_team_id": "9821638",
+    "home_team_name": "Simplicity (SMP)",
+    "away_team_name": "Scarra's Better Than Us (SCA)",
+    "home_score": "13",
+    "away_score": "8"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769480",
+    "away_team_id": "9769481",
+    "home_team_name": "Tremendously Tasty Toasties (TTT)",
+    "away_team_name": "Can't Rank Up (CRU)",
+    "home_score": "8",
+    "away_score": "13"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769482",
+    "away_team_id": "9769506",
+    "home_team_name": "Chronologically Gifted (CG)",
+    "away_team_name": "FNW eSports (FNW)",
+    "home_score": "13",
+    "away_score": "10"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769505",
+    "away_team_id": "9769503",
+    "home_team_name": "Hardstuck Anonymous (HSA)",
+    "away_team_name": "Revitalize (REV)",
+    "home_score": "13",
+    "away_score": "6"
+  },
+  {
+    "week": "1",
+    "home_team_id": "9769474",
+    "away_team_id": "9769480",
+    "home_team_name": "Team Counter Spike (TCS)",
+    "away_team_name": "Tremendously Tasty Toasties (TTT)",
+    "home_score": "13",
+    "away_score": "11"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9821638",
+    "away_team_id": "9769474",
+    "home_team_name": "Scarra's Better Than Us (SCA)",
+    "away_team_name": "Team Counter Spike (TCS)",
+    "home_score": "7",
+    "away_score": "13"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769501",
+    "away_team_id": "9769475",
+    "home_team_name": "Spectre Gaming (SG)",
+    "away_team_name": "Awakened (AWK)",
+    "home_score": "17",
+    "away_score": "15"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769506",
+    "away_team_id": "9769481",
+    "home_team_name": "FNW eSports (FNW)",
+    "away_team_name": "Can't Rank Up (CRU)",
+    "home_score": "13",
+    "away_score": "3"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769476",
+    "away_team_id": "9769478",
+    "home_team_name": "YMC9 (YMC9)",
+    "away_team_name": "GG Go Next (G3N)",
+    "home_score": "13",
+    "away_score": "15"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769504",
+    "away_team_id": "9769474",
+    "home_team_name": "We Love Cats ALOT (WLC)",
+    "away_team_name": "Team Counter Spike (TCS)",
+    "home_score": "15",
+    "away_score": "17"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769505",
+    "away_team_id": "9769477",
+    "home_team_name": "Hardstuck Anonymous (HSA)",
+    "away_team_name": "Simplicity (SMP)",
+    "home_score": "13",
+    "away_score": "2"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769502",
+    "away_team_id": "9769475",
+    "home_team_name": "Where We Going (WWG)",
+    "away_team_name": "Awakened (AWK)",
+    "home_score": "13",
+    "away_score": "4"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769474",
+    "away_team_id": "9769505",
+    "home_team_name": "Team Counter Spike (TCS)",
+    "away_team_name": "Hardstuck Anonymous (HSA)",
+    "home_score": "13",
+    "away_score": "6"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769503",
+    "away_team_id": "9769482",
+    "home_team_name": "Revitalize (REV)",
+    "away_team_name": "Chronologically Gifted (CG)",
+    "home_score": "3",
+    "away_score": "13"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769480",
+    "away_team_id": "9769506",
+    "home_team_name": "Tremendously Tasty Toasties (TTT)",
+    "away_team_name": "FNW eSports (FNW)",
+    "home_score": "-3",
+    "away_score": "5"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769478",
+    "away_team_id": "9821627",
+    "home_team_name": "GG Go Next (G3N)",
+    "away_team_name": "My Little PogChamp (MLP)",
+    "home_score": "13",
+    "away_score": "5"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9821627",
+    "away_team_id": "9769479",
+    "home_team_name": "My Little PogChamp (MLP)",
+    "away_team_name": "Lilith (LIL)",
+    "home_score": "13",
+    "away_score": "1"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769504",
+    "away_team_id": "9769482",
+    "home_team_name": "We Love Cats ALOT (WLC)",
+    "away_team_name": "Chronologically Gifted (CG)",
+    "home_score": "3",
+    "away_score": "13"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769476",
+    "away_team_id": "9769502",
+    "home_team_name": "YMC9 (YMC9)",
+    "away_team_name": "Where We Going (WWG)",
+    "home_score": "13",
+    "away_score": "10"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9821638",
+    "away_team_id": "9769476",
+    "home_team_name": "Scarra's Better Than Us (SCA)",
+    "away_team_name": "YMC9 (YMC9)",
+    "home_score": "12",
+    "away_score": "14"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769502",
+    "away_team_id": "9769479",
+    "home_team_name": "Where We Going (WWG)",
+    "away_team_name": "Lilith (LIL)",
+    "home_score": "13",
+    "away_score": "4"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9769481",
+    "away_team_id": "9769503",
+    "home_team_name": "Can't Rank Up (CRU)",
+    "away_team_name": "Revitalize (REV)",
+    "home_score": "10",
+    "away_score": "13"
+  },
+  {
+    "week": "2",
+    "home_team_id": "9821638",
+    "away_team_id": "9769480",
+    "home_team_name": "Scarra's Better Than Us (SCA)",
+    "away_team_name": "Tremendously Tasty Toasties (TTT)",
+    "home_score": "5",
+    "away_score": "0"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769476",
+    "away_team_id": "9821638",
+    "home_team_name": "YMC9 (YMC9)",
+    "away_team_name": "Scarra's Better Than Us (SCA)",
+    "home_score": "13",
+    "away_score": "7"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769476",
+    "away_team_id": "9769481",
+    "home_team_name": "YMC9 (YMC9)",
+    "away_team_name": "Can't Rank Up (CRU)",
+    "home_score": "13",
+    "away_score": "9"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9821627",
+    "away_team_id": "9769475",
+    "home_team_name": "My Little PogChamp (MLP)",
+    "away_team_name": "Awakened (AWK)",
+    "home_score": "7",
+    "away_score": "13"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769482",
+    "away_team_id": "9769504",
+    "home_team_name": "Chronologically Gifted (CG)",
+    "away_team_name": "We Love Cats ALOT (WLC)",
+    "home_score": "11",
+    "away_score": "13"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769501",
+    "away_team_id": "9769478",
+    "home_team_name": "Spectre Gaming (SG)",
+    "away_team_name": "GG Go Next (G3N)",
+    "home_score": "6",
+    "away_score": "13"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769506",
+    "away_team_id": "9769475",
+    "home_team_name": "FNW eSports (FNW)",
+    "away_team_name": "Awakened (AWK)",
+    "home_score": "13",
+    "away_score": "7"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769474",
+    "away_team_id": "9769501",
+    "home_team_name": "Team Counter Spike (TCS)",
+    "away_team_name": "Spectre Gaming (SG)",
+    "home_score": "7",
+    "away_score": "13"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769478",
+    "away_team_id": "9769480",
+    "home_team_name": "GG Go Next (G3N)",
+    "away_team_name": "Tremendously Tasty Toasties (TTT)",
+    "home_score": "13",
+    "away_score": "8"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769477",
+    "away_team_id": "9769502",
+    "home_team_name": "Simplicity (SMP)",
+    "away_team_name": "Where We Going (WWG)",
+    "home_score": "3",
+    "away_score": "13"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769505",
+    "away_team_id": "9769481",
+    "home_team_name": "Hardstuck Anonymous (HSA)",
+    "away_team_name": "Can't Rank Up (CRU)",
+    "home_score": "13",
+    "away_score": "4"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769504",
+    "away_team_id": "9769480",
+    "home_team_name": "We Love Cats ALOT (WLC)",
+    "away_team_name": "Tremendously Tasty Toasties (TTT)",
+    "home_score": "14",
+    "away_score": "4"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769479",
+    "away_team_id": "9769482",
+    "home_team_name": "Lilith (LIL)",
+    "away_team_name": "Chronologically Gifted (CG)",
+    "home_score": "0",
+    "away_score": "13"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769477",
+    "away_team_id": "9769478",
+    "home_team_name": "Simplicity (SMP)",
+    "away_team_name": "GG Go Next (G3N)",
+    "home_score": "3",
+    "away_score": "13"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9821627",
+    "away_team_id": "9769502",
+    "home_team_name": "My Little PogChamp (MLP)",
+    "away_team_name": "Where We Going (WWG)",
+    "home_score": "8",
+    "away_score": "13"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769474",
+    "away_team_id": "9769503",
+    "home_team_name": "Team Counter Spike (TCS)",
+    "away_team_name": "Revitalize (REV)",
+    "home_score": "13",
+    "away_score": "8"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769482",
+    "away_team_id": "9769505",
+    "home_team_name": "Chronologically Gifted (CG)",
+    "away_team_name": "Hardstuck Anonymous (HSA)",
+    "home_score": "13",
+    "away_score": "6"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9821638",
+    "away_team_id": "9769479",
+    "home_team_name": "Scarra's Better Than Us (SCA)",
+    "away_team_name": "Lilith (LIL)",
+    "home_score": "13",
+    "away_score": "6"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9769503",
+    "away_team_id": "9769506",
+    "home_team_name": "Revitalize (REV)",
+    "away_team_name": "FNW eSports (FNW)",
+    "home_score": "10",
+    "away_score": "13"
+  },
+  {
+    "week": "3",
+    "home_team_id": "9821638",
+    "away_team_id": "9769503",
+    "home_team_name": "Scarra's Better Than Us (SCA)",
+    "away_team_name": "Revitalize (REV)",
+    "home_score": "15",
+    "away_score": "13"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769478",
+    "away_team_id": "9769501",
+    "home_team_name": "GG Go Next (G3N)",
+    "away_team_name": "Spectre Gaming (SG)",
+    "home_score": "13",
+    "away_score": "2"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769482",
+    "away_team_id": "9769475",
+    "home_team_name": "Chronologically Gifted (CG)",
+    "away_team_name": "Awakened (AWK)",
+    "home_score": "16",
+    "away_score": "14"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9821627",
+    "away_team_id": "9769505",
+    "home_team_name": "My Little PogChamp (MLP)",
+    "away_team_name": "Hardstuck Anonymous (HSA)",
+    "home_score": "13",
+    "away_score": "5"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769476",
+    "away_team_id": "9769475",
+    "home_team_name": "YMC9 (YMC9)",
+    "away_team_name": "Awakened (AWK)",
+    "home_score": "11",
+    "away_score": "13"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769477",
+    "away_team_id": "9769480",
+    "home_team_name": "Simplicity (SMP)",
+    "away_team_name": "Tremendously Tasty Toasties (TTT)",
+    "home_score": "6",
+    "away_score": "13"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769474",
+    "away_team_id": "9769481",
+    "home_team_name": "Team Counter Spike (TCS)",
+    "away_team_name": "Can't Rank Up (CRU)",
+    "home_score": "16",
+    "away_score": "14"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769502",
+    "away_team_id": "9769478",
+    "home_team_name": "Where We Going (WWG)",
+    "away_team_name": "GG Go Next (G3N)",
+    "home_score": "13",
+    "away_score": "8"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769504",
+    "away_team_id": "9769503",
+    "home_team_name": "We Love Cats ALOT (WLC)",
+    "away_team_name": "Revitalize (REV)",
+    "home_score": "13",
+    "away_score": "10"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769474",
+    "away_team_id": "9769506",
+    "home_team_name": "Team Counter Spike (TCS)",
+    "away_team_name": "FNW eSports (FNW)",
+    "home_score": "5",
+    "away_score": "13"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769502",
+    "away_team_id": "9769476",
+    "home_team_name": "Where We Going (WWG)",
+    "away_team_name": "YMC9 (YMC9)",
+    "home_score": "13",
+    "away_score": "5"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769481",
+    "away_team_id": "9769482",
+    "home_team_name": "Can't Rank Up (CRU)",
+    "away_team_name": "Chronologically Gifted (CG)",
+    "home_score": "10",
+    "away_score": "13"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769506",
+    "away_team_id": "9821627",
+    "home_team_name": "FNW eSports (FNW)",
+    "away_team_name": "My Little PogChamp (MLP)",
+    "home_score": "13",
+    "away_score": "3"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769477",
+    "away_team_id": "9769479",
+    "home_team_name": "Simplicity (SMP)",
+    "away_team_name": "Lilith (LIL)",
+    "home_score": "13",
+    "away_score": "10"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769502",
+    "away_team_id": "9769503",
+    "home_team_name": "Where We Going (WWG)",
+    "away_team_name": "Revitalize (REV)",
+    "home_score": "13",
+    "away_score": "8"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769480",
+    "away_team_id": "9821638",
+    "home_team_name": "Tremendously Tasty Toasties (TTT)",
+    "away_team_name": "Scarra's Better Than Us (SCA)",
+    "home_score": "6",
+    "away_score": "13"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769479",
+    "away_team_id": "9821638",
+    "home_team_name": "Lilith (LIL)",
+    "away_team_name": "Scarra's Better Than Us (SCA)",
+    "home_score": "13",
+    "away_score": "4"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769501",
+    "away_team_id": "9769505",
+    "home_team_name": "Spectre Gaming (SG)",
+    "away_team_name": "Hardstuck Anonymous (HSA)",
+    "home_score": "13",
+    "away_score": "3"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769476",
+    "away_team_id": "9769501",
+    "home_team_name": "YMC9 (YMC9)",
+    "away_team_name": "Spectre Gaming (SG)",
+    "home_score": "13",
+    "away_score": "8"
+  },
+  {
+    "week": "4",
+    "home_team_id": "9769504",
+    "away_team_id": "9769505",
+    "home_team_name": "We Love Cats ALOT (WLC)",
+    "away_team_name": "Hardstuck Anonymous (HSA)",
+    "home_score": "13",
+    "away_score": "5"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769474",
+    "away_team_id": "9769476",
+    "home_team_name": "Team Counter Spike (TCS)",
+    "away_team_name": "YMC9 (YMC9)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769476",
+    "away_team_id": "9769505",
+    "home_team_name": "YMC9 (YMC9)",
+    "away_team_name": "Hardstuck Anonymous (HSA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769481",
+    "away_team_id": "9821638",
+    "home_team_name": "Can't Rank Up (CRU)",
+    "away_team_name": "Scarra's Better Than Us (SCA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769475",
+    "away_team_id": "9769478",
+    "home_team_name": "Awakened (AWK)",
+    "away_team_name": "GG Go Next (G3N)",
+    "home_score": "3",
+    "away_score": "13"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9821638",
+    "away_team_id": "9769502",
+    "home_team_name": "Scarra's Better Than Us (SCA)",
+    "away_team_name": "Where We Going (WWG)",
+    "home_score": "8",
+    "away_score": "13"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769480",
+    "away_team_id": "9769475",
+    "home_team_name": "Tremendously Tasty Toasties (TTT)",
+    "away_team_name": "Awakened (AWK)",
+    "home_score": "5",
+    "away_score": "13"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769474",
+    "away_team_id": "9769477",
+    "home_team_name": "Team Counter Spike (TCS)",
+    "away_team_name": "Simplicity (SMP)",
+    "home_score": "13",
+    "away_score": "5"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769479",
+    "away_team_id": "9821627",
+    "home_team_name": "Lilith (LIL)",
+    "away_team_name": "My Little PogChamp (MLP)",
+    "home_score": "6",
+    "away_score": "13"
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769481",
+    "away_team_id": "9769504",
+    "home_team_name": "Can't Rank Up (CRU)",
+    "away_team_name": "We Love Cats ALOT (WLC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769506",
+    "away_team_id": "9769503",
+    "home_team_name": "FNW eSports (FNW)",
+    "away_team_name": "Revitalize (REV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769501",
+    "away_team_id": "9769482",
+    "home_team_name": "Spectre Gaming (SG)",
+    "away_team_name": "Chronologically Gifted (CG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9821627",
+    "away_team_id": "9769506",
+    "home_team_name": "My Little PogChamp (MLP)",
+    "away_team_name": "FNW eSports (FNW)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769480",
+    "away_team_id": "9821627",
+    "home_team_name": "Tremendously Tasty Toasties (TTT)",
+    "away_team_name": "My Little PogChamp (MLP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769504",
+    "away_team_id": "9769477",
+    "home_team_name": "We Love Cats ALOT (WLC)",
+    "away_team_name": "Simplicity (SMP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769478",
+    "away_team_id": "9769479",
+    "home_team_name": "GG Go Next (G3N)",
+    "away_team_name": "Lilith (LIL)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769476",
+    "away_team_id": "9769482",
+    "home_team_name": "YMC9 (YMC9)",
+    "away_team_name": "Chronologically Gifted (CG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769479",
+    "away_team_id": "9769505",
+    "home_team_name": "Lilith (LIL)",
+    "away_team_name": "Hardstuck Anonymous (HSA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "5",
+    "home_team_id": "9769506",
+    "away_team_id": "9769502",
+    "home_team_name": "FNW eSports (FNW)",
+    "away_team_name": "Where We Going (WWG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769505",
+    "away_team_id": "9769475",
+    "home_team_name": "Hardstuck Anonymous (HSA)",
+    "away_team_name": "Awakened (AWK)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9821627",
+    "away_team_id": "9769476",
+    "home_team_name": "My Little PogChamp (MLP)",
+    "away_team_name": "YMC9 (YMC9)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769477",
+    "away_team_id": "9769474",
+    "home_team_name": "Simplicity (SMP)",
+    "away_team_name": "Team Counter Spike (TCS)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769501",
+    "away_team_id": "9821638",
+    "home_team_name": "Spectre Gaming (SG)",
+    "away_team_name": "Scarra's Better Than Us (SCA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769504",
+    "away_team_id": "9769476",
+    "home_team_name": "We Love Cats ALOT (WLC)",
+    "away_team_name": "YMC9 (YMC9)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769480",
+    "away_team_id": "9769504",
+    "home_team_name": "Tremendously Tasty Toasties (TTT)",
+    "away_team_name": "We Love Cats ALOT (WLC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769475",
+    "away_team_id": "9769503",
+    "home_team_name": "Awakened (AWK)",
+    "away_team_name": "Revitalize (REV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769481",
+    "away_team_id": "9769479",
+    "home_team_name": "Can't Rank Up (CRU)",
+    "away_team_name": "Lilith (LIL)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769478",
+    "away_team_id": "9769482",
+    "home_team_name": "GG Go Next (G3N)",
+    "away_team_name": "Chronologically Gifted (CG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9821627",
+    "away_team_id": "9769477",
+    "home_team_name": "My Little PogChamp (MLP)",
+    "away_team_name": "Simplicity (SMP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769477",
+    "away_team_id": "9769506",
+    "home_team_name": "Simplicity (SMP)",
+    "away_team_name": "FNW eSports (FNW)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769481",
+    "away_team_id": "9769501",
+    "home_team_name": "Can't Rank Up (CRU)",
+    "away_team_name": "Spectre Gaming (SG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769506",
+    "away_team_id": "9769478",
+    "home_team_name": "FNW eSports (FNW)",
+    "away_team_name": "GG Go Next (G3N)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769503",
+    "away_team_id": "9769480",
+    "home_team_name": "Revitalize (REV)",
+    "away_team_name": "Tremendously Tasty Toasties (TTT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769502",
+    "away_team_id": "9769505",
+    "home_team_name": "Where We Going (WWG)",
+    "away_team_name": "Hardstuck Anonymous (HSA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769475",
+    "away_team_id": "9821638",
+    "home_team_name": "Awakened (AWK)",
+    "away_team_name": "Scarra's Better Than Us (SCA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769479",
+    "away_team_id": "9769474",
+    "home_team_name": "Lilith (LIL)",
+    "away_team_name": "Team Counter Spike (TCS)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "6",
+    "home_team_id": "9769482",
+    "away_team_id": "9769502",
+    "home_team_name": "Chronologically Gifted (CG)",
+    "away_team_name": "Where We Going (WWG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9821627",
+    "away_team_id": "9769481",
+    "home_team_name": "My Little PogChamp (MLP)",
+    "away_team_name": "Can't Rank Up (CRU)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769503",
+    "away_team_id": "9769501",
+    "home_team_name": "Revitalize (REV)",
+    "away_team_name": "Spectre Gaming (SG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769476",
+    "away_team_id": "9769477",
+    "home_team_name": "YMC9 (YMC9)",
+    "away_team_name": "Simplicity (SMP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769505",
+    "away_team_id": "9821638",
+    "home_team_name": "Hardstuck Anonymous (HSA)",
+    "away_team_name": "Scarra's Better Than Us (SCA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769480",
+    "away_team_id": "9769501",
+    "home_team_name": "Tremendously Tasty Toasties (TTT)",
+    "away_team_name": "Spectre Gaming (SG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9821627",
+    "away_team_id": "9769478",
+    "home_team_name": "My Little PogChamp (MLP)",
+    "away_team_name": "GG Go Next (G3N)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769505",
+    "away_team_id": "9769478",
+    "home_team_name": "Hardstuck Anonymous (HSA)",
+    "away_team_name": "GG Go Next (G3N)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769474",
+    "away_team_id": "9821638",
+    "home_team_name": "Team Counter Spike (TCS)",
+    "away_team_name": "Scarra's Better Than Us (SCA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769475",
+    "away_team_id": "9769477",
+    "home_team_name": "Awakened (AWK)",
+    "away_team_name": "Simplicity (SMP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769479",
+    "away_team_id": "9769476",
+    "home_team_name": "Lilith (LIL)",
+    "away_team_name": "YMC9 (YMC9)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769506",
+    "away_team_id": "9769504",
+    "home_team_name": "FNW eSports (FNW)",
+    "away_team_name": "We Love Cats ALOT (WLC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769475",
+    "away_team_id": "9769482",
+    "home_team_name": "Awakened (AWK)",
+    "away_team_name": "Chronologically Gifted (CG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769474",
+    "away_team_id": "9769482",
+    "home_team_name": "Team Counter Spike (TCS)",
+    "away_team_name": "Chronologically Gifted (CG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769482",
+    "away_team_id": "9769503",
+    "home_team_name": "Chronologically Gifted (CG)",
+    "away_team_name": "Revitalize (REV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769480",
+    "away_team_id": "9769502",
+    "home_team_name": "Tremendously Tasty Toasties (TTT)",
+    "away_team_name": "Where We Going (WWG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769479",
+    "away_team_id": "9769481",
+    "home_team_name": "Lilith (LIL)",
+    "away_team_name": "Can't Rank Up (CRU)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769504",
+    "away_team_id": "9769502",
+    "home_team_name": "We Love Cats ALOT (WLC)",
+    "away_team_name": "Where We Going (WWG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "7",
+    "home_team_id": "9769506",
+    "away_team_id": "9769479",
+    "home_team_name": "FNW eSports (FNW)",
+    "away_team_name": "Lilith (LIL)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769475",
+    "away_team_id": "9769479",
+    "home_team_name": "Awakened (AWK)",
+    "away_team_name": "Lilith (LIL)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769478",
+    "away_team_id": "9769502",
+    "home_team_name": "GG Go Next (G3N)",
+    "away_team_name": "Where We Going (WWG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769480",
+    "away_team_id": "9769505",
+    "home_team_name": "Tremendously Tasty Toasties (TTT)",
+    "away_team_name": "Hardstuck Anonymous (HSA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769504",
+    "away_team_id": "9769501",
+    "home_team_name": "We Love Cats ALOT (WLC)",
+    "away_team_name": "Spectre Gaming (SG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769503",
+    "away_team_id": "9769505",
+    "home_team_name": "Revitalize (REV)",
+    "away_team_name": "Hardstuck Anonymous (HSA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769481",
+    "away_team_id": "9769502",
+    "home_team_name": "Can't Rank Up (CRU)",
+    "away_team_name": "Where We Going (WWG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9821627",
+    "away_team_id": "9769501",
+    "home_team_name": "My Little PogChamp (MLP)",
+    "away_team_name": "Spectre Gaming (SG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769478",
+    "away_team_id": "9769503",
+    "home_team_name": "GG Go Next (G3N)",
+    "away_team_name": "Revitalize (REV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769482",
+    "away_team_id": "9769481",
+    "home_team_name": "Chronologically Gifted (CG)",
+    "away_team_name": "Can't Rank Up (CRU)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769482",
+    "away_team_id": "9769477",
+    "home_team_name": "Chronologically Gifted (CG)",
+    "away_team_name": "Simplicity (SMP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769501",
+    "away_team_id": "9769506",
+    "home_team_name": "Spectre Gaming (SG)",
+    "away_team_name": "FNW eSports (FNW)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769476",
+    "away_team_id": "9769506",
+    "home_team_name": "YMC9 (YMC9)",
+    "away_team_name": "FNW eSports (FNW)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769474",
+    "away_team_id": "9821627",
+    "home_team_name": "Team Counter Spike (TCS)",
+    "away_team_name": "My Little PogChamp (MLP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9821638",
+    "away_team_id": "9769504",
+    "home_team_name": "Scarra's Better Than Us (SCA)",
+    "away_team_name": "We Love Cats ALOT (WLC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769475",
+    "away_team_id": "9769474",
+    "home_team_name": "Awakened (AWK)",
+    "away_team_name": "Team Counter Spike (TCS)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769476",
+    "away_team_id": "9769480",
+    "home_team_name": "YMC9 (YMC9)",
+    "away_team_name": "Tremendously Tasty Toasties (TTT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9769503",
+    "away_team_id": "9769479",
+    "home_team_name": "Revitalize (REV)",
+    "away_team_name": "Lilith (LIL)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "8",
+    "home_team_id": "9821638",
+    "away_team_id": "9769477",
+    "home_team_name": "Scarra's Better Than Us (SCA)",
+    "away_team_name": "Simplicity (SMP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769477",
+    "away_team_id": "9821627",
+    "home_team_name": "Simplicity (SMP)",
+    "away_team_name": "My Little PogChamp (MLP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769480",
+    "away_team_id": "9769503",
+    "home_team_name": "Tremendously Tasty Toasties (TTT)",
+    "away_team_name": "Revitalize (REV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769502",
+    "away_team_id": "9769482",
+    "home_team_name": "Where We Going (WWG)",
+    "away_team_name": "Chronologically Gifted (CG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769505",
+    "away_team_id": "9769502",
+    "home_team_name": "Hardstuck Anonymous (HSA)",
+    "away_team_name": "Where We Going (WWG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769476",
+    "away_team_id": "9769504",
+    "home_team_name": "YMC9 (YMC9)",
+    "away_team_name": "We Love Cats ALOT (WLC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769481",
+    "away_team_id": "9769506",
+    "home_team_name": "Can't Rank Up (CRU)",
+    "away_team_name": "FNW eSports (FNW)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769501",
+    "away_team_id": "9769477",
+    "home_team_name": "Spectre Gaming (SG)",
+    "away_team_name": "Simplicity (SMP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769503",
+    "away_team_id": "9821638",
+    "home_team_name": "Revitalize (REV)",
+    "away_team_name": "Scarra's Better Than Us (SCA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769504",
+    "away_team_id": "9769481",
+    "home_team_name": "We Love Cats ALOT (WLC)",
+    "away_team_name": "Can't Rank Up (CRU)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769478",
+    "away_team_id": "9769477",
+    "home_team_name": "GG Go Next (G3N)",
+    "away_team_name": "Simplicity (SMP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769475",
+    "away_team_id": "9769476",
+    "home_team_name": "Awakened (AWK)",
+    "away_team_name": "YMC9 (YMC9)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769480",
+    "away_team_id": "9769474",
+    "home_team_name": "Tremendously Tasty Toasties (TTT)",
+    "away_team_name": "Team Counter Spike (TCS)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769475",
+    "away_team_id": "9769505",
+    "home_team_name": "Awakened (AWK)",
+    "away_team_name": "Hardstuck Anonymous (HSA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9821627",
+    "away_team_id": "9769482",
+    "home_team_name": "My Little PogChamp (MLP)",
+    "away_team_name": "Chronologically Gifted (CG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769478",
+    "away_team_id": "9769506",
+    "home_team_name": "GG Go Next (G3N)",
+    "away_team_name": "FNW eSports (FNW)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769474",
+    "away_team_id": "9769479",
+    "home_team_name": "Team Counter Spike (TCS)",
+    "away_team_name": "Lilith (LIL)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9769482",
+    "away_team_id": "9769479",
+    "home_team_name": "Chronologically Gifted (CG)",
+    "away_team_name": "Lilith (LIL)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "9",
+    "home_team_id": "9821638",
+    "away_team_id": "9769501",
+    "home_team_name": "Scarra's Better Than Us (SCA)",
+    "away_team_name": "Spectre Gaming (SG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769503",
+    "away_team_id": "9821627",
+    "home_team_name": "Revitalize (REV)",
+    "away_team_name": "My Little PogChamp (MLP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769477",
+    "away_team_id": "9769476",
+    "home_team_name": "Simplicity (SMP)",
+    "away_team_name": "YMC9 (YMC9)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9821627",
+    "away_team_id": "9769504",
+    "home_team_name": "My Little PogChamp (MLP)",
+    "away_team_name": "We Love Cats ALOT (WLC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769480",
+    "away_team_id": "9769482",
+    "home_team_name": "Tremendously Tasty Toasties (TTT)",
+    "away_team_name": "Chronologically Gifted (CG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769478",
+    "away_team_id": "9769474",
+    "home_team_name": "GG Go Next (G3N)",
+    "away_team_name": "Team Counter Spike (TCS)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769479",
+    "away_team_id": "9769501",
+    "home_team_name": "Lilith (LIL)",
+    "away_team_name": "Spectre Gaming (SG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769504",
+    "away_team_id": "9769479",
+    "home_team_name": "We Love Cats ALOT (WLC)",
+    "away_team_name": "Lilith (LIL)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769502",
+    "away_team_id": "9821638",
+    "home_team_name": "Where We Going (WWG)",
+    "away_team_name": "Scarra's Better Than Us (SCA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769506",
+    "away_team_id": "9821638",
+    "home_team_name": "FNW eSports (FNW)",
+    "away_team_name": "Scarra's Better Than Us (SCA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769505",
+    "away_team_id": "9769476",
+    "home_team_name": "Hardstuck Anonymous (HSA)",
+    "away_team_name": "YMC9 (YMC9)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769481",
+    "away_team_id": "9769480",
+    "home_team_name": "Can't Rank Up (CRU)",
+    "away_team_name": "Tremendously Tasty Toasties (TTT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769474",
+    "away_team_id": "9769475",
+    "home_team_name": "Team Counter Spike (TCS)",
+    "away_team_name": "Awakened (AWK)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769477",
+    "away_team_id": "9769503",
+    "home_team_name": "Simplicity (SMP)",
+    "away_team_name": "Revitalize (REV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769478",
+    "away_team_id": "9769481",
+    "home_team_name": "GG Go Next (G3N)",
+    "away_team_name": "Can't Rank Up (CRU)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769506",
+    "away_team_id": "9769505",
+    "home_team_name": "FNW eSports (FNW)",
+    "away_team_name": "Hardstuck Anonymous (HSA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769475",
+    "away_team_id": "9769506",
+    "home_team_name": "Awakened (AWK)",
+    "away_team_name": "FNW eSports (FNW)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769482",
+    "away_team_id": "9769478",
+    "home_team_name": "Chronologically Gifted (CG)",
+    "away_team_name": "GG Go Next (G3N)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "10",
+    "home_team_id": "9769501",
+    "away_team_id": "9769502",
+    "home_team_name": "Spectre Gaming (SG)",
+    "away_team_name": "Where We Going (WWG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769478",
+    "away_team_id": "9769505",
+    "home_team_name": "GG Go Next (G3N)",
+    "away_team_name": "Hardstuck Anonymous (HSA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9821627",
+    "away_team_id": "9821638",
+    "home_team_name": "My Little PogChamp (MLP)",
+    "away_team_name": "Scarra's Better Than Us (SCA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769482",
+    "away_team_id": "9821627",
+    "home_team_name": "Chronologically Gifted (CG)",
+    "away_team_name": "My Little PogChamp (MLP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769478",
+    "away_team_id": "9769476",
+    "home_team_name": "GG Go Next (G3N)",
+    "away_team_name": "YMC9 (YMC9)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769481",
+    "away_team_id": "9769475",
+    "home_team_name": "Can't Rank Up (CRU)",
+    "away_team_name": "Awakened (AWK)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769501",
+    "away_team_id": "9769479",
+    "home_team_name": "Spectre Gaming (SG)",
+    "away_team_name": "Lilith (LIL)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769479",
+    "away_team_id": "9769480",
+    "home_team_name": "Lilith (LIL)",
+    "away_team_name": "Tremendously Tasty Toasties (TTT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769475",
+    "away_team_id": "9769502",
+    "home_team_name": "Awakened (AWK)",
+    "away_team_name": "Where We Going (WWG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769503",
+    "away_team_id": "9769476",
+    "home_team_name": "Revitalize (REV)",
+    "away_team_name": "YMC9 (YMC9)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769477",
+    "away_team_id": "9769481",
+    "home_team_name": "Simplicity (SMP)",
+    "away_team_name": "Can't Rank Up (CRU)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769474",
+    "away_team_id": "9769502",
+    "home_team_name": "Team Counter Spike (TCS)",
+    "away_team_name": "Where We Going (WWG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769481",
+    "away_team_id": "9769505",
+    "home_team_name": "Can't Rank Up (CRU)",
+    "away_team_name": "Hardstuck Anonymous (HSA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9821638",
+    "away_team_id": "9769506",
+    "home_team_name": "Scarra's Better Than Us (SCA)",
+    "away_team_name": "FNW eSports (FNW)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769504",
+    "away_team_id": "9769475",
+    "home_team_name": "We Love Cats ALOT (WLC)",
+    "away_team_name": "Awakened (AWK)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769501",
+    "away_team_id": "9769504",
+    "home_team_name": "Spectre Gaming (SG)",
+    "away_team_name": "We Love Cats ALOT (WLC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769506",
+    "away_team_id": "9769480",
+    "home_team_name": "FNW eSports (FNW)",
+    "away_team_name": "Tremendously Tasty Toasties (TTT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769502",
+    "away_team_id": "9769474",
+    "home_team_name": "Where We Going (WWG)",
+    "away_team_name": "Team Counter Spike (TCS)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "11",
+    "home_team_id": "9769503",
+    "away_team_id": "9769477",
+    "home_team_name": "Revitalize (REV)",
+    "away_team_name": "Simplicity (SMP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769479",
+    "away_team_id": "9769475",
+    "home_team_name": "Lilith (LIL)",
+    "away_team_name": "Awakened (AWK)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769474",
+    "away_team_id": "9769504",
+    "home_team_name": "Team Counter Spike (TCS)",
+    "away_team_name": "We Love Cats ALOT (WLC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769505",
+    "away_team_id": "9769480",
+    "home_team_name": "Hardstuck Anonymous (HSA)",
+    "away_team_name": "Tremendously Tasty Toasties (TTT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769503",
+    "away_team_id": "9769478",
+    "home_team_name": "Revitalize (REV)",
+    "away_team_name": "GG Go Next (G3N)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769504",
+    "away_team_id": "9821638",
+    "home_team_name": "We Love Cats ALOT (WLC)",
+    "away_team_name": "Scarra's Better Than Us (SCA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769502",
+    "away_team_id": "9769481",
+    "home_team_name": "Where We Going (WWG)",
+    "away_team_name": "Can't Rank Up (CRU)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769501",
+    "away_team_id": "9821627",
+    "home_team_name": "Spectre Gaming (SG)",
+    "away_team_name": "My Little PogChamp (MLP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769477",
+    "away_team_id": "9769482",
+    "home_team_name": "Simplicity (SMP)",
+    "away_team_name": "Chronologically Gifted (CG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769503",
+    "away_team_id": "9769475",
+    "home_team_name": "Revitalize (REV)",
+    "away_team_name": "Awakened (AWK)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9821627",
+    "away_team_id": "9769503",
+    "home_team_name": "My Little PogChamp (MLP)",
+    "away_team_name": "Revitalize (REV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769481",
+    "away_team_id": "9769477",
+    "home_team_name": "Can't Rank Up (CRU)",
+    "away_team_name": "Simplicity (SMP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769482",
+    "away_team_id": "9769480",
+    "home_team_name": "Chronologically Gifted (CG)",
+    "away_team_name": "Tremendously Tasty Toasties (TTT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769505",
+    "away_team_id": "9769501",
+    "home_team_name": "Hardstuck Anonymous (HSA)",
+    "away_team_name": "Spectre Gaming (SG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769506",
+    "away_team_id": "9769476",
+    "home_team_name": "FNW eSports (FNW)",
+    "away_team_name": "YMC9 (YMC9)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769501",
+    "away_team_id": "9769474",
+    "home_team_name": "Spectre Gaming (SG)",
+    "away_team_name": "Team Counter Spike (TCS)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769505",
+    "away_team_id": "9769506",
+    "home_team_name": "Hardstuck Anonymous (HSA)",
+    "away_team_name": "FNW eSports (FNW)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769479",
+    "away_team_id": "9769477",
+    "home_team_name": "Lilith (LIL)",
+    "away_team_name": "Simplicity (SMP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "12",
+    "home_team_id": "9769478",
+    "away_team_id": "9821638",
+    "home_team_name": "GG Go Next (G3N)",
+    "away_team_name": "Scarra's Better Than Us (SCA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769480",
+    "away_team_id": "9769477",
+    "home_team_name": "Tremendously Tasty Toasties (TTT)",
+    "away_team_name": "Simplicity (SMP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769505",
+    "away_team_id": "9769479",
+    "home_team_name": "Hardstuck Anonymous (HSA)",
+    "away_team_name": "Lilith (LIL)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769501",
+    "away_team_id": "9769480",
+    "home_team_name": "Spectre Gaming (SG)",
+    "away_team_name": "Tremendously Tasty Toasties (TTT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769479",
+    "away_team_id": "9769478",
+    "home_team_name": "Lilith (LIL)",
+    "away_team_name": "GG Go Next (G3N)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769475",
+    "away_team_id": "9769481",
+    "home_team_name": "Awakened (AWK)",
+    "away_team_name": "Can't Rank Up (CRU)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769503",
+    "away_team_id": "9769502",
+    "home_team_name": "Revitalize (REV)",
+    "away_team_name": "Where We Going (WWG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769482",
+    "away_team_id": "9769501",
+    "home_team_name": "Chronologically Gifted (CG)",
+    "away_team_name": "Spectre Gaming (SG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769478",
+    "away_team_id": "9769475",
+    "home_team_name": "GG Go Next (G3N)",
+    "away_team_name": "Awakened (AWK)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9821627",
+    "away_team_id": "9769480",
+    "home_team_name": "My Little PogChamp (MLP)",
+    "away_team_name": "Tremendously Tasty Toasties (TTT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9821638",
+    "away_team_id": "9769482",
+    "home_team_name": "Scarra's Better Than Us (SCA)",
+    "away_team_name": "Chronologically Gifted (CG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769506",
+    "away_team_id": "9769474",
+    "home_team_name": "FNW eSports (FNW)",
+    "away_team_name": "Team Counter Spike (TCS)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769502",
+    "away_team_id": "9769506",
+    "home_team_name": "Where We Going (WWG)",
+    "away_team_name": "FNW eSports (FNW)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9821638",
+    "away_team_id": "9769481",
+    "home_team_name": "Scarra's Better Than Us (SCA)",
+    "away_team_name": "Can't Rank Up (CRU)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769476",
+    "away_team_id": "9769503",
+    "home_team_name": "YMC9 (YMC9)",
+    "away_team_name": "Revitalize (REV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769504",
+    "away_team_id": "9821627",
+    "home_team_name": "We Love Cats ALOT (WLC)",
+    "away_team_name": "My Little PogChamp (MLP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769477",
+    "away_team_id": "9769505",
+    "home_team_name": "Simplicity (SMP)",
+    "away_team_name": "Hardstuck Anonymous (HSA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769476",
+    "away_team_id": "9769474",
+    "home_team_name": "YMC9 (YMC9)",
+    "away_team_name": "Team Counter Spike (TCS)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "13",
+    "home_team_id": "9769477",
+    "away_team_id": "9769504",
+    "home_team_name": "Simplicity (SMP)",
+    "away_team_name": "We Love Cats ALOT (WLC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769502",
+    "away_team_id": "9769504",
+    "home_team_name": "Where We Going (WWG)",
+    "away_team_name": "We Love Cats ALOT (WLC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769504",
+    "away_team_id": "9769478",
+    "home_team_name": "We Love Cats ALOT (WLC)",
+    "away_team_name": "GG Go Next (G3N)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769503",
+    "away_team_id": "9769481",
+    "home_team_name": "Revitalize (REV)",
+    "away_team_name": "Can't Rank Up (CRU)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769475",
+    "away_team_id": "9769480",
+    "home_team_name": "Awakened (AWK)",
+    "away_team_name": "Tremendously Tasty Toasties (TTT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9821627",
+    "away_team_id": "9769474",
+    "home_team_name": "My Little PogChamp (MLP)",
+    "away_team_name": "Team Counter Spike (TCS)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769477",
+    "away_team_id": "9769501",
+    "home_team_name": "Simplicity (SMP)",
+    "away_team_name": "Spectre Gaming (SG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769505",
+    "away_team_id": "9769482",
+    "home_team_name": "Hardstuck Anonymous (HSA)",
+    "away_team_name": "Chronologically Gifted (CG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769482",
+    "away_team_id": "9821638",
+    "home_team_name": "Chronologically Gifted (CG)",
+    "away_team_name": "Scarra's Better Than Us (SCA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769479",
+    "away_team_id": "9769503",
+    "home_team_name": "Lilith (LIL)",
+    "away_team_name": "Revitalize (REV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769501",
+    "away_team_id": "9769476",
+    "home_team_name": "Spectre Gaming (SG)",
+    "away_team_name": "YMC9 (YMC9)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9821638",
+    "away_team_id": "9769475",
+    "home_team_name": "Scarra's Better Than Us (SCA)",
+    "away_team_name": "Awakened (AWK)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769480",
+    "away_team_id": "9769479",
+    "home_team_name": "Tremendously Tasty Toasties (TTT)",
+    "away_team_name": "Lilith (LIL)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769481",
+    "away_team_id": "9769476",
+    "home_team_name": "Can't Rank Up (CRU)",
+    "away_team_name": "YMC9 (YMC9)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769506",
+    "away_team_id": "9769501",
+    "home_team_name": "FNW eSports (FNW)",
+    "away_team_name": "Spectre Gaming (SG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769506",
+    "away_team_id": "9769477",
+    "home_team_name": "FNW eSports (FNW)",
+    "away_team_name": "Simplicity (SMP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769474",
+    "away_team_id": "9769478",
+    "home_team_name": "Team Counter Spike (TCS)",
+    "away_team_name": "GG Go Next (G3N)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769502",
+    "away_team_id": "9821627",
+    "home_team_name": "Where We Going (WWG)",
+    "away_team_name": "My Little PogChamp (MLP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "14",
+    "home_team_id": "9769505",
+    "away_team_id": "9821627",
+    "home_team_name": "Hardstuck Anonymous (HSA)",
+    "away_team_name": "My Little PogChamp (MLP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769479",
+    "away_team_id": "9769504",
+    "home_team_name": "Lilith (LIL)",
+    "away_team_name": "We Love Cats ALOT (WLC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769502",
+    "away_team_id": "9769477",
+    "home_team_name": "Where We Going (WWG)",
+    "away_team_name": "Simplicity (SMP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769503",
+    "away_team_id": "9769504",
+    "home_team_name": "Revitalize (REV)",
+    "away_team_name": "We Love Cats ALOT (WLC)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769482",
+    "away_team_id": "9769474",
+    "home_team_name": "Chronologically Gifted (CG)",
+    "away_team_name": "Team Counter Spike (TCS)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9821638",
+    "away_team_id": "9769478",
+    "home_team_name": "Scarra's Better Than Us (SCA)",
+    "away_team_name": "GG Go Next (G3N)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9821638",
+    "away_team_id": "9769505",
+    "home_team_name": "Scarra's Better Than Us (SCA)",
+    "away_team_name": "Hardstuck Anonymous (HSA)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769501",
+    "away_team_id": "9769503",
+    "home_team_name": "Spectre Gaming (SG)",
+    "away_team_name": "Revitalize (REV)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769504",
+    "away_team_id": "9769506",
+    "home_team_name": "We Love Cats ALOT (WLC)",
+    "away_team_name": "FNW eSports (FNW)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769475",
+    "away_team_id": "9769501",
+    "home_team_name": "Awakened (AWK)",
+    "away_team_name": "Spectre Gaming (SG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769481",
+    "away_team_id": "9769474",
+    "home_team_name": "Can't Rank Up (CRU)",
+    "away_team_name": "Team Counter Spike (TCS)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769481",
+    "away_team_id": "9821627",
+    "home_team_name": "Can't Rank Up (CRU)",
+    "away_team_name": "My Little PogChamp (MLP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769506",
+    "away_team_id": "9769482",
+    "home_team_name": "FNW eSports (FNW)",
+    "away_team_name": "Chronologically Gifted (CG)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769476",
+    "away_team_id": "9821627",
+    "home_team_name": "YMC9 (YMC9)",
+    "away_team_name": "My Little PogChamp (MLP)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769477",
+    "away_team_id": "9769475",
+    "home_team_name": "Simplicity (SMP)",
+    "away_team_name": "Awakened (AWK)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769476",
+    "away_team_id": "9769479",
+    "home_team_name": "YMC9 (YMC9)",
+    "away_team_name": "Lilith (LIL)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769480",
+    "away_team_id": "9769478",
+    "home_team_name": "Tremendously Tasty Toasties (TTT)",
+    "away_team_name": "GG Go Next (G3N)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769502",
+    "away_team_id": "9769480",
+    "home_team_name": "Where We Going (WWG)",
+    "away_team_name": "Tremendously Tasty Toasties (TTT)",
+    "home_score": "",
+    "away_score": ""
+  },
+  {
+    "week": "15",
+    "home_team_id": "9769505",
+    "away_team_id": "9769474",
+    "home_team_name": "Hardstuck Anonymous (HSA)",
+    "away_team_name": "Team Counter Spike (TCS)",
+    "home_score": "",
+    "away_score": ""
+  }
+]
