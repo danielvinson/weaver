@@ -6,21 +6,19 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import type { Match as MatchType } from "../types/match";
 
-const testUUID = "8af8c964-4736-492f-b90d-daf7ef12a400";
-const testUUID2 = "3598516c-c1a3-4dbb-93a3-af5943b0cefa";
-
 interface Params {
+  readonly actId: string;
   readonly matchId: string;
 }
 
 export const MatchDetail = () => {
-  const { matchId } = useParams<Params>();
+  const { actId, matchId } = useParams<Params>();
   const [match, setMatch] = useState<MatchType>();
 
   // Fetch data from API - refreshes on UUID change
   useEffect(() => {
     const getMatch = async () => {
-      const res = await API.getMatch(matchId);
+      const res = await API.getMatch(matchId, actId);
 
       // Filter out spectators
       const matchWithNoSpectators = {
@@ -29,7 +27,6 @@ export const MatchDetail = () => {
       };
 
       setMatch(matchWithNoSpectators);
-      console.log(res);
     };
 
     void getMatch();

@@ -1,15 +1,17 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import { cache } from "./cache";
 import axios from "axios";
 import type { AxiosResponse } from "axios";
 import type { Match, MatchHistoryMatch, QueueType } from "../types/match";
 import type { Player } from "../types/player";
 
-const episodeIds = {
+export const episodeIds = {
   episode1: {},
   episode2: {},
   episode3: {
     act1: "2a27e5d2-4d30-c9e2-b15a-93b8909a442c",
     act2: "4cb622e1-4244-6da3-7276-8daaf1c01be2",
+    act3: "a16955a5-4ad0-f761-5e9e-389df1c892fb",
   },
 };
 
@@ -18,14 +20,18 @@ const baseApi = axios.create({
 });
 
 export const API = {
-  getMatch: async (matchId: string): Promise<Match> => {
+  getMatch: async (
+    matchId: string,
+    actId: string,
+    type: "puuid" | "subject" = "subject"
+  ): Promise<Match> => {
     const cachedMatch = cache.getMatch(matchId);
     if (cachedMatch !== null) return cachedMatch;
 
     const axiosResponse = await baseApi.get<Match>("match/" + matchId, {
       params: {
-        actId: episodeIds.episode3.act2,
-        type: "subject",
+        actId,
+        type,
       },
     });
 

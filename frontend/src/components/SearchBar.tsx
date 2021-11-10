@@ -4,12 +4,14 @@ import { ROUTES } from "../App";
 import { Spacer } from "./Spacer";
 import { colors, gradients } from "../util/colorPalette";
 import { common } from "../util/styles";
+import { episodeIds } from "../api/api";
 import { generatePath, useHistory } from "react-router-dom";
 import { useState } from "react";
 import type { CSSProperties } from "react";
 
 const TEXT_SIZE = "1em";
 const SEARCHBAR_HEIGHT = "40px";
+const DEFAULT_ACT = episodeIds.episode3.act3;
 
 const styles: Record<string, CSSProperties> = {
   container: {
@@ -51,6 +53,7 @@ export const SearchBar = () => {
   const [inputText, setInputText] = useState<string>("");
   const [option, setOption] = useState<string>("match");
   const [errorText, setErrorText] = useState<string>();
+  const [selectedActId, setSelectedActId] = useState<string>(DEFAULT_ACT);
 
   const handleSearch = () => {
     if (inputText === "") {
@@ -74,6 +77,7 @@ export const SearchBar = () => {
 
     if (option === "match") {
       const linkLocation = generatePath(ROUTES.detail.path, {
+        actId: selectedActId,
         matchId: inputText,
       });
       setErrorText(undefined);
@@ -82,6 +86,16 @@ export const SearchBar = () => {
   };
 
   const placeholderText = option === "player" ? "Player UUID" : "Match UUID";
+
+  const episodeOptions = Object.entries(episodeIds).map(
+    ([episodeName, acts]) => {
+      return Object.entries(acts).map(([actName, actId]) => (
+        <option key={actId} value={actId}>
+          {episodeName}:{actName}
+        </option>
+      ));
+    }
+  );
 
   return (
     <div style={common.column}>
@@ -106,6 +120,18 @@ export const SearchBar = () => {
           placeholder={placeholderText}
           className="searchInput"
         />
+
+        {option === "match" && (
+          <div>
+            <select
+              style={styles.select}
+              defaultValue={DEFAULT_ACT}
+              onChange={(e) => setSelectedActId(e.target.value)}
+            >
+              {episodeOptions}
+            </select>
+          </div>
+        )}
 
         <div onClick={handleSearch} className="searchButton">
           Search{<Spacer width="10px" />}&#10148;
