@@ -8,6 +8,28 @@ import type { Match, Player } from "../types/match";
     3. Percent of bullets which hit players you killed which were headshots
 */
 
+const calculateBulletHeadshotPercent = (player: Player, match: Match) => {
+  const playerId = player.subject;
+  const playerStats = match.roundResults.flatMap((round) =>
+    round.playerStats.filter((ps) => ps.subject === playerId)
+  );
+  const playerDamage = playerStats.flatMap((ps) => ps.damage);
+  const bodyshots = playerDamage
+    .map((d) => d.bodyshots)
+    .reduce((prev, cur) => prev + cur, 0);
+  const legshots = playerDamage
+    .map((d) => d.legshots)
+    .reduce((prev, cur) => prev + cur, 0);
+  const headshots = playerDamage
+    .map((d) => d.headshots)
+    .reduce((prev, cur) => prev + cur, 0);
+
+  const totalhits = bodyshots + legshots + headshots;
+  const hsPercent = headshots / totalhits;
+
+  return hsPercent;
+};
+
 const calculateKillHeadshotPercent = (player: Player, match: Match) => {
   const headshotKillsByRound = match.roundResults.map((round) => {
     const stats = round.playerStats.find((ps) => ps.subject === player.subject);
@@ -29,7 +51,7 @@ const calculateKillHeadshotPercent = (player: Player, match: Match) => {
         return 0;
       });
 
-    return headshotKills.filter(k => k === 1).length;
+    return headshotKills.filter((k) => k === 1).length;
   });
 
   const totalHSKills = headshotKillsByRound.reduce(
@@ -37,46 +59,7 @@ const calculateKillHeadshotPercent = (player: Player, match: Match) => {
     0
   );
 
-  console.log(player.subject, totalHSKills);
-
-  return (
-    headshotKillsByRound.reduce((prev, cur) => prev + cur, 0) /
-    headshotKillsByRound.length
-  );
-};
-
-const calculateBulletHeadshotPercent = (player: Player, match: Match) => {
-  const roundHeadshotPercents = match.roundResults.map((round) => {
-    const stats = round.playerStats.find((ps) => ps.subject === player.subject);
-    if (stats === undefined) {
-      return 0;
-    }
-
-    const bodyshots = stats.damage
-      .map((d) => d.bodyshots)
-      .reduce((prev, cur) => prev + cur, 0);
-    const legshots = stats.damage
-      .map((d) => d.legshots)
-      .reduce((prev, cur) => prev + cur, 0);
-    const headshots = stats.damage
-      .map((d) => d.headshots)
-      .reduce((prev, cur) => prev + cur, 0);
-
-    const totalHits = bodyshots + legshots + headshots;
-    if (totalHits === 0) {
-      return 0;
-    }
-
-    return headshots / totalHits;
-  });
-
-  const numberOfRounds = roundHeadshotPercents.length;
-  const totalHeadshots = roundHeadshotPercents.reduce(
-    (prev, cur) => prev + cur,
-    0
-  );
-
-  return totalHeadshots / numberOfRounds;
+  return totalHSKills / headshotKillsByRound.length;
 };
 
 export const calculateHeadshotData = (match: Match) => {
