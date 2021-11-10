@@ -4,9 +4,18 @@ import type { Round } from "./round";
 type UUID = string;
 
 export type TeamName = "Blue" | "Neutral" | "Red";
-export type MapName = "ascent" | "bind" | "breeze" | "haven" | "icebox";
+export type MapName =
+  "ascent" | "bind" | "breeze" | "fracture" | "haven" | "icebox" | "split";
+
 export type QueueType =
-  "" | "competitive" | "custom" | "deathmatch" | "newmap" | "onefa" | "spikerush" | "unrated";
+  | ""
+  | "competitive"
+  | "custom"
+  | "deathmatch"
+  | "newmap"
+  | "onefa"
+  | "spikerush"
+  | "unrated";
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface NewPlayerExperienceDetails {} // boring data, ignoring

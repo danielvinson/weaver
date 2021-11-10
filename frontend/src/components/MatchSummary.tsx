@@ -3,7 +3,7 @@ import { RankIcon } from "./RankIcon";
 import { Spacer } from "./Spacer";
 import { colorScales, colors } from "../util/colorPalette";
 import { common } from "../util/styles";
-import { maps } from "./Map";
+import { mapImages } from "./Map";
 import { normalizeRange } from "../util/normalizeRange";
 import moment from "moment";
 import type { AgentId } from "./AgentIcon";
@@ -65,7 +65,7 @@ export const MatchSummary = ({ match }: Props) => {
     "linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0), rgba(0,0,0,0.1))";
   const backgroundColor =
     "linear-gradient(90deg, rgba(23, 29, 38,1) 0%, rgba(28, 68, 115,1) 70%, rgba(28, 68, 115,0) 85%)";
-  const backgroundImage = `url(${maps[match.map]}) no-repeat right bottom`;
+  const backgroundImage = `url(${mapImages[match.map]}) no-repeat right bottom`;
 
   return (
     <div
