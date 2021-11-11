@@ -1,12 +1,16 @@
 import requests
 import json
 import time
+import os
+
+data_dir = "../../data/"
 
 base_url = "https://valorant.iesdev.com/match/"
 act_ids = {
     "episode3": {
         "act1": "2a27e5d2-4d30-c9e2-b15a-93b8909a442c",
         "act2": "4cb622e1-4244-6da3-7276-8daaf1c01be2",
+        "act3": "a16955a5-4ad0-f761-5e9e-389df1c892fb",
     }
 }
 
@@ -25,6 +29,8 @@ def download_boomer_matches():
     with open("boomer_matches.txt", "r") as infile:
         for line in infile:
             match_id = line.strip()
+            if os.path.exists(os.path.join(data_dir, match_id + ".json")):
+                continue
             with open(f"{match_id}.json", "w") as outfile:
                 print(f"downloading {match_id}")
                 match_type = "subject"

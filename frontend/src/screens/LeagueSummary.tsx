@@ -1,20 +1,7 @@
-
-
-interface TeamPlayer {
-  readonly isCaptain: boolean;
-  readonly valorantName: string;
-  readonly valorantTag: string;
-  readonly discordName: string;
-  readonly discordTag: string;
-}
-
-interface Team {
-  readonly name: string;
-  readonly players: TeamPlayer[];
-}
+import React from "react";
 
 interface Props {
-  readonly teams: Team[];
+  readonly leagueName: string;
 }
 
-export const League = ({ teams }: Props) => <div />;
+export const League = ({}: Props) => <div />;
