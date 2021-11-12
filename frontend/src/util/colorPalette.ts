@@ -1,6 +1,6 @@
 export const colors = {
   background: "#232224",
-  blueTeam: "#255C99",
+  blueTeam: "rgb(37, 92, 153)",
   blueTeamDarker1: "#245894",
   blueTeamDarker2: "#204E83",
   blueTeamDarker3: "#1C4473",
@@ -14,7 +14,7 @@ export const colors = {
   redTeamDarker3: "#7A0012",
   secondary: "#ACCBE1",
   shadow: "#111111",
-  white: "#F5F0F6", // 28, 68, 115
+  white: "rgb(245, 240, 246)",
 };
 
 export const gradients = {

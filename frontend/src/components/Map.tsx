@@ -1,11 +1,18 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import Ascent from "../assets/images/ascent.jpeg";
+import AscentLarge from "../assets/images/ascent-large.png";
 import Bind from "../assets/images/bind.jpeg";
+import BindLarge from "../assets/images/bind-large.png";
 import Breeze from "../assets/images/breeze.jpeg";
+import BreezeLarge from "../assets/images/breeze-large.png";
 import Fracture from "../assets/images/fracture.jpeg";
+import FractureLarge from "../assets/images/fracture-large.png";
 import Haven from "../assets/images/haven.jpeg";
+import HavenLarge from "../assets/images/haven-large.png";
 import Icebox from "../assets/images/icebox.png";
+import IceboxLarge from "../assets/images/icebox-large.png";
 import Split from "../assets/images/split.jpeg";
+import SplitLarge from "../assets/images/split-large.png";
 import type { MapName } from "../types/match";
 
 export const mapImages: Record<MapName, string> = {
@@ -15,8 +22,17 @@ export const mapImages: Record<MapName, string> = {
   fracture: Fracture,
   haven: Haven,
   icebox: Icebox,
-  // port: Icebox,
   split: Split,
+};
+
+export const largeMapImages: Record<MapName, string> = {
+  ascent: AscentLarge,
+  bind: BindLarge,
+  breeze: BreezeLarge,
+  fracture: FractureLarge,
+  haven: HavenLarge,
+  icebox: IceboxLarge,
+  split: SplitLarge,
 };
 
 export type MapImageName = keyof typeof mapImages;

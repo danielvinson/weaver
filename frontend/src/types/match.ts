@@ -5,13 +5,20 @@ type UUID = string;
 
 export type TeamName = "Blue" | "Neutral" | "Red";
 export type MapName =
-  "ascent" | "bind" | "breeze" | "fracture" | "haven" | "icebox" | "split";
+  | "ascent"
+  | "bind"
+  | "breeze"
+  | "fracture"
+  | "haven"
+  | "icebox"
+  | "split";
 
 export type QueueType =
   | ""
   | "competitive"
   | "custom"
   | "deathmatch"
+  | "gungame"
   | "newmap"
   | "onefa"
   | "spikerush"

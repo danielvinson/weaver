@@ -1,6 +1,8 @@
 import { API } from "../api/api";
 import { MatchTable } from "../components/MatchTable";
+import { MatchTableSummary } from "../components/MatchTableSummary";
 import { RiseLoader } from "react-spinners";
+import { Spacer } from "../components/Spacer";
 import { colors } from "../util/colorPalette";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
@@ -42,6 +44,8 @@ export const MatchDetail = () => {
 
   return (
     <div>
+      <MatchTableSummary match={match} />
+      <Spacer height="10px" />
       <MatchTable match={match} />
     </div>
   );
