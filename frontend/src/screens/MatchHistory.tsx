@@ -1,7 +1,8 @@
-import { API } from "../api/api";
+import { API, episodeIds } from "../api/api";
 import { MatchSummary } from "../components/MatchSummary";
 import { PlayerStats } from "../components/PlayerStats";
 import { ROUTES } from "../App";
+import { Row } from "../components/Row";
 import { colors } from "../util/colorPalette";
 import { common } from "../util/styles";
 import { generatePath, useHistory, useParams } from "react-router-dom";
@@ -9,6 +10,8 @@ import { useEffect, useState } from "react";
 import type { CSSProperties } from "react";
 import type { MatchHistoryMatch, QueueType } from "../types/match";
 import type { Player } from "../types/player";
+
+const DEFAULT_ACT_ID = episodeIds.episode3.act3;
 
 const styles: Record<string, CSSProperties> = {
   matches: {
@@ -32,6 +35,7 @@ export const MatchHistory = () => {
     useState<readonly MatchHistoryMatch[]>();
   const [playerData, setPlayerData] = useState<Player>();
   const [queue, setQueue] = useState<QueueType | "all">("all");
+  const [selectedActId, setSelectedActId] = useState<string>(DEFAULT_ACT_ID);
 
   // This API is stupid and requires playerName and playerTag instead of an id...
   useEffect(() => {
@@ -51,6 +55,7 @@ export const MatchHistory = () => {
       if (playerData !== undefined) {
         const historyResponse = await API.getMatchHistory(
           playerData.id,
+          selectedActId,
           queue === "all"
             ? [
                 "competitive",
@@ -69,14 +74,14 @@ export const MatchHistory = () => {
     };
 
     void getHistory();
-  }, [playerData, queue]);
+  }, [playerData, queue, selectedActId]);
 
   return (
     <>
       <div style={{ ...common.column, color: colors.white }}>
         {playerData && <PlayerStats player={playerData} />}
       </div>
-      <div>
+      <Row>
         <select
           value={queue}
           onChange={(e) => {
@@ -92,7 +97,20 @@ export const MatchHistory = () => {
           <option value="deathmatch">Deathmatch</option>
           <option value="spikerush">Spike Rush</option>
         </select>
-      </div>
+        <select
+          style={styles.select}
+          defaultValue={DEFAULT_ACT_ID}
+          onChange={(e) => setSelectedActId(e.target.value)}
+        >
+          {Object.entries(episodeIds).map(([episodeName, acts]) => {
+            return Object.entries(acts).map(([actName, actId]) => (
+              <option key={actId} value={actId}>
+                {episodeName}:{actName}
+              </option>
+            ));
+          })}
+        </select>
+      </Row>
       <div style={styles.matches}>
         {matchHistory?.map((match) => (
           <div

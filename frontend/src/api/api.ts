@@ -42,13 +42,14 @@ export const API = {
 
   getMatchHistory: async (
     playerId: string,
+    actId: string,
     queueTypes: QueueType[]
   ): Promise<AxiosResponse<readonly MatchHistoryMatch[]>> => {
     return baseApi.get<readonly MatchHistoryMatch[]>(
       "matchplayer/" + playerId,
       {
         params: {
-          actId: episodeIds.episode3.act2,
+          actId: actId,
           offset: 0,
           queues: queueTypes.includes("custom")
             ? queueTypes.join(",") + ","
