@@ -8,7 +8,9 @@ import diamond3 from "../assets/icons/diamond3.svg";
 import gold1 from "../assets/icons/gold1.svg";
 import gold2 from "../assets/icons/gold2.svg";
 import gold3 from "../assets/icons/gold3.svg";
-import immortal from "../assets/icons/immortal.svg";
+import immortal1 from "../assets/icons/immortal1.svg";
+import immortal2 from "../assets/icons/immortal2.svg";
+import immortal3 from "../assets/icons/immortal3.svg";
 import iron1 from "../assets/icons/iron1.svg";
 import iron2 from "../assets/icons/iron2.svg";
 import iron3 from "../assets/icons/iron3.svg";
@@ -41,8 +43,10 @@ export const ranks = {
   18: diamond1,
   19: diamond2,
   20: diamond3,
-  21: immortal,
-  22: radiant,
+  21: immortal1,
+  22: immortal2,
+  23: immortal3,
+  24: radiant,
 };
 
 export type RankNumber = keyof typeof ranks;
