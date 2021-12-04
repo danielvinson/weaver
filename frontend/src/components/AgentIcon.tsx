@@ -2,6 +2,7 @@
 import Astra from "../assets/images/astra.png";
 import Breach from "../assets/images/breach.png";
 import Brimstone from "../assets/images/brimstone.png";
+import Chamber from "../assets/images/chamber.png";
 import Cypher from "../assets/images/cypher.png";
 import Jett from "../assets/images/jett.png";
 import Kay0 from "../assets/images/kay0.png";
@@ -29,6 +30,7 @@ export const agents = {
   "569fdd95-4d10-43ab-ca70-79becc718b46": Sage,
   "601dbbe7-43ce-be57-2a40-4abd24953621": Kay0,
   "707eab51-4836-f488-046a-cda6bf494859": Viper,
+  "22697a3d-45bf-8dd7-4fec-84a9e28c69d7": Chamber,
   "a3bfb853-43b2-7238-a4f1-ad90e9e46bcc": Reyna,
   "add6443a-41bd-e414-f6ad-e58d267f4e95": Jett,
   "eb93336a-449b-9c1b-0a54-a891f7921d69": Phoenix,
