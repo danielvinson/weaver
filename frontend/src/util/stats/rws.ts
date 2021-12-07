@@ -6,8 +6,8 @@
 */
 
 import { getRoundType } from "./roundType";
-import type { Player } from "../types/match";
-import type { Round } from "../types/round";
+import type { Player } from "../../types/match";
+import type { Round } from "../../types/round";
 
 const WEIGHTS = {
   force: 0.8,

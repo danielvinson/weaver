@@ -1,4 +1,4 @@
-import { getRoundType } from "../util/roundType";
+import { getRoundType } from "../util/stats/roundType";
 import type { Match } from "../types/match";
 
 interface Props {
@@ -16,7 +16,8 @@ export const RoundInfo = ({ match }: Props) => {
               <div>{round.roundNum}</div>
               <div>{round.winningTeam}</div>
               <div>
-                {getRoundType(round, match.players).blue} {getRoundType(round, match.players).red}
+                {getRoundType(round, match.players).blue}{" "}
+                {getRoundType(round, match.players).red}
               </div>
             </div>
           );

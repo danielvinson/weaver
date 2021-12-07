@@ -2,8 +2,8 @@
 /* eslint-disable functional/immutable-data */
 /* eslint-disable functional/no-let */
 import { makeRoundTimeline } from "./roundTimeline";
-import type { Player } from "../types/match";
-import type { Round } from "../types/round";
+import type { Player } from "../../types/match";
+import type { Round } from "../../types/round";
 
 export interface Clutches {
   "1v1": number;
@@ -58,81 +58,91 @@ export const calculateRoundClutch = (
     team: undefined,
   };
 
-  const successfulClutches = timeline.map((kill) => {
-    const victim = players.find((player) => player.subject === kill.victim);
+  const successfulClutches = timeline
+    .map((kill) => {
+      const victim = players.find((player) => player.subject === kill.victim);
 
-    if (victim === undefined) {
-      console.log(`Couldn't find player ${kill.victim}`);
-      return;
-    }
-
-    playersAlive = playersAlive.filter((p) => p !== victim.subject);
-
-    // If that kill triggered a clutch...
-    if (currentClutch.player === undefined) {
-      const redTeamAlive = getTeamPlayersAlive("Red", playersAlive, players);
-      const blueTeamAlive = getTeamPlayersAlive("Blue", playersAlive, players);
-
-      if (redTeamAlive.length === 1) {
-        currentClutch = {
-          enemies: blueTeamAlive.length,
-          player: redTeamAlive[0],
-          team: "Red",
-        };
+      if (victim === undefined) {
+        console.log(`Couldn't find player ${kill.victim}`);
+        return;
       }
 
-      if (blueTeamAlive.length === 1) {
-        currentClutch = {
-          enemies: redTeamAlive.length,
-          player: blueTeamAlive[0],
-          team: "Blue",
-        };
-      }
-    }
+      playersAlive = playersAlive.filter((p) => p !== victim.subject);
 
-    // See if a current clutch succeeded
-    if (currentClutch.player !== undefined) {
-      const redTeamAlive = getTeamPlayersAlive("Red", playersAlive, players);
-      const blueTeamAlive = getTeamPlayersAlive("Blue", playersAlive, players);
+      // If that kill triggered a clutch...
+      if (currentClutch.player === undefined) {
+        const redTeamAlive = getTeamPlayersAlive("Red", playersAlive, players);
+        const blueTeamAlive = getTeamPlayersAlive(
+          "Blue",
+          playersAlive,
+          players
+        );
 
-      // Check the weird case of a 1vX turning into a 1v1
-      if (redTeamAlive.length === 1 && blueTeamAlive.length === 1) {
-        if (currentClutch.team === "Red") {
-          secondaryClutch = {
-            enemies: 1,
-            player: blueTeamAlive[0],
-            team: "Blue",
-          };
-        }
-
-        if (currentClutch.team === "Blue") {
-          secondaryClutch = {
-            enemies: 1,
+        if (redTeamAlive.length === 1) {
+          currentClutch = {
+            enemies: blueTeamAlive.length,
             player: redTeamAlive[0],
             team: "Red",
           };
         }
+
+        if (blueTeamAlive.length === 1) {
+          currentClutch = {
+            enemies: redTeamAlive.length,
+            player: blueTeamAlive[0],
+            team: "Blue",
+          };
+        }
       }
 
-      // Check the normal case
-      if (currentClutch.team === "Red" && blueTeamAlive.length === 0) {
-        return currentClutch as Clutch;
-      }
+      // See if a current clutch succeeded
+      if (currentClutch.player !== undefined) {
+        const redTeamAlive = getTeamPlayersAlive("Red", playersAlive, players);
+        const blueTeamAlive = getTeamPlayersAlive(
+          "Blue",
+          playersAlive,
+          players
+        );
 
-      if (currentClutch.team === "Blue" && redTeamAlive.length === 0) {
-        return currentClutch as Clutch;
-      }
+        // Check the weird case of a 1vX turning into a 1v1
+        if (redTeamAlive.length === 1 && blueTeamAlive.length === 1) {
+          if (currentClutch.team === "Red") {
+            secondaryClutch = {
+              enemies: 1,
+              player: blueTeamAlive[0],
+              team: "Blue",
+            };
+          }
 
-      // Check if the secondary clutch succeeded
-      if (secondaryClutch.team === "Red" && blueTeamAlive.length === 0) {
-        return secondaryClutch as Clutch;
-      }
+          if (currentClutch.team === "Blue") {
+            secondaryClutch = {
+              enemies: 1,
+              player: redTeamAlive[0],
+              team: "Red",
+            };
+          }
+        }
 
-      if (secondaryClutch.team === "Blue" && redTeamAlive.length === 0) {
-        return secondaryClutch as Clutch;
+        // Check the normal case
+        if (currentClutch.team === "Red" && blueTeamAlive.length === 0) {
+          return currentClutch as Clutch;
+        }
+
+        if (currentClutch.team === "Blue" && redTeamAlive.length === 0) {
+          return currentClutch as Clutch;
+        }
+
+        // Check if the secondary clutch succeeded
+        if (secondaryClutch.team === "Red" && blueTeamAlive.length === 0) {
+          return secondaryClutch as Clutch;
+        }
+
+        if (secondaryClutch.team === "Blue" && redTeamAlive.length === 0) {
+          return secondaryClutch as Clutch;
+        }
       }
-    }
-  }).filter(c => c !== undefined);
+    })
+    .filter((c) => c !== undefined);
 
   if (successfulClutches.length === 0) {
     return false;

@@ -1,5 +1,5 @@
-import type { Player } from "../types/match";
-import type { Round } from "../types/round";
+import type { Player } from "../../types/match";
+import type { Round } from "../../types/round";
 
 /*
   This while file ended up being a demonstration of how to use

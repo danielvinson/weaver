@@ -1,5 +1,5 @@
 /* eslint-disable functional/immutable-data */
-import type { Match, Player } from "../types/match";
+import type { Match, Player } from "../../types/match";
 
 /* 
   Trying out a few stats here -

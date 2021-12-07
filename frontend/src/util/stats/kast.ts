@@ -1,6 +1,6 @@
 /* eslint-disable functional/immutable-data */
-import type { Player } from "../types/match";
-import type { Round } from "../types/round";
+import type { Player } from "../../types/match";
+import type { Round } from "../../types/round";
 
 const TRADE_THRESHOLD_MS = 3000;
 

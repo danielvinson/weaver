@@ -46,6 +46,7 @@ const settingsGroups: Record<string, SettingGroup> = {
   clutch: { display: true, order: 1, title: "Clutches" },
   computed: { display: true, order: 2, title: "Computed" },
   dev: { display: false, order: 5, title: "Dev" },
+  eco: { display: true, order: 6, title: "Kill Breakdown" },
   kast: { display: true, order: 4, title: "KAST" },
   multi: { display: true, order: 3, title: "Multikills" },
 };

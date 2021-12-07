@@ -1,5 +1,5 @@
-import type { Player } from "../types/match";
-import type { Round } from "../types/round";
+import type { Player } from "../../types/match";
+import type { Round } from "../../types/round";
 
 /*
   Calculates a round type for each team.
@@ -45,10 +45,18 @@ export const getRoundType = (
     };
   }
 
-  const redTeamPlayerIds = players.filter((p) => p.teamId === "Red").map(p => p.subject);
-  const blueTeamPlayerIds = players.filter((p) => p.teamId === "Blue").map(p => p.subject);
-  const redEconomies = round.playerEconomies.filter((pe) => redTeamPlayerIds.includes(pe.subject));
-  const blueEconomies = round.playerEconomies.filter((pe) => blueTeamPlayerIds.includes(pe.subject));
+  const redTeamPlayerIds = players
+    .filter((p) => p.teamId === "Red")
+    .map((p) => p.subject);
+  const blueTeamPlayerIds = players
+    .filter((p) => p.teamId === "Blue")
+    .map((p) => p.subject);
+  const redEconomies = round.playerEconomies.filter((pe) =>
+    redTeamPlayerIds.includes(pe.subject)
+  );
+  const blueEconomies = round.playerEconomies.filter((pe) =>
+    blueTeamPlayerIds.includes(pe.subject)
+  );
 
   return {
     blue: calculateTeamEconomy(blueEconomies),

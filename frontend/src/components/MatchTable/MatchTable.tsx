@@ -1,21 +1,24 @@
 /* eslint-disable functional/immutable-data */
-import { API } from "../../api/api";
+
 import { MatchTableCell } from "./MatchTableCell";
 import { MatchTableSettings } from "./MatchTableSettings";
 import { SortableTable } from "../SortableTable";
 import { Spacer } from "../Spacer";
 import { Switch } from "../Switch";
-import { calculateClutches } from "../../util/clutches";
-import { calculateFirstDeaths } from "../../util/firstDeaths";
-import { calculateFirstKills } from "../../util/firstKills";
-import { calculateHeadshotData } from "../../util/headshot";
-import { calculateKastNumbers, calculateKastPercents } from "../../util/kast";
-import { calculateMatchMultikills } from "../../util/multiKills";
-import { calculateRWS, calculateWeightedRWS } from "../../util/rws";
+import { calculateClutches } from "../../util/stats/clutches";
+import { calculateFirstDeaths } from "../../util/stats/firstDeaths";
+import { calculateFirstKills } from "../../util/stats/firstKills";
+import { calculateHeadshotData } from "../../util/stats/headshot";
+import {
+  calculateKastNumbers,
+  calculateKastPercents,
+} from "../../util/stats/kast";
+import { calculateMatchMultikills } from "../../util/stats/multiKills";
+import { calculateRWS, calculateWeightedRWS } from "../../util/stats/rws";
 import { colors } from "../../util/colorPalette";
 import { common } from "../../util/styles";
 import { defaultTableHeaders } from "./tableHeaders";
-import { getRoundType } from "../../util/roundType";
+import { getRoundType } from "../../util/stats/roundType";
 import { default as lodash } from "lodash";
 import { useEffect, useState } from "react";
 import Modal from "react-modal";
@@ -74,14 +77,19 @@ export const MatchTable = ({ match }: Props) => {
   const [tableHeaders, setTableHeaders] = useState<TableHeader[]>(
     defaultTableHeaders.map((th, index) => ({ ...th, order: index }))
   );
+  const [sideOption, setSideOption] = useState<string>("both");
 
   // Calculate data and build table
   useEffect(() => {
     const tableData: PlayerData[] = [];
+    const filteredRoundResults = match.roundResults;
 
-    const clutches = calculateClutches(match.players, match.roundResults);
-    const firstKills = calculateFirstKills(match.players, match.roundResults);
-    const firstDeaths = calculateFirstDeaths(match.players, match.roundResults);
+    const clutches = calculateClutches(match.players, filteredRoundResults);
+    const firstKills = calculateFirstKills(match.players, filteredRoundResults);
+    const firstDeaths = calculateFirstDeaths(
+      match.players,
+      filteredRoundResults
+    );
     const headshotPercents = calculateHeadshotData(match);
 
     const rwsData: Record<string, number> = {};
@@ -240,14 +248,42 @@ export const MatchTable = ({ match }: Props) => {
         }}
       >
         <div style={{ ...common.row, alignItems: "center" }}>
-          <Switch
-            value={separateTeams}
-            onChange={(newValue: boolean) => setSeparateTeams(newValue)}
-          />
-          <Spacer width="5px" />
-          <span style={{ color: colors.white, fontSize: "0.9em" }}>
-            Separate Teams
-          </span>
+          <div style={{ ...common.row, alignItems: "center" }}>
+            <Switch
+              value={separateTeams}
+              onChange={(newValue: boolean) => setSeparateTeams(newValue)}
+            />
+            <Spacer width="5px" />
+            <span style={{ color: colors.white, fontSize: "0.9em" }}>
+              Separate Teams
+            </span>
+          </div>
+
+          <Spacer width="15px" />
+
+          <div style={{ ...common.row, alignItems: "center" }}>
+            <Switch
+              value={separateTeams}
+              onChange={(newValue: boolean) => setSeparateTeams(newValue)}
+            />
+            <select
+              style={{
+                background: colors.shadow,
+                color: colors.white,
+                paddingLeft: "5px",
+                paddingRight: "5px",
+              }}
+              onChange={(e) => setSideOption(e.target.value)}
+            >
+              <option value="both">Both Sides</option>
+              <option value="attack">Attack</option>
+              <option value="defense">Defense</option>
+            </select>
+            <Spacer width="5px" />
+            <span style={{ color: colors.white, fontSize: "0.9em" }}>
+              Switch side
+            </span>
+          </div>
         </div>
 
         <div style={{ position: "relative" }}>
