@@ -37,6 +37,15 @@ export const defaultTableHeaders = [
       "Weighted Round Win Combat Score calculated by average combat scores for only rounds which that player's team won, weighted to make kills on pistol rounds and against full buys more valuable.",
     width: "90px",
   },
+  {
+    display: true,
+    group: "computed",
+    key: "agentWeightedAcs",
+    name: "Agent Weighted Score",
+    tooltip:
+      "Combat Score normalized by a weight based on statistics from pro play",
+    width: "auto",
+  },
   { display: false, group: "basic", key: "kills", name: "K", width: "50px" },
   { display: false, group: "basic", key: "deaths", name: "D", width: "50px" },
   { display: false, group: "basic", key: "assists", name: "A", width: "50px" },

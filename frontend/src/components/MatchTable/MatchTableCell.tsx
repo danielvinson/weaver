@@ -33,13 +33,13 @@ const renderMatchCell = (
       return <RankIcon rankNumber={val as RankNumber} />;
     }
     case "kast": {
-      return `${Math.round(val as number)}%`
+      return `${Math.round(val as number)}%`;
     }
     case "hsPercentBullet": {
-      return (val as number).toFixed(2) + "%"
+      return (val as number).toFixed(2) + "%";
     }
     case "hsPercentKill": {
-      return (val as number).toFixed(2) + "%"
+      return (val as number).toFixed(2) + "%";
     }
     default:
       return typeof val === "number" ? val.toFixed(0) : val;
@@ -66,13 +66,13 @@ export const MatchTableCell = ({
       key={`${player.id}${dataKey}`}
       style={{
         alignItems: "center",
+        background: colors.shadow,
         borderLeft: borderLeftStyle,
         color: colors.white,
         display: "flex",
         flexDirection: "row",
         justifyContent: "center",
         padding: "4px",
-        background: colors.shadow,
       }}
     >
       {renderMatchCell(dataKey, index, value, player)}

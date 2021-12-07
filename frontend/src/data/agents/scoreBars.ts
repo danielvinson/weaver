@@ -37,7 +37,7 @@ export const agentPerformanceTiers = {
     average: 225.1,
     high: 267.5,
   },
-  kayo: {
+  "kay/O": {
     low: 180.6,
     average: 197.3,
     high: 235.6,

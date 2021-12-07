@@ -25,6 +25,7 @@ import Modal from "react-modal";
 import type { Match as MatchType, TeamName } from "../../types/match";
 import type { Setting } from "./MatchTableSettings";
 import type { TableHeader } from "../SortableTable";
+import { calculateAgentPerformance } from "../../util/stats/agentPerformance";
 
 export interface PlayerData {
   readonly id: string;
@@ -64,6 +65,7 @@ export interface PlayerData {
   readonly kda: string;
   readonly hsPercentBullet: number;
   readonly hsPercentKill: number;
+  readonly agentWeightedAcs: number;
 }
 
 interface Props {
@@ -173,6 +175,10 @@ export const MatchTable = ({ match }: Props) => {
 
       tableData.push({
         agent: player.characterId,
+        agentWeightedAcs: calculateAgentPerformance(
+          player,
+          player.stats.score / player.stats.roundsPlayed
+        ),
         assists: player.stats.assists,
         clutch: totalClutches,
         clutchv1: clutches[player.subject]["1v1"],

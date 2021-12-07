@@ -22,6 +22,7 @@ export const mapImages: Record<MapName, string> = {
   fracture: Fracture,
   haven: Haven,
   icebox: Icebox,
+  port: Icebox,
   split: Split,
 };
 
@@ -32,6 +33,7 @@ export const largeMapImages: Record<MapName, string> = {
   fracture: FractureLarge,
   haven: HavenLarge,
   icebox: IceboxLarge,
+  port: IceboxLarge,
   split: SplitLarge,
 };
 

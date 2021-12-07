@@ -11,6 +11,7 @@ export type MapName =
   | "fracture"
   | "haven"
   | "icebox"
+  | "port"
   | "split";
 
 export type QueueType =

@@ -1,13 +1,13 @@
+import { ModeIcon } from "./ModeIcon";
 import { Row } from "./Row";
 import { Spacer } from "./Spacer";
-import { colors, makeAlpha } from "../util/colorPalette";
+import { colors } from "../util/colorPalette";
 import { largeMapImages } from "../components/Map";
+import Competitive from "../assets/images/competitive.png";
 import React from "react";
 import moment from "moment";
 import type { CSSProperties } from "react";
 import type { Match as MatchType } from "../types/match";
-import { ModeIcon } from "./ModeIcon";
-import Competitive from "../assets/images/competitive.png";
 
 const styles: Record<string, CSSProperties> = {
   bigText: {
@@ -61,7 +61,7 @@ export const MatchTableSummary = ({ match }: Props) => {
       <Spacer height="10px" />
       <Row style={{ alignItems: "center", flex: 1 }}>
         <div style={{ ...styles.bigText, ...styles.capitalize }}>
-          {match.map}
+          {match.map === "port" ? "Icebox" : match.map}
         </div>
         <Spacer width="10px" />
         <div style={{ display: "flex", flexDirection: "column" }}>
