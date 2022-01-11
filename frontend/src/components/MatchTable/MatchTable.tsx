@@ -5,6 +5,7 @@ import { MatchTableSettings } from "./MatchTableSettings";
 import { SortableTable } from "../SortableTable";
 import { Spacer } from "../Spacer";
 import { Switch } from "../Switch";
+import { calculateAgentPerformance } from "../../util/stats/agentPerformance";
 import { calculateClutches } from "../../util/stats/clutches";
 import { calculateFirstDeaths } from "../../util/stats/firstDeaths";
 import { calculateFirstKills } from "../../util/stats/firstKills";
@@ -25,7 +26,6 @@ import Modal from "react-modal";
 import type { Match as MatchType, TeamName } from "../../types/match";
 import type { Setting } from "./MatchTableSettings";
 import type { TableHeader } from "../SortableTable";
-import { calculateAgentPerformance } from "../../util/stats/agentPerformance";
 
 export interface PlayerData {
   readonly id: string;

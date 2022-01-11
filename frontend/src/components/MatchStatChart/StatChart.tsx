@@ -6,9 +6,9 @@ import {
   VictoryTooltip,
   VictoryVoronoiContainer,
 } from "victory";
+import { calculateAgentPerformance } from "../../util/stats/agentPerformance";
 import React, { useEffect, useState } from "react";
 import type { Player } from "../../types/match";
-import { calculateAgentPerformance } from "../../util/stats/agentPerformance";
 
 const VINSON_ID = "fa518d3e-8182-58ee-ac1f-70708f62816b";
 
