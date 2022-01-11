@@ -13,6 +13,9 @@ export const episodeIds = {
     act2: "4cb622e1-4244-6da3-7276-8daaf1c01be2",
     act3: "a16955a5-4ad0-f761-5e9e-389df1c892fb",
   },
+  episode4: {
+    act1: "573f53ac-41a5-3a7d-d9ce-d6a6298e5704",
+  },
 };
 
 const baseApi = axios.create({
