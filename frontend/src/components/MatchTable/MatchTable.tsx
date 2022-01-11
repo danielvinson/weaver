@@ -66,6 +66,7 @@ export interface PlayerData {
   readonly hsPercentBullet: number;
   readonly hsPercentKill: number;
   readonly agentWeightedAcs: number;
+  readonly agentWeightedWrwcs: number;
 }
 
 interface Props {
@@ -178,6 +179,10 @@ export const MatchTable = ({ match }: Props) => {
         agentWeightedAcs: calculateAgentPerformance(
           player,
           player.stats.score / player.stats.roundsPlayed
+        ),
+        agentWeightedWrwcs: calculateAgentPerformance(
+          player,
+          wrwsData[player.subject] / teamRoundsWon
         ),
         assists: player.stats.assists,
         clutch: totalClutches,
