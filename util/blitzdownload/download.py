@@ -14,7 +14,7 @@ act_ids = {
     }
 }
 
-boomer_match_filename = "boomer_matches.txt"
+boomer_match_filename = "noober_match_ids.txt"
 
 
 def download_match(match_id, act_id, type):
@@ -26,18 +26,24 @@ def download_match(match_id, act_id, type):
 def download_boomer_matches():
     act1 = act_ids["episode3"]["act1"]
     act2 = act_ids["episode3"]["act2"]
-    with open("boomer_matches.txt", "r") as infile:
+    act3 = act_ids["episode3"]["act3"]
+    with open(boomer_match_filename, "r") as infile:
         for line in infile:
             match_id = line.strip()
             if os.path.exists(os.path.join(data_dir, match_id + ".json")):
                 continue
-            with open(f"{match_id}.json", "w") as outfile:
+            with open(f"{data_dir}{match_id}.json", "w") as outfile:
                 print(f"downloading {match_id}")
                 match_type = "subject"
                 res = download_match(match_id, act1, "subject")
+
                 if len(res.content) == 0:
                     time.sleep(2)
                     res = download_match(match_id, act2, "subject")
+
+                if len(res.content) == 0:
+                    time.sleep(2)
+                    res = download_match(match_id, act3, "subject")
 
                 if len(res.content) == 0:
                     time.sleep(2)
@@ -47,6 +53,10 @@ def download_boomer_matches():
                 if len(res.content) == 0:
                     time.sleep(2)
                     res = download_match(match_id, act2, "puuid")
+
+                if len(res.content) == 0:
+                    time.sleep(2)
+                    res = download_match(match_id, act3, "puuid")
 
                 if len(res.content) == 0:
                     print(f"Couldn't find match {match_id}")

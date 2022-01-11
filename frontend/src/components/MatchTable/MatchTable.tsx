@@ -267,11 +267,8 @@ export const MatchTable = ({ match }: Props) => {
 
           <Spacer width="15px" />
 
+          {/*
           <div style={{ ...common.row, alignItems: "center" }}>
-            <Switch
-              value={separateTeams}
-              onChange={(newValue: boolean) => setSeparateTeams(newValue)}
-            />
             <select
               style={{
                 background: colors.shadow,
@@ -285,11 +282,8 @@ export const MatchTable = ({ match }: Props) => {
               <option value="attack">Attack</option>
               <option value="defense">Defense</option>
             </select>
-            <Spacer width="5px" />
-            <span style={{ color: colors.white, fontSize: "0.9em" }}>
-              Switch side
-            </span>
           </div>
+          */}
         </div>
 
         <div style={{ position: "relative" }}>
