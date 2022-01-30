@@ -3,9 +3,8 @@ import type { Round } from "./round";
 // making UUID different type for later convenience
 type UUID = string;
 
-/*
-export type TeamName = "Blue" | "Neutral" | "Red";
-export type MapName =
+export type TeamNameUnion = "Blue" | "Neutral" | "Red";
+export type MapNameUnion =
   | "ascent"
   | "bind"
   | "breeze"
@@ -15,7 +14,7 @@ export type MapName =
   | "port"
   | "split";
 
-export type QueueType =
+export type QueueTypeUnion =
   | ""
   | "competitive"
   | "custom"
@@ -25,7 +24,6 @@ export type QueueType =
   | "onefa"
   | "spikerush"
   | "unrated";
-  */
 
 export type TeamName = string;
 export type MapName = string;

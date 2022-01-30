@@ -3,24 +3,44 @@
 
 import { MatchTableSettings } from "../MatchTable/MatchTableSettings";
 import { SortableTable } from "../SortableTable";
-import { Spacer } from "../Spacer";
 import { TournamentTableCell } from "./TournamentTableCell";
+import { agents } from "../AgentIcon";
 import { aggregatePlayerData } from "./aggregatePlayerData";
 import { calculateMatchStats } from "./calculateMatchStats";
 import { colors } from "../../util/colorPalette";
 import { common } from "../../util/styles";
+import { content } from "../../api/content";
 import { defaultTableHeaders } from "./tableHeaders";
 import Modal from "react-modal";
 import React, { useEffect, useState } from "react";
 import lodash from "lodash";
+import type { AgentId } from "../AgentIcon";
 import type { AggregateStats, TournamentPlayerData } from "./types";
-import type { Match } from "../../types/match";
+import type { CSSProperties } from "react";
+import type { MapNameUnion, Match } from "../../types/match";
 import type { Setting } from "../MatchTable/MatchTableSettings";
 import type { TableHeader } from "../SortableTable";
+import { Spacer } from "../Spacer";
 
 interface Props {
   readonly matches: Match[];
 }
+
+interface Filters {
+  readonly agent: AgentId | "none";
+  readonly map: MapNameUnion | "none";
+}
+
+const styles: Record<string, CSSProperties> = {
+  select: {
+    background: colors.shadow,
+    color: colors.white,
+    fontSize: "1em",
+    height: "40px",
+    paddingLeft: "5px",
+    paddingRight: "5px",
+  },
+};
 
 export const TournamentStatTable = ({ matches }: Props) => {
   const [settingsOpen, setSettingsOpen] = useState<boolean>(false);
@@ -30,12 +50,24 @@ export const TournamentStatTable = ({ matches }: Props) => {
     defaultTableHeaders.map((th, index) => ({ ...th, order: index }))
   );
 
+  // Filters
+  const [selectedFilters, setSelectedFilters] = useState<Filters>({
+    agent: "none",
+    map: "none",
+  });
+
   // Calculate data and build table
   useEffect(() => {
-    const matchStats = matches.flatMap(calculateMatchStats);
-    console.log(matchStats);
-    const stats = aggregatePlayerData(matchStats);
-    console.log(stats);
+    const filteredMapMatches =
+      selectedFilters.map !== "none"
+        ? matches.filter((m) => m.map === selectedFilters.map)
+        : matches;
+    const matchStats = filteredMapMatches.flatMap(calculateMatchStats);
+    const filteredAgentStats =
+      selectedFilters.agent !== "none"
+        ? matchStats.filter((s) => s.agent === selectedFilters.agent)
+        : matchStats;
+    const stats = aggregatePlayerData(filteredAgentStats);
     setAggregateStats(stats);
 
     const sumValues = (values: number[]) => {
@@ -96,7 +128,7 @@ export const TournamentStatTable = ({ matches }: Props) => {
     }));
 
     setAveragedStats(averagedStatData);
-  }, []);
+  }, [selectedFilters]);
 
   if (aggregateStats === undefined || averagedStats === undefined) {
     return <div>"Loading..."</div>;
@@ -119,6 +151,16 @@ export const TournamentStatTable = ({ matches }: Props) => {
     setSettingsOpen(!settingsOpen);
   };
 
+  const handleChangeFilter = (
+    filterType: keyof Filters,
+    newValue: AgentId | string
+  ) => {
+    setSelectedFilters({
+      ...selectedFilters,
+      [filterType]: newValue,
+    });
+  };
+
   return (
     <div>
       <div
@@ -127,10 +169,55 @@ export const TournamentStatTable = ({ matches }: Props) => {
           alignItems: "center",
           justifyContent: "space-between",
           paddingBottom: "10px",
+          paddingTop: "10px",
           width: "90vw",
         }}
       >
-        <Spacer />
+        <div style={{ ...common.row }}>
+          <div style={{ ...common.row, alignItems: "center" }}>
+            <span style={{ color: colors.white, paddingRight: "10px" }}>
+              Map
+            </span>
+            <select
+              value={selectedFilters.map}
+              onChange={(e) => {
+                handleChangeFilter("map", e.target.value);
+              }}
+              style={styles.select}
+              defaultValue={undefined}
+            >
+              <option value="none">None</option>
+              <option value="ascent">Ascent</option>
+              <option value="bind">Bind</option>
+              <option value="haven">Haven</option>
+              <option value="split">Split</option>
+            </select>
+          </div>
+          <Spacer width="35px" />
+          <div style={{ ...common.row, alignItems: "center" }}>
+            <span style={{ color: colors.white, paddingRight: "10px" }}>
+              Agent
+            </span>
+            <select
+              value={selectedFilters.agent}
+              onChange={(e) => {
+                handleChangeFilter("agent", e.target.value);
+              }}
+              style={styles.select}
+              defaultValue={undefined}
+            >
+              <option value="none">None</option>
+              {Object.keys(agents).map((agentId) => (
+                <option value={agentId}>
+                  {
+                    content.agents.find((a) => a.id.toLowerCase() === agentId)
+                      ?.name
+                  }
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
         <div style={{ position: "relative" }}>
           <span
             style={{
@@ -186,22 +273,24 @@ export const TournamentStatTable = ({ matches }: Props) => {
           )}
         </div>
       </div>
-      <SortableTable<TournamentPlayerData>
-        headers={tableHeaders}
-        data={averagedStats}
-        defaultSort={{
-          direction: "Descending",
-          key: "combat",
-        }}
-        renderCell={(key, index, val, item) => (
-          <TournamentTableCell
-            dataKey={key}
-            index={index}
-            value={val}
-            player={item}
-          />
-        )}
-      />
+      <div style={{ width: "90vw" }}>
+        <SortableTable<TournamentPlayerData>
+          headers={tableHeaders}
+          data={averagedStats}
+          defaultSort={{
+            direction: "Descending",
+            key: "combat",
+          }}
+          renderCell={(key, index, val, item) => (
+            <TournamentTableCell
+              dataKey={key}
+              index={index}
+              value={val}
+              player={item}
+            />
+          )}
+        />
+      </div>
     </div>
   );
 };

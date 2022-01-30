@@ -48,8 +48,6 @@ export const calculateMatchStats = (match: Match): PlayerData[] => {
       return player as NonSpectatorPlayer;
     });
 
-  console.log(playersNoSpectators);
-
   const matchData = playersNoSpectators.map((player) => {
     const teamRoundsWon = match.roundResults.filter(
       (r) => r.winningTeam === player.teamId
