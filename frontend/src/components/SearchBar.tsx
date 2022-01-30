@@ -18,7 +18,6 @@ const styles: Record<string, CSSProperties> = {
     ...common.row,
     alignItems: "flex-end",
     background: gradients.inputBackground,
-
     boxShadow: "1px 1px 4px rgba(0,0,0,0.5)",
     justifyContent: "space-between",
     paddingBottom: "2px",

@@ -92,4 +92,9 @@ export const agentPerformanceTiers = {
     average: 207.0,
     high: 215.7,
   },
+  neon: {
+    low: 170,
+    average: 200,
+    high: 240,
+  },
 };

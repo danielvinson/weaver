@@ -7,6 +7,7 @@ import Cypher from "../assets/images/cypher.png";
 import Jett from "../assets/images/jett.png";
 import Kay0 from "../assets/images/kay0.png";
 import Killjoy from "../assets/images/killjoy.png";
+import Neon from "../assets/images/neon.png";
 import Omen from "../assets/images/omen.png";
 import Phoenix from "../assets/images/phoenix.png";
 import Raze from "../assets/images/raze.png";
@@ -33,6 +34,7 @@ export const agents = {
   "22697a3d-45bf-8dd7-4fec-84a9e28c69d7": Chamber,
   "a3bfb853-43b2-7238-a4f1-ad90e9e46bcc": Reyna,
   "add6443a-41bd-e414-f6ad-e58d267f4e95": Jett,
+  "bb2a4828-46eb-8cd1-e765-15848195d751": Neon,
   "eb93336a-449b-9c1b-0a54-a891f7921d69": Phoenix,
   "f94c3b30-42be-e959-889c-5aa313dba261": Raze,
 };

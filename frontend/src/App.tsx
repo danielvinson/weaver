@@ -1,3 +1,4 @@
+import { BoomerCharityTournament } from "./screens/BoomerCharityTournament";
 import { DefaultLayout } from "./layouts/DefaultLayout";
 import { Home } from "./screens/Home";
 import { MatchDetail } from "./screens/MatchDetail";
@@ -6,6 +7,11 @@ import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { StatChart } from "./components/MatchStatChart/StatChart";
 
 export const ROUTES = {
+  boomerCharityTournament: {
+    key: "boomerCharityTournament",
+    name: "Boomer Charity Tournament Stats",
+    path: "/boomerCharityTournament",
+  },
   detail: { key: "detail", name: "Match", path: "/match/:actId/:matchId" },
   history: {
     key: "history",
@@ -33,6 +39,11 @@ export default function App() {
         <Route path={ROUTES.history.path}>
           <DefaultLayout activeRoute="history">
             <MatchHistory />
+          </DefaultLayout>
+        </Route>
+        <Route path={ROUTES.boomerCharityTournament.path}>
+          <DefaultLayout activeRoute="boomerCharityTournament">
+            <BoomerCharityTournament />
           </DefaultLayout>
         </Route>
         <Route path={ROUTES.home.path}>

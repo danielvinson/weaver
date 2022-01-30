@@ -22,7 +22,10 @@ export const StatChart = () => {
   const [stats, setStats] = useState<Player[]>();
 
   const getCombatScore = (player: Player) => {
-    return player.stats.score / player.stats.roundsPlayed;
+    if (player.stats) {
+      return player.stats.score / player.stats.roundsPlayed;
+    }
+    return 0;
   };
 
   useEffect(() => {

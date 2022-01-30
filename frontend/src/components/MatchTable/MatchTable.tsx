@@ -32,7 +32,7 @@ export interface PlayerData {
   readonly team: TeamName;
   readonly name: string;
   readonly tag: string;
-  readonly agent: string;
+  readonly agent: string | null;
   readonly rank: number;
   readonly combat: number;
   readonly kills: number;
@@ -163,6 +163,11 @@ export const MatchTable = ({ match }: Props) => {
 
     // Build table data
     match.players.forEach((player) => {
+      // Check if player is spectator
+      if (player.stats === null) {
+        return;
+      }
+
       const teamRoundsWon = match.roundResults.filter(
         (r) => r.winningTeam === player.teamId
       ).length;

@@ -7,6 +7,11 @@ export interface Coordinate {
   readonly x: number;
   readonly y: number;
 }
+export interface Location {
+  readonly subject: string;
+  readonly viewRadians: number;
+  readonly location: Coordinate;
+}
 
 export interface PlayerEconomy {
   readonly armor: UUID | "";
@@ -31,7 +36,7 @@ export interface PlayerDamage {
 }
 
 export interface PlayerKills {
-  readonly assistants: readonly [];
+  readonly assistants: readonly string[];
   readonly finishingDamage: {
     readonly damageItem: UUID;
     readonly damageType: string | "Weapon";
@@ -43,7 +48,7 @@ export interface PlayerKills {
     readonly location: Coordinate;
     readonly subject: UUID;
     readonly viewRadians: number;
-  };
+  }[];
   readonly roundTime: number;
   readonly victim: UUID;
   readonly victimLocation: Coordinate;
@@ -66,14 +71,14 @@ export interface PlayerStat {
 }
 
 export interface Round {
-  readonly bombPlanter: UUID | null;
+  readonly bombPlanter?: UUID | null;
   readonly defuseLocation: Coordinate | null;
-  readonly defusePlayerLocations: readonly Coordinate[] | null;
+  readonly defusePlayerLocations: readonly Location[] | null;
   readonly defuseRoundTime: number;
   readonly plantLocation: Coordinate;
-  readonly plantPlayerLocations: readonly Coordinate[];
+  readonly plantPlayerLocations: readonly Location[] | null;
   readonly plantRoundTime: number;
-  readonly plantSite: "A" | "B" | "C" | null;
+  readonly plantSite: string; // "A" | "B" | "C" | null;
   readonly playerEconomies: readonly PlayerEconomy[];
   readonly playerScores: readonly PlayerScore[];
   readonly playerStats: readonly PlayerStat[];

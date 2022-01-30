@@ -3,6 +3,7 @@ import type { Round } from "./round";
 // making UUID different type for later convenience
 type UUID = string;
 
+/*
 export type TeamName = "Blue" | "Neutral" | "Red";
 export type MapName =
   | "ascent"
@@ -24,6 +25,11 @@ export type QueueType =
   | "onefa"
   | "spikerush"
   | "unrated";
+  */
+
+export type TeamName = string;
+export type MapName = string;
+export type QueueType = string;
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface NewPlayerExperienceDetails {} // boring data, ignoring
@@ -58,14 +64,36 @@ export interface PlayerStats {
 
 export interface Player {
   readonly accountLevel: number;
-  readonly behaviorFactors: {
+  readonly behaviorFactors?: {
     readonly afkRounds: number;
-    readonly statedInSpawnRounds: 0;
+    readonly stayedInSpawnRounds: number;
+  };
+  readonly characterId: string | null; // null for spectator
+  readonly competitiveTier: number;
+  readonly gameName: string;
+  readonly newPlayerExperienceDetails?: NewPlayerExperienceDetails;
+  readonly partyId: UUID;
+  readonly platformInfo: PlatformInfo;
+  readonly playerCard: UUID;
+  readonly playerTitle: UUID;
+  readonly roundDamage: readonly RoundDamage[] | null; // null for spectator
+  readonly sessionPlaytimeMinutes: number;
+  readonly stats: PlayerStats | null; // null for spectator
+  readonly subject: UUID;
+  readonly tagLine: string;
+  readonly teamId: TeamName;
+}
+
+export interface NonSpectatorPlayer {
+  readonly accountLevel: number;
+  readonly behaviorFactors?: {
+    readonly afkRounds: number;
+    readonly stayedInSpawnRounds: number;
   };
   readonly characterId: string;
   readonly competitiveTier: number;
   readonly gameName: string;
-  readonly newPlayerExperienceDetails: NewPlayerExperienceDetails;
+  readonly newPlayerExperienceDetails?: NewPlayerExperienceDetails;
   readonly partyId: UUID;
   readonly platformInfo: PlatformInfo;
   readonly playerCard: UUID;

@@ -37,6 +37,8 @@ export const MatchHistory = () => {
   const [queue, setQueue] = useState<QueueType | "all">("all");
   const [selectedActId, setSelectedActId] = useState<string>(DEFAULT_ACT_ID);
 
+  console.log("Hi");
+
   // This API is stupid and requires playerName and playerTag instead of an id...
   useEffect(() => {
     const getPlayer = async () => {
@@ -85,7 +87,7 @@ export const MatchHistory = () => {
         <select
           value={queue}
           onChange={(e) => {
-            setQueue(e.target.value as QueueType | "all");
+            setQueue(e.target.value);
           }}
           style={styles.select}
           defaultValue={queue}

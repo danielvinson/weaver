@@ -1,10 +1,8 @@
 import { AgentIcon } from "../AgentIcon";
 import { PlayerName } from "../PlayerName";
-import { RankIcon } from "../RankIcon";
 import { colors } from "../../util/colorPalette";
 import type { AgentId } from "../AgentIcon";
-import type { PlayerData } from "./MatchTable";
-import type { RankNumber } from "../RankIcon";
+import type { PlayerData } from "./types";
 import type { ReactNode } from "react";
 
 type Key = keyof PlayerData;
@@ -17,7 +15,7 @@ interface TableCellProps {
   readonly player: PlayerData;
 }
 
-export const renderMatchCell = (
+export const renderTournamentTableCell = (
   dataKey: Key,
   index: number,
   val: Value,
@@ -29,16 +27,10 @@ export const renderMatchCell = (
     case "name": {
       return <PlayerName name={val as string} tag={player.tag} />;
     }
-    case "rank": {
-      return <RankIcon rankNumber={val as RankNumber} />;
-    }
     case "kast": {
       return `${Math.round(val as number)}%`;
     }
-    case "hsPercentBullet": {
-      return (val as number).toFixed(2) + "%";
-    }
-    case "hsPercentKill": {
+    case "hsPercent": {
       return (val as number).toFixed(2) + "%";
     }
     default:
@@ -46,28 +38,18 @@ export const renderMatchCell = (
   }
 };
 
-export const MatchTableCell = ({
+export const TournamentTableCell = ({
   dataKey,
   index,
   player,
   value,
 }: TableCellProps) => {
-  const teamIsBlue = player.team === "Blue";
-  const isFirstElement = index === 0;
-  const borderLeftStyle =
-    isFirstElement && teamIsBlue
-      ? `5px solid ${colors.blueTeamDarker1}`
-      : isFirstElement && !teamIsBlue
-      ? `5px solid ${colors.redTeamDarker1}`
-      : "none";
-
   return (
     <div
       key={`${player.id}${dataKey}`}
       style={{
         alignItems: "center",
         background: colors.shadow,
-        borderLeft: borderLeftStyle,
         color: colors.white,
         display: "flex",
         flexDirection: "row",
@@ -75,7 +57,7 @@ export const MatchTableCell = ({
         padding: "4px",
       }}
     >
-      {renderMatchCell(dataKey, index, value, player)}
+      {renderTournamentTableCell(dataKey, index, value, player)}
     </div>
   );
 };
