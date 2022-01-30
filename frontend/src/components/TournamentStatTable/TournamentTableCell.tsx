@@ -2,28 +2,34 @@ import { AgentIcon } from "../AgentIcon";
 import { PlayerName } from "../PlayerName";
 import { colors } from "../../util/colorPalette";
 import type { AgentId } from "../AgentIcon";
-import type { PlayerData } from "./types";
 import type { ReactNode } from "react";
+import type { TournamentPlayerData } from "./types";
 
-type Key = keyof PlayerData;
-type Value = PlayerData[Key];
+type Key = keyof TournamentPlayerData;
+type Value = TournamentPlayerData[Key];
 
 interface TableCellProps {
   readonly dataKey: Key;
   readonly index: number;
   readonly value: Value;
-  readonly player: PlayerData;
+  readonly player: TournamentPlayerData;
 }
 
 export const renderTournamentTableCell = (
   dataKey: Key,
   index: number,
   val: Value,
-  player: PlayerData
+  player: TournamentPlayerData
 ): ReactNode => {
   switch (dataKey) {
-    case "agent":
-      return <AgentIcon agentId={val as AgentId} />;
+    case "agents":
+      return (
+        <>
+          {(val as AgentId[]).map((agentId) => (
+            <AgentIcon agentId={agentId} />
+          ))}
+        </>
+      );
     case "name": {
       return <PlayerName name={val as string} tag={player.tag} />;
     }
@@ -34,7 +40,7 @@ export const renderTournamentTableCell = (
       return (val as number).toFixed(2) + "%";
     }
     default:
-      return typeof val === "number" ? val.toFixed(0) : val;
+      return typeof val === "number" ? val.toFixed(0) : <div />;
   }
 };
 

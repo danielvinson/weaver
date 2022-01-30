@@ -71,7 +71,7 @@ export const BoomerCharityTournament = () => {
   const data = MATCHES.map((match) => match.data);
   return (
     <div>
-      <span style={{ color: "white", fontSize: "1.2em", padding: "5px" }}>
+      <span style={{ color: "white", fontSize: "1.2em", padding: "15px" }}>
         Boomerants: Winter Boomerland Stats
       </span>
       <TournamentStatTable matches={data} />
