@@ -22,6 +22,10 @@ import match27 from "../data/charityTournament/9e878bd2-aa89-4a25-bf02-274d37253
 import match28 from "../data/charityTournament/2ec16c21-7bc0-464b-be7b-2d3c82278b1e.json";
 import match29 from "../data/charityTournament/37bf6b57-a001-44fb-b42a-4c1782c0054c.json";
 import match3 from "../data/charityTournament/82a246e8-1151-42a1-82bb-36543d0b31dd.json";
+import match30 from "../data/charityTournament/ebd7bc41-64c5-4138-9ff5-916592cbd119.json";
+import match31 from "../data/charityTournament/17515786-e155-45d7-a9f2-1461ab507516.json";
+import match32 from "../data/charityTournament/d257a497-f39a-4517-9daf-0f4c165d01fa.json";
+import match33 from "../data/charityTournament/2c13d70a-07a0-499b-8af9-c9bc5f26ae1b.json";
 import match4 from "../data/charityTournament/e48cba19-c7a8-47fe-8f93-9f179e19f858.json";
 import match5 from "../data/charityTournament/46e576ef-ebf0-4e41-81ff-91f575ab72f2.json";
 import match6 from "../data/charityTournament/b4fd5353-a21c-4b67-8a0d-b6d62a8710a7.json";
@@ -65,6 +69,10 @@ const MATCHES: SavedMatchFile[] = [
   match27,
   match28,
   match29,
+  match30,
+  match31,
+  match32,
+  match33,
 ];
 
 export const BoomerCharityTournament = () => {
