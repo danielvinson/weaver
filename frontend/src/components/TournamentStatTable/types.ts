@@ -28,6 +28,8 @@ export interface AggregatePlayer {
   readonly wrws: number[];
   readonly agentWeightedAcs: number[];
   readonly agentWeightedWrwcs: number[];
+  readonly defuses: number[];
+  readonly plants: number[];
 }
 
 export interface PlayerData {
@@ -58,6 +60,8 @@ export interface PlayerData {
   readonly wrws: number;
   readonly agentWeightedAcs: number;
   readonly agentWeightedWrwcs: number;
+  readonly defuses: number;
+  readonly plants: number;
 }
 
 export interface TournamentPlayerData {
@@ -96,4 +100,6 @@ export interface TournamentPlayerData {
   readonly wrws: number;
   readonly agentWeightedAcs: number;
   readonly agentWeightedWrwcs: number;
+  readonly defuses: number;
+  readonly plants: number;
 }

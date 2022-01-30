@@ -3,6 +3,7 @@
 
 import { MatchTableSettings } from "../MatchTable/MatchTableSettings";
 import { SortableTable } from "../SortableTable";
+import { Spacer } from "../Spacer";
 import { TournamentTableCell } from "./TournamentTableCell";
 import { agents } from "../AgentIcon";
 import { aggregatePlayerData } from "./aggregatePlayerData";
@@ -20,7 +21,6 @@ import type { CSSProperties } from "react";
 import type { MapNameUnion, Match } from "../../types/match";
 import type { Setting } from "../MatchTable/MatchTableSettings";
 import type { TableHeader } from "../SortableTable";
-import { Spacer } from "../Spacer";
 
 interface Props {
   readonly matches: Match[];
@@ -93,6 +93,7 @@ export const TournamentStatTable = ({ matches }: Props) => {
       combat: averageValues(playerStats.combat),
       deathsAvg: averageValues(playerStats.deaths),
       deathsTotal: sumValues(playerStats.deaths),
+      defuses: sumValues(playerStats.defuses),
       fdAvg: averageValues(playerStats.fd),
       fdTotal: sumValues(playerStats.fd),
       fkAvg: averageValues(playerStats.fk),
@@ -122,6 +123,7 @@ export const TournamentStatTable = ({ matches }: Props) => {
         ...playerStats.multiKills5,
       ]),
       name: playerStats.name,
+      plants: sumValues(playerStats.plants),
       rws: averageValues(playerStats.rws),
       tag: playerStats.tag,
       wrws: averageValues(playerStats.wrws),

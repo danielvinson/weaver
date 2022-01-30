@@ -72,6 +72,7 @@ export interface PlayerStat {
 
 export interface Round {
   readonly bombPlanter?: UUID | null;
+  readonly bombDefuser?: UUID | null;
   readonly defuseLocation: Coordinate | null;
   readonly defusePlayerLocations: readonly Location[] | null;
   readonly defuseRoundTime: number;

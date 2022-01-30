@@ -257,4 +257,20 @@ export const defaultTableHeaders = [
     tooltip: "Percent of bullets which hit which were headshots",
     width: "120px",
   },
+  {
+    display: true,
+    group: "basic",
+    key: "plants",
+    name: "Plants",
+    tooltip: "Total number of plants",
+    width: "70px",
+  },
+  {
+    display: true,
+    group: "basic",
+    key: "defuses",
+    name: "Defuses",
+    tooltip: "Total number of defuses",
+    width: "70px",
+  },
 ];

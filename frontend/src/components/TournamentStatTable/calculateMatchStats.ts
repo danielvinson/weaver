@@ -77,6 +77,9 @@ export const calculateMatchStats = (match: Match): PlayerData[] => {
       clutchv5: clutches[player.subject]["1v5"],
       combat: player.stats.score / player.stats.roundsPlayed,
       deaths: player.stats.deaths,
+      defuses: match.roundResults.filter(
+        (round) => round.bombDefuser === player.subject
+      ).length,
       fd: firstDeaths[player.subject],
       fk: firstKills[player.subject],
       hsPercent: headshotPercents[player.subject].bullet * 100,
@@ -89,6 +92,9 @@ export const calculateMatchStats = (match: Match): PlayerData[] => {
       multiKills4: multiKills[player.subject]["4"],
       multiKills5: multiKills[player.subject]["5"],
       name: player.gameName,
+      plants: match.roundResults.filter(
+        (round) => round.bombPlanter === player.subject
+      ).length,
       rws: rwsData[player.subject] / teamRoundsWon,
       tag: player.tagLine,
       wrws: wrwsData[player.subject] / teamRoundsWon,
