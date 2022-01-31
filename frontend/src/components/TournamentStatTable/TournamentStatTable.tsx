@@ -193,6 +193,9 @@ export const TournamentStatTable = ({ matches }: Props) => {
               <option value="bind">Bind</option>
               <option value="haven">Haven</option>
               <option value="split">Split</option>
+              <option value="fracture">Fracture</option>
+              <option value="port">Icebox</option>
+              <option value="breeze">Breeze</option>
             </select>
           </div>
           <Spacer width="35px" />
