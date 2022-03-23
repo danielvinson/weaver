@@ -38,7 +38,7 @@ export const defaultTableHeaders = [
     width: "90px",
   },
   {
-    display: true,
+    display: false,
     group: "computed",
     key: "agentWeightedAcs",
     name: "AWACS",
@@ -126,7 +126,7 @@ export const defaultTableHeaders = [
     width: "auto",
   },
   {
-    display: false,
+    display: true,
     group: "multi",
     key: "multiKills1",
     name: "1k",
@@ -134,7 +134,7 @@ export const defaultTableHeaders = [
     width: "auto",
   },
   {
-    display: false,
+    display: true,
     group: "multi",
     key: "multiKills2",
     name: "2k",
@@ -142,7 +142,7 @@ export const defaultTableHeaders = [
     width: "auto",
   },
   {
-    display: false,
+    display: true,
     group: "multi",
     key: "multiKills3",
     name: "3k",
@@ -150,7 +150,7 @@ export const defaultTableHeaders = [
     width: "auto",
   },
   {
-    display: false,
+    display: true,
     group: "multi",
     key: "multiKills4",
     name: "4k",
@@ -158,7 +158,7 @@ export const defaultTableHeaders = [
     width: "auto",
   },
   {
-    display: false,
+    display: true,
     group: "multi",
     key: "multiKills5",
     name: "5k",
