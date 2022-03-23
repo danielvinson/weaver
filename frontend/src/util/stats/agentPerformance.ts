@@ -33,6 +33,7 @@ export const calculateAgentPerformance = (player: Player, acs: number) => {
   const agent = content.agents.find(
     (a) => a.id.toLowerCase() === player.characterId
   );
+
   if (agent === undefined) {
     console.log(player.characterId);
     throw new Error("Agent not found - should not be possible");
