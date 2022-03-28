@@ -86,6 +86,6 @@ export interface Round {
   readonly roundCeremony: string;
   readonly roundNum: number;
   readonly roundResult: string | "Eliminated";
-  readonly roundResultCode: string | "Elimination";
+  readonly roundResultCode: string | "Defuse" | "Detonate" | "Elimination";
   readonly winningTeam: TeamName;
 }
