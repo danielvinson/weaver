@@ -18,10 +18,10 @@ const styles: Record<string, CSSProperties> = {
     paddingTop: "4px",
     width: "90vw",
   },
-  tableBody: { padding: "1px" },
+  tableBody: { padding: "1px", paddingLeft: "10px" },
   tableBodyRow: {},
   tableHeadeRow: {},
-  tableHeader: { padding: "1px" },
+  tableHeader: { padding: "1px", paddingLeft: "10px" },
   text: {
     color: colors.white,
     fontFamily: "Lato",
@@ -35,6 +35,18 @@ interface Props {
 }
 
 export const LoadoutsTable = ({ players, round }: Props) => {
+  if (!round) {
+    return <Spacer height="12em" />;
+  }
+
+  const sortedPlayerEconomies = [...round.playerEconomies].sort((e) => {
+    const player = players.find((p) => p.subject === e.subject);
+    if (!player) {
+      return 0;
+    }
+    return player.teamId.localeCompare("Red");
+  });
+
   return (
     <table style={styles.text}>
       <thead>
@@ -48,43 +60,49 @@ export const LoadoutsTable = ({ players, round }: Props) => {
         </tr>
       </thead>
       <tbody>
-        {round ? (
-          round.playerEconomies.map((playerEconomy) => {
-            const player = players.find(
-              (p) => p.subject === playerEconomy.subject
-            );
+        {sortedPlayerEconomies.map((playerEconomy) => {
+          const player = players.find(
+            (p) => p.subject === playerEconomy.subject
+          );
 
-            if (player === undefined) {
-              throw new Error(
-                `couldn't find player with id ${playerEconomy.subject}`
-              );
-            }
-
-            return (
-              <tr style={styles.tableBodyRow}>
-                <td style={styles.tableBody}>
-                  <PlayerName name={player.gameName} tag={player.tagLine} />
-                </td>
-                <td style={styles.tableBody}>{playerEconomy.loadoutValue}</td>
-                <td style={styles.tableBody}>{playerEconomy.spent}</td>
-                <td style={styles.tableBody}>{playerEconomy.remaining}</td>
-                <td style={styles.tableBody}>
-                  <WeaponIcon
-                    weaponId={playerEconomy.weapon as WeaponId}
-                    height={20}
-                  />
-                </td>
-                <td style={styles.tableBody}>
-                  {playerEconomy.armor && (
-                    <ArmorIcon armorId={playerEconomy.armor as ArmorId} />
-                  )}
-                </td>
-              </tr>
+          if (player === undefined) {
+            throw new Error(
+              `couldn't find player with id ${playerEconomy.subject}`
             );
-          })
-        ) : (
-          <Spacer height="10em" />
-        )}
+          }
+
+          const playerTeam = player.teamId as "Blue" | "Red";
+
+          return (
+            <tr style={styles.tableBodyRow}>
+              <td
+                style={{
+                  ...styles.tableBody,
+                  borderLeft:
+                    playerTeam === "Blue"
+                      ? `5px solid ${colors.blueTeamDarker1}`
+                      : `5px solid ${colors.redTeamDarker1}`,
+                }}
+              >
+                <PlayerName name={player.gameName} tag={player.tagLine} />
+              </td>
+              <td style={styles.tableBody}>{playerEconomy.loadoutValue}</td>
+              <td style={styles.tableBody}>{playerEconomy.spent}</td>
+              <td style={styles.tableBody}>{playerEconomy.remaining}</td>
+              <td style={styles.tableBody}>
+                <WeaponIcon
+                  weaponId={playerEconomy.weapon as WeaponId}
+                  height={20}
+                />
+              </td>
+              <td style={styles.tableBody}>
+                {playerEconomy.armor && (
+                  <ArmorIcon armorId={playerEconomy.armor as ArmorId} />
+                )}
+              </td>
+            </tr>
+          );
+        })}
       </tbody>
     </table>
   );
