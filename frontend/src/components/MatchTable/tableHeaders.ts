@@ -59,19 +59,19 @@ export const defaultTableHeaders = [
   { display: false, group: "basic", key: "assists", name: "A", width: "50px" },
   { display: true, group: "basic", key: "kda", name: "KDA", width: "95px" },
   {
-    display: false,
-    group: "basic",
-    key: "fd",
-    name: "FD",
-    tooltip: "First Deaths",
-    width: "50px",
-  },
-  {
     display: true,
     group: "basic",
     key: "fk",
     name: "FK",
     tooltip: "First Kills",
+    width: "50px",
+  },
+  {
+    display: true,
+    group: "basic",
+    key: "fd",
+    name: "FD",
+    tooltip: "First Deaths",
     width: "50px",
   },
   {
