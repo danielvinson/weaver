@@ -36,6 +36,10 @@ export const MatchTeamStats = ({ match }: Props) => {
     return {
       Blue: roundType.blue,
       Red: roundType.red,
+      blueLoadoutValue: roundType.blueLoadoutValue,
+      blueSpend: roundType.blueSpend,
+      redLoadoutValue: roundType.redLoadoutValue,
+      redSpend: roundType.redSpend,
       roundNumber: round.roundNum,
     };
   });

@@ -11,7 +11,6 @@ interface Props {
 }
 
 export const RoundResultIcon = ({ resultCode, winningTeam }: Props) => {
-  console.log(resultCode);
   const winningTeamColor =
     winningTeam === "Blue" ? colors.blueTeamDarker1 : colors.redTeamDarker1;
   switch (resultCode) {
