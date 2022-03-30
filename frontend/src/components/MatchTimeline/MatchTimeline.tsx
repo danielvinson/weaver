@@ -34,7 +34,8 @@ const styles: Record<string, CSSProperties> = {
   },
   timelineSeparator: {
     borderLeft: `3px solid ${makeAlpha(colors.header, 0.4)}`,
-    margin: "1px",
+    marginLeft: "8px",
+    marginRight: "8px",
   },
 };
 
