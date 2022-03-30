@@ -1,15 +1,17 @@
 import { ReactComponent as Defuse } from "../../assets/icons/defuse.svg";
 import { ReactComponent as Detonate } from "../../assets/icons/detonate.svg";
 import { ReactComponent as Elimination } from "../../assets/icons/elimination.svg";
+import { ReactComponent as Time } from "../../assets/icons/time.svg";
 import { colors } from "../../util/colorPalette";
 
-export type RoundResultCode = "Defuse" | "Detonate" | "Elimination";
+export type RoundResultCode = "" | "Defuse" | "Detonate" | "Elimination";
 interface Props {
   readonly winningTeam: "Blue" | "Red";
   readonly resultCode: RoundResultCode;
 }
 
 export const RoundResultIcon = ({ resultCode, winningTeam }: Props) => {
+  console.log(resultCode);
   const winningTeamColor =
     winningTeam === "Blue" ? colors.blueTeamDarker1 : colors.redTeamDarker1;
   switch (resultCode) {
@@ -31,7 +33,13 @@ export const RoundResultIcon = ({ resultCode, winningTeam }: Props) => {
           <Elimination width={20} height={20} />
         </div>
       );
+    case "":
+      return (
+        <div style={{ color: winningTeamColor }}>
+          <Time width={20} height={20} />
+        </div>
+      );
     default:
-      throw new Error("invalid round result code");
+      throw new Error(`invalid round result code ${resultCode}`);
   }
 };
