@@ -1,6 +1,7 @@
 import { API } from "../api/api";
 import { MatchTable } from "../components/MatchTable";
 import { MatchTableSummary } from "../components/MatchTableSummary";
+import { MatchTeamStats } from "../components/MatchTeamStats/MatchTeamStats";
 import { MatchTimeline } from "../components/MatchTimeline/MatchTimeline";
 import { RiseLoader } from "react-spinners";
 import { RoundBreakdown } from "../components/RoundBreakdown/RoundBreakdown";
@@ -94,6 +95,7 @@ export const MatchDetail = () => {
           }}
         />
       </div>
+      <MatchTeamStats match={match} />
       <Spacer height="10px" />
       <MatchTable match={match} />
     </div>
