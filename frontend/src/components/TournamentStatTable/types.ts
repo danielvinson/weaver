@@ -81,6 +81,7 @@ export interface TournamentPlayerData {
   readonly fkTotal: number;
   readonly fdAvg: number;
   readonly fdTotal: number;
+  readonly fkDiff: number;
   readonly clutch: number;
   readonly clutchv1: number;
   readonly clutchv2: number;

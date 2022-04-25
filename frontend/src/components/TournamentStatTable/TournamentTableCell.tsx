@@ -1,6 +1,7 @@
 import { AgentIcon } from "../AgentIcon";
 import { PlayerName } from "../PlayerName";
-import { colors } from "../../util/colorPalette";
+import { colorScales, colors } from "../../util/colorPalette";
+import { normalizeRange } from "../../util/normalizeRange";
 import type { AgentId } from "../AgentIcon";
 import type { ReactNode } from "react";
 import type { TournamentPlayerData } from "./types";
@@ -38,6 +39,25 @@ export const renderTournamentTableCell = (
     }
     case "hsPercent": {
       return (val as number).toFixed(2) + "%";
+    }
+    case "fkAvg":
+    case "fdAvg":
+    case "assistsAvg":
+    case "deathsAvg":
+    case "killsAvg": {
+      return (val as number).toFixed(2);
+    }
+    case "fkDiff": {
+      const num = val as number;
+      const isPositive = num > 0;
+      const normalizedDiff = 9 - normalizeRange(num, -50, 50, 0, 9);
+
+      return (
+        <span style={{ color: colorScales.greenToRed[normalizedDiff] }}>
+          {isPositive && "+"}
+          {num.toFixed(0)}
+        </span>
+      );
     }
     default:
       return typeof val === "number" ? val.toFixed(0) : <div />;

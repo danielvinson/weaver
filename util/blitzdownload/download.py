@@ -3,7 +3,7 @@ import json
 import time
 import os
 
-data_dir = "../../data/"
+data_dir = "../../data/temp/"
 
 base_url = "https://valorant.iesdev.com/match/"
 act_ids = {
@@ -18,7 +18,7 @@ act_ids = {
     },
 }
 
-boomer_match_filename = "boomer3.txt"
+boomer_match_filename = "boomer3champions.txt"
 
 
 def download_match(match_id, act_id, type):

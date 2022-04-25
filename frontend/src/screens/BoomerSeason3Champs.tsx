@@ -1,31 +1,73 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+import { Spacer } from "../components/Spacer";
 import { TournamentStatTable } from "../components/TournamentStatTable/TournamentStatTable";
-import match1 from "../data/boomerSeason3/championship/0f58c00e-31a9-4dc6-8104-0a88c056cf98.json";
-import match2 from "../data/boomerSeason3/championship/15fb585d-9775-4601-9db9-f990b3ca89f1.json";
-import match3 from "../data/boomerSeason3/championship/285c2815-4f34-48cc-94e6-a552efffa898.json";
-import match4 from "../data/boomerSeason3/championship/5a290a98-4543-47e0-ae77-f1172960fc36.json";
-import match5 from "../data/boomerSeason3/championship/83c6b049-2c40-40fc-b360-908d9d21452f.json";
-import match6 from "../data/boomerSeason3/championship/c770095d-9a47-46ad-ab1f-f2045db51e10.json";
-import match7 from "../data/boomerSeason3/championship/fe415513-bf92-4760-9f5d-1821756027f8.json";
-
+import { colors } from "../util/colorPalette";
+import {
+  groupA,
+  groupB,
+  groupC,
+  groupD,
+} from "../data/boomerSeason3/championshipMatches";
+import { useEffect, useState } from "react";
+import type { CSSProperties } from "react";
 import type { Match } from "../types/match";
 
+export type GroupName = "A" | "B" | "C" | "D" | undefined;
 export interface SavedMatchFile {
   readonly match_type: string; //"puuid" | "subject";
   readonly data: Match;
 }
 
-const MATCHES: SavedMatchFile[] = [
-  match1,
-  match2,
-  match3,
-  match4,
-  match5,
-  match6,
-  match7,
-];
+const styles: Record<string, CSSProperties> = {
+  select: {
+    background: colors.shadow,
+    color: colors.white,
+    fontSize: "1em",
+    height: "40px",
+    paddingLeft: "5px",
+    paddingRight: "5px",
+  },
+};
+
+const getMatchData = async (matchId: string) => {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  const data = await import(
+    `../data/boomerSeason3/championship/${matchId}.json`
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+  ).then((module) => module.default);
+
+  return data as SavedMatchFile;
+};
+
+const groupMatchIds = {
+  A: Object.values(groupA).flat(),
+  B: Object.values(groupB).flat(),
+  C: Object.values(groupC).flat(),
+  D: Object.values(groupD).flat(),
+};
 
 export const BoomerSeason3Stats = () => {
-  const data = MATCHES.map((match) => match.data);
+  const [matchData, setMatchData] = useState<Match[]>();
+  const [selectedGroup, setSelectedGroup] = useState<GroupName>();
+
+  useEffect(() => {
+    const getAndSetMatchData = async () => {
+      const matchIds =
+        selectedGroup !== undefined
+          ? groupMatchIds[selectedGroup]
+          : Object.values(groupMatchIds).flat();
+
+      const matches = matchIds.map(async (matchId) => {
+        return getMatchData(matchId);
+      });
+
+      const resolvedMatches = await Promise.all(matches);
+
+      setMatchData(resolvedMatches.map((match) => match.data));
+    };
+
+    void getAndSetMatchData();
+  }, [selectedGroup]);
 
   return (
     <div>
@@ -33,7 +75,35 @@ export const BoomerSeason3Stats = () => {
         Boomerants: Season 3 Championship Stats
       </span>
 
-      <TournamentStatTable matches={data} />
+      <Spacer height="15px" />
+
+      <div>
+        <span style={{ color: "white" }}>Filter by group: </span>
+        <select
+          defaultValue={undefined}
+          value={selectedGroup}
+          style={styles.select}
+          onChange={(e) => {
+            if (e.target.value === "all") {
+              setSelectedGroup(undefined);
+            } else {
+              setSelectedGroup(e.target.value as GroupName);
+            }
+          }}
+        >
+          <option value="all">All Groups</option>
+          <option value="A">Group A</option>
+          <option value="A">Group B</option>
+          <option value="A">Group C</option>
+          <option value="A">Group D</option>
+        </select>
+      </div>
+
+      {matchData !== undefined ? (
+        <TournamentStatTable matches={matchData} />
+      ) : (
+        <span style={{ color: "white" }}>"Loading..."</span>
+      )}
     </div>
   );
 };

@@ -97,6 +97,7 @@ export const TournamentStatTable = ({ matches }: Props) => {
       fdAvg: averageValues(playerStats.fd),
       fdTotal: sumValues(playerStats.fd),
       fkAvg: averageValues(playerStats.fk),
+      fkDiff: sumValues(playerStats.fk) - sumValues(playerStats.fd),
       fkTotal: sumValues(playerStats.fk),
       gamesPlayed: playerStats.agent.length,
       hsPercent: averageValues(playerStats.hsPercent),
