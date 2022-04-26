@@ -77,19 +77,63 @@ export const groupB = {
 };
 
 export const groupC = {
-  week1: [],
-  week2: [],
-  week3: [],
-  week4: [],
-  week5: [],
-  week6: [],
+  week1: [
+    "4fce4df7-fa72-411e-bc8e-34d6cfff7c02",
+    "79b4018c-1cf1-4ca6-ba1e-1743680505f5",
+    "a5370670-0bc3-437e-85bb-18fae8e6debd",
+    "0118d738-19a3-4a7c-be78-d250fdd1d876",
+  ],
+  week2: [
+    "a35f4eda-41e5-4b9a-a39f-7bc8ab4f8f35",
+    "7d3af3ab-06f2-4e9d-ae01-7e61fabdab39",
+    "dd5c52b9-0218-463c-90cc-a822650d3c9a",
+    "153377b5-79b6-478f-b480-bda89a6e5128",
+  ],
+  week3: [
+    "4e66ada9-3a31-477d-bf41-c24bcedd6652",
+    "e30d3ced-5d36-4c41-96ce-867554b007d5",
+    "f6f2131b-a3fe-4ad6-9904-1e977e4dde7e",
+    "a11b2c7a-9e99-482e-8b3c-a00c6a48571c",
+  ],
+  week4: [
+    "b54a90e2-994d-42fb-80b1-47c41fee16d5",
+    "915c5487-8777-4370-91b3-b0b2043dd88b",
+    "86827897-7832-4d3e-b872-1f234c210bfc",
+    "efef3df3-1da4-4a17-b1c1-70e08977a180",
+  ],
+  week5: [
+    "aec0e458-a31f-4980-98a4-5fd50a742c7e",
+    "f40a48bf-a1eb-4461-8890-e713be00313e",
+  ],
+  week6: [
+    "85be2712-c29d-4ba9-aaf9-8ab0af3115d4",
+    "cf44ab29-d3f3-4a85-b054-29eb7d453bd7",
+    "63466365-073d-4704-b749-2c85cb423b46",
+    "398da557-2957-4284-84cb-7f4a8cc21cb1",
+  ],
 };
 
 export const groupD = {
-  week1: [],
-  week2: [],
-  week3: [],
-  week4: [],
-  week5: [],
+  week1: [
+    "2757bbe3-420f-4686-9095-a7491b1c7e2f",
+    "4d62e887-5418-4604-8d19-08e9913603e4",
+  ],
+  week2: [
+    "72b74493-7cd1-4313-8907-1875ebdabb26",
+    "533a81e3-76fa-41d4-b2d8-382acce2a437",
+    "e43da236-de97-49a2-ae5c-8d69ede0ab3e",
+    "185a235e-4df5-4996-aaf9-e6b9cc5f8658",
+  ],
+  week3: [
+    "be66fe3d-1fd8-4920-8f04-d94f207d324d",
+    "d2b3d8bd-ac83-41ea-8667-06172af3084f",
+    "077dcc0b-e822-4d5c-b0ea-86e41155329f",
+    "ddf7105e-72e1-4b8a-95cf-c4d71b470883",
+  ],
+  week4: ["5958a6c3-edc1-4cb7-8686-f19f1b923eb9"],
+  week5: [
+    "eefa3d68-d123-41b9-ac85-2c9550aab76a",
+    "cb72f432-785c-4f9f-bc07-95f7cedc0200",
+  ],
   week6: [],
 };

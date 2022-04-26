@@ -102,7 +102,7 @@ export const BoomerSeason3Stats = () => {
       {matchData !== undefined ? (
         <TournamentStatTable matches={matchData} />
       ) : (
-        <span style={{ color: "white" }}>"Loading..."</span>
+        <span style={{ color: "white" }}>Loading...</span>
       )}
     </div>
   );
