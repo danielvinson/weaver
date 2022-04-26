@@ -64,8 +64,8 @@ export const BoomerSeason3Stats = () => {
       });
 
       const resolvedMatches = await Promise.all(matches);
-
-      setMatchData(resolvedMatches.map((match) => match.data));
+      const resolvedMatchData = resolvedMatches.map((match) => match.data);
+      setMatchData([...resolvedMatchData]);
     };
 
     void getAndSetMatchData();

@@ -131,7 +131,7 @@ export const TournamentStatTable = ({ matches }: Props) => {
     }));
 
     setAveragedStats(averagedStatData);
-  }, [selectedFilters]);
+  }, [selectedFilters, matches]);
 
   if (aggregateStats === undefined || averagedStats === undefined) {
     return <div>"Loading..."</div>;
