@@ -7,12 +7,13 @@ import {
   groupB,
   groupC,
   groupD,
+  playoffs,
 } from "../data/boomerSeason3/championshipMatches";
 import { useEffect, useState } from "react";
 import type { CSSProperties } from "react";
 import type { Match } from "../types/match";
 
-export type GroupName = "A" | "B" | "C" | "D" | undefined;
+export type GroupName = "A" | "B" | "C" | "D" | "playoffs" | undefined;
 export interface SavedMatchFile {
   readonly match_type: string; //"puuid" | "subject";
   readonly data: Match;
@@ -44,6 +45,7 @@ const groupMatchIds = {
   B: Object.values(groupB).flat(),
   C: Object.values(groupC).flat(),
   D: Object.values(groupD).flat(),
+  playoffs: Object.values(playoffs).flat(),
 };
 
 export const BoomerSeason3Stats = () => {
@@ -93,9 +95,10 @@ export const BoomerSeason3Stats = () => {
         >
           <option value="all">All Groups</option>
           <option value="A">Group A</option>
-          <option value="A">Group B</option>
-          <option value="A">Group C</option>
-          <option value="A">Group D</option>
+          <option value="B">Group B</option>
+          <option value="C">Group C</option>
+          <option value="D">Group D</option>
+          <option value="playoffs">Playoffs</option>
         </select>
       </div>
 

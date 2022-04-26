@@ -26,9 +26,11 @@ export const renderTournamentTableCell = (
     case "agents":
       return (
         <>
-          {(val as AgentId[]).map((agentId) => (
-            <AgentIcon agentId={agentId} />
-          ))}
+          {(val as AgentId[])
+            .filter((v, i, a) => a.indexOf(v) === i)
+            .map((agentId) => (
+              <AgentIcon agentId={agentId} />
+            ))}
         </>
       );
     case "name": {

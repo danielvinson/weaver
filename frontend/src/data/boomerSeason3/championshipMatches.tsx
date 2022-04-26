@@ -137,3 +137,12 @@ export const groupD = {
   ],
   week6: [],
 };
+
+export const playoffs = {
+  round1: [
+    "31e78a52-f88f-4e0b-9045-bb9f304b415a",
+    "ca30ec52-b718-4bc0-b9ea-c7ad1c49185b",
+  ],
+  round2: [],
+  round3: [],
+};
