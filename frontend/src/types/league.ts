@@ -5,15 +5,14 @@ export type TeamId = string;
 export interface LeaguePlayer {
   readonly valorantName: string;
   readonly valorantTag: string;
-  readonly discordName: string;
-  readonly discordTag: string;
+  readonly discordName?: string;
+  readonly discordTag?: string;
 }
 
 export interface LeagueTeam {
-  readonly id: string;
   readonly name: string;
   readonly shortName: string;
-  readonly captain: LeaguePlayer;
+  readonly captain?: LeaguePlayer;
   readonly players: LeaguePlayer[];
 }
 
