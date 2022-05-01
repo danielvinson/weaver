@@ -97,4 +97,9 @@ export const agentPerformanceTiers = {
     average: 200,
     high: 240,
   },
+  fade: {
+    low: 170,
+    average: 195,
+    high: 240,
+  },
 };
