@@ -64,7 +64,14 @@ export const BoomerSeason3Academy = () => {
 
   return (
     <div>
-      <span style={{ color: "white", fontSize: "1.2em", padding: "15px" }}>
+      <span
+        style={{
+          color: "white",
+          fontSize: "1.2em",
+          paddingBottom: "15px",
+          paddingTop: "15px",
+        }}
+      >
         Boomerants: Season 3 Academy Stats
       </span>
 
