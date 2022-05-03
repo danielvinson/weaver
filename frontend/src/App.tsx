@@ -1,3 +1,4 @@
+import { BoomerSeason3Academy } from "./screens/BoomerSeason3Academy";
 import { BoomerSeason3Challenger } from "./screens/BoomerSeason3Challenger";
 import { BoomerSeason3Championship } from "./screens/BoomerSeason3Champs";
 import { DefaultLayout } from "./layouts/DefaultLayout";
@@ -7,6 +8,11 @@ import { MatchHistory } from "./screens/MatchHistory";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 export const ROUTES = {
+  boomerSeason3academy: {
+    key: "boomerSeason3academy",
+    name: "BoomerSeason3Academy",
+    path: "/boomerants/season3/academy",
+  },
   boomerSeason3challenger: {
     key: "boomerSeason3challenger",
     name: "BoomerSeason3Challenger",
@@ -38,6 +44,11 @@ export default function App() {
         <Route path={ROUTES.boomerSeason3challenger.path}>
           <DefaultLayout activeRoute="boomerSeason3challenger">
             <BoomerSeason3Challenger />
+          </DefaultLayout>
+        </Route>
+        <Route path={ROUTES.boomerSeason3academy.path}>
+          <DefaultLayout activeRoute="boomerSeason3academy">
+            <BoomerSeason3Academy />
           </DefaultLayout>
         </Route>
         <Route path={ROUTES.detail.path}>
