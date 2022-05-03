@@ -8,7 +8,7 @@ import {
   groupC,
   groupD,
   playoffs,
-} from "../data/boomerSeason3/championshipMatches";
+} from "../data/boomerSeason3/challengerMatches";
 import { useEffect, useState } from "react";
 import type { CSSProperties } from "react";
 import type { Match } from "../types/match";
@@ -33,7 +33,7 @@ const styles: Record<string, CSSProperties> = {
 const getMatchData = async (matchId: string) => {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const data = await import(
-    `../data/boomerSeason3/championship/${matchId}.json`
+    `../data/boomerSeason3/challenger/${matchId}.json`
     // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   ).then((module) => module.default);
 
@@ -48,7 +48,7 @@ const groupMatchIds = {
   playoffs: Object.values(playoffs).flat(),
 };
 
-export const BoomerSeason3Championship = () => {
+export const BoomerSeason3Challenger = () => {
   const [matchData, setMatchData] = useState<Match[]>();
   const [selectedGroup, setSelectedGroup] = useState<GroupName>();
 
@@ -74,7 +74,7 @@ export const BoomerSeason3Championship = () => {
   return (
     <div>
       <span style={{ color: "white", fontSize: "1.2em", padding: "15px" }}>
-        Boomerants: Season 3 Championship Stats
+        Boomerants: Season 3 Challenger Stats
       </span>
 
       <Spacer height="15px" />

@@ -15,6 +15,7 @@ act_ids = {
     "episode4": {
         "act1": "573f53ac-41a5-3a7d-d9ce-d6a6298e5704",
         "act2": "d929bc38-4ab6-7da4-94f0-ee84f8ac141e",
+        "act3": "3e47230a-463c-a301-eb7d-67bb60357d4f",
     },
 }
 
@@ -34,6 +35,7 @@ def download_matches():
         # act_ids["episode3"]["act3"],
         # act_ids["episode4"]["act1"],
         act_ids["episode4"]["act2"],
+        act_ids["episode4"]["act3"],
     ]
     match_types = [
         "subject",
