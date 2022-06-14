@@ -11,3 +11,7 @@ export const groupA = {
   week7: [],
   week8: [],
 };
+
+export const playoffs = {
+  round1: [],
+};

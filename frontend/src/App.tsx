@@ -1,6 +1,9 @@
 import { BoomerSeason3Academy } from "./screens/BoomerSeason3Academy";
 import { BoomerSeason3Challenger } from "./screens/BoomerSeason3Challenger";
 import { BoomerSeason3Championship } from "./screens/BoomerSeason3Champs";
+import { BoomerSeason4Academy } from "./screens/BoomerSeason4Academy";
+import { BoomerSeason4Challenger } from "./screens/BoomerSeason4Challenger";
+import { BoomerSeason4Championship } from "./screens/BoomerSeason4Champs";
 import { DefaultLayout } from "./layouts/DefaultLayout";
 import { Home } from "./screens/Home";
 import { MatchDetail } from "./screens/MatchDetail";
@@ -22,6 +25,21 @@ export const ROUTES = {
     key: "boomerSeason3champs",
     name: "BoomerSeason3Championship",
     path: "/boomerants/season3/championship",
+  },
+  boomerSeason4academy: {
+    key: "boomerSeason4academy",
+    name: "BoomerSeason4Academy",
+    path: "/boomerants/season4/academy",
+  },
+  boomerSeason4challenger: {
+    key: "boomerSeason4challenger",
+    name: "BoomerSeason4Challenger",
+    path: "/boomerants/season4/challenger",
+  },
+  boomerSeason4champs: {
+    key: "boomerSeason4champs",
+    name: "BoomerSeason4Championship",
+    path: "/boomerants/season4/championship",
   },
   detail: { key: "detail", name: "Match", path: "/match/:actId/:matchId" },
   history: {
@@ -49,6 +67,21 @@ export default function App() {
         <Route path={ROUTES.boomerSeason3academy.path}>
           <DefaultLayout activeRoute="boomerSeason3academy">
             <BoomerSeason3Academy />
+          </DefaultLayout>
+        </Route>
+        <Route path={ROUTES.boomerSeason4champs.path}>
+          <DefaultLayout activeRoute="boomerSeason4champs">
+            <BoomerSeason4Championship />
+          </DefaultLayout>
+        </Route>
+        <Route path={ROUTES.boomerSeason4challenger.path}>
+          <DefaultLayout activeRoute="boomerSeason4challenger">
+            <BoomerSeason4Challenger />
+          </DefaultLayout>
+        </Route>
+        <Route path={ROUTES.boomerSeason4academy.path}>
+          <DefaultLayout activeRoute="boomerSeason4academy">
+            <BoomerSeason4Academy />
           </DefaultLayout>
         </Route>
         <Route path={ROUTES.detail.path}>
