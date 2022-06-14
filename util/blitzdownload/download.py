@@ -19,7 +19,7 @@ act_ids = {
     },
 }
 
-boomer_match_filename = "boomer3champions.txt"
+boomer_match_filename = "match_ids.txt"
 
 
 def download_match(match_id, act_id, type):
@@ -34,7 +34,7 @@ def download_matches():
         # act_ids["episode3"]["act2"],
         # act_ids["episode3"]["act3"],
         # act_ids["episode4"]["act1"],
-        act_ids["episode4"]["act2"],
+        # act_ids["episode4"]["act2"],
         act_ids["episode4"]["act3"],
     ]
     match_types = [
