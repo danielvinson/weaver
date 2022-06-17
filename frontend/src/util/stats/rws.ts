@@ -25,12 +25,17 @@ export const calculateRWS = (
   const rws: RWSMap = {};
 
   players.forEach((player) => {
-    const score = round.playerScores.find(
-      (r) => r.subject === player.subject
-    )?.score;
-    if (score !== undefined) {
-      const finalScore = player.teamId === round.winningTeam ? score : 0;
-      rws[player.subject] = finalScore;
+    try {
+      const score = round.playerScores.find(
+        (r) => r.subject === player.subject
+      )?.score;
+
+      if (score !== undefined) {
+        const finalScore = player.teamId === round.winningTeam ? score : 0;
+        rws[player.subject] = finalScore;
+      }
+    } catch (e: unknown) {
+      console.error(`playerScores missing for round ${round.roundNum}`);
     }
   });
 
@@ -43,21 +48,25 @@ export const calculateWeightedRWS = (
 ): RWSMap => {
   const rws: RWSMap = {};
   players.forEach((player) => {
-    const score = round.playerScores.find(
-      (r) => r.subject === player.subject
-    )?.score;
-    if (score === undefined) {
-      return; // not possible
-    }
+    try {
+      const score = round.playerScores.find(
+        (r) => r.subject === player.subject
+      )?.score;
+      if (score === undefined) {
+        return; // not possible
+      }
 
-    if (player.teamId !== round.winningTeam) {
-      return 0;
-    }
+      if (player.teamId !== round.winningTeam) {
+        return 0;
+      }
 
-    const enemyBuyType = getRoundType(round, players)[
-      player.teamId === "Blue" ? "red" : "blue"
-    ];
-    rws[player.subject] = score * WEIGHTS[enemyBuyType];
+      const enemyBuyType = getRoundType(round, players)[
+        player.teamId === "Blue" ? "red" : "blue"
+      ];
+      rws[player.subject] = score * WEIGHTS[enemyBuyType];
+    } catch (e: unknown) {
+      console.error(`playerScores missing for round ${round.roundNum}`);
+    }
   });
 
   return rws;

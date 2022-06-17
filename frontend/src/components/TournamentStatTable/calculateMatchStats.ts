@@ -11,6 +11,7 @@ import type { Match, NonSpectatorPlayer } from "../../types/match";
 import type { PlayerData } from "./types";
 
 export const calculateMatchStats = (match: Match): PlayerData[] => {
+  console.log(`calculating stats for matchId ${match.id}`);
   const clutches = calculateClutches(match.players, match.roundResults);
   const firstKills = calculateFirstKills(match.players, match.roundResults);
   const firstDeaths = calculateFirstDeaths(match.players, match.roundResults);
