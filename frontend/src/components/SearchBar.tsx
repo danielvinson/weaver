@@ -11,7 +11,7 @@ import type { CSSProperties } from "react";
 
 const TEXT_SIZE = "1em";
 const SEARCHBAR_HEIGHT = "40px";
-const DEFAULT_ACT = episodeIds.episode5.act1;
+const DEFAULT_ACT = episodeIds.episode5.act2;
 
 const styles: Record<string, CSSProperties> = {
   container: {
