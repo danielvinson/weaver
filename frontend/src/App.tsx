@@ -8,6 +8,9 @@ import { DefaultLayout } from "./layouts/DefaultLayout";
 import { Home } from "./screens/Home";
 import { MatchDetail } from "./screens/MatchDetail";
 import { MatchHistory } from "./screens/MatchHistory";
+import { RendezvousSeason1Academy } from "./screens/RendezvousSeason1Academy";
+import { RendezvousSeason1Challenger } from "./screens/RendezvousSeason1Challenger";
+import { RendezvousSeason1Championship } from "./screens/RendezvousSeason1Championship";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 export const ROUTES = {
@@ -48,6 +51,21 @@ export const ROUTES = {
     path: "/matchHistory/:playerName/:playerTag",
   },
   home: { key: "home", name: "Home", path: "/" },
+  rendezvousSeason1Academy: {
+    key: "rendezvousSeason1Academy",
+    name: "RendezvousSeason1Academy",
+    path: "/rendezvous/season1/academy",
+  },
+  rendezvousSeason1Challenger: {
+    key: "rendezvousSeason1Challenger",
+    name: "RendezvousSeason1Challenger",
+    path: "/rendezvous/season1/challenger",
+  },
+  rendezvousSeason1Championship: {
+    key: "rendezvousSeason1Championship",
+    name: "RendezvousSeason1Championship",
+    path: "/rendezvous/season1/championship",
+  },
 };
 
 export default function App() {
@@ -84,6 +102,23 @@ export default function App() {
             <BoomerSeason4Academy />
           </DefaultLayout>
         </Route>
+
+        <Route path={ROUTES.rendezvousSeason1Academy.path}>
+          <DefaultLayout activeRoute="rendezvousSeason1academy">
+            <RendezvousSeason1Academy />
+          </DefaultLayout>
+        </Route>
+        <Route path={ROUTES.rendezvousSeason1Challenger.path}>
+          <DefaultLayout activeRoute="rendezvousSeason1challenger">
+            <RendezvousSeason1Challenger />
+          </DefaultLayout>
+        </Route>
+        <Route path={ROUTES.rendezvousSeason1Championship.path}>
+          <DefaultLayout activeRoute="rendezvousSeason1championship">
+            <RendezvousSeason1Championship />
+          </DefaultLayout>
+        </Route>
+
         <Route path={ROUTES.detail.path}>
           <DefaultLayout activeRoute="detail">
             <MatchDetail />

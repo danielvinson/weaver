@@ -17,6 +17,10 @@ act_ids = {
         "act2": "d929bc38-4ab6-7da4-94f0-ee84f8ac141e",
         "act3": "3e47230a-463c-a301-eb7d-67bb60357d4f",
     },
+    "episode5": {
+        "act1": "67e373c7-48f7-b422-641b-079ace30b427",
+        "act2": "7a85de9a-4032-61a9-61d8-f4aa2b4a84b6",
+    },
 }
 
 boomer_match_filename = "match_ids.txt"
@@ -35,7 +39,8 @@ def download_matches():
         # act_ids["episode3"]["act3"],
         # act_ids["episode4"]["act1"],
         # act_ids["episode4"]["act2"],
-        act_ids["episode4"]["act3"],
+        # act_ids["episode4"]["act3"],
+        act_ids["episode5"]["act2"]
     ]
     match_types = [
         "subject",
