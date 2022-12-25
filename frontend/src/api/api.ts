@@ -21,6 +21,7 @@ export const episodeIds = {
   episode5: {
     act1: "67e373c7-48f7-b422-641b-079ace30b427",
     act2: "7a85de9a-4032-61a9-61d8-f4aa2b4a84b6",
+    act3: "aca29595-40e4-01f5-3f35-b1b3d304c96e",
   },
 };
 
